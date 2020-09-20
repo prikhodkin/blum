@@ -1,3 +1,22 @@
 .button {
-  background-color: aqua;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 25px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  appearance: none;
+
+  &:hover {
+    background-color: #1c92e6;
+  }
 }

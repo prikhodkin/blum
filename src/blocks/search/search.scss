@@ -1,0 +1,25 @@
+.search {
+  position: relative;
+  display: flex;
+}
+
+.search__input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid $main-color;
+  border-radius: 0;
+  appearance: none;
+}
+
+.search__icon {
+  width: 21px;
+  height: 21px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+

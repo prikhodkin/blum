@@ -1,3 +1,15 @@
 @font-face {
-  @include includeFont(200, $first-font, "Montserrat-Thin");
+  @include includeFont(400, $main-font, "PTSans-Caption");
+}
+
+@font-face {
+  @include includeFont(700, $main-font, "PTSans-CaptionBold");
+}
+
+@font-face {
+  @include includeFont(400, $add-font, "Montserrat-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $add-font, "Montserrat-Medium");
 }

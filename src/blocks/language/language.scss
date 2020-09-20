@@ -1,0 +1,39 @@
+.language {
+  display: inline-flex;
+  padding: 6px;
+  background-color: rgba(#009ada, 0.15);
+  border-radius: 3px;
+
+  &::after {
+    @include pseudo;
+    width: 10px;
+    height: 5px;
+    margin-top: 9px;
+    margin-left: 6px;
+    background-image: url("../../img/language__arrow.png");
+    background-size: contain;
+    transition: all 0.3s;
+  }
+
+  &--active {
+    &::after {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.language__list {
+  @include list-reset;
+}
+
+.language__item {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #727272;
+  text-transform: uppercase;
+
+  &:nth-child(n+2) {
+    display: none;
+  }
+}
