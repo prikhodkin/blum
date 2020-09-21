@@ -1,4 +1,6 @@
 @import "./button/button";
+@import "./visually-hidden/visually-hidden.scss";
+@import "./title/title.scss";
 @import "./tabs/tabs";
 @import "./menu/menu";
 @import "./search/search";
@@ -9,3 +11,8 @@
 @import "./page/page";
 @import "./footer/footer";
 @import "./social/social";
+@import "./breadcrumbs/breadcrumbs.scss";
+@import "./programs/programs.scss";
+@import "./sidebar/sidebar.scss";
+@import "./program-card/program-card.scss";
+@import "./pagination/pagination.scss";
