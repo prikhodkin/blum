@@ -26,25 +26,6 @@
     text-transform: uppercase;
     background-color: transparent;
 
-    &:hover {
-      & > .mega-menu__inner {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      background-color: #009ada;
-
-      & > a {
-        color: #ffffff;
-      }
-
-      a {
-        &::before {
-          opacity: 1;
-        }
-      }
-    }
-
     a {
       position: relative;
       display: flex;
@@ -64,6 +45,45 @@
         opacity: 0;
       }
     }
+
+    &--active {
+      & > .mega-menu__inner {
+        opacity: 1;
+        pointer-events: none;
+      }
+
+      background-color: #009ada;
+
+      & > a {
+        color: #ffffff;
+      }
+
+      a {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+      & > .mega-menu__inner {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      background-color: #009ada;
+
+      & > a {
+        color: #ffffff;
+      }
+
+      a {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
 
     img {
       width: 40px;
