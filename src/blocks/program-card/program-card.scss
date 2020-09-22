@@ -1,8 +1,8 @@
 .program-card {
-  box-shadow: 0px 0px 10px #E6EEF2;
-  border-radius: 10px;
   width: 203px;
   min-height: 336px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e6eef2;
 }
 
 .program-card__link {
@@ -17,11 +17,11 @@
 }
 
 .program-card__text {
+  margin-right: 5px;
+  margin-left: 10px;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  margin-left: 10px;
-  margin-right: 5px;
 }
 
 .programs__pagination {
