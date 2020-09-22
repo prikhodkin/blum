@@ -74,6 +74,10 @@
   &:hover {
     color: #4ACFFC;
   }
+
+  &--current {
+    color: #4ACFFC;
+  }
 }
 
 @media (min-width: 1200px) {
