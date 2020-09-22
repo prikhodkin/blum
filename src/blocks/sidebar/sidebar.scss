@@ -72,7 +72,11 @@
   transition: all 0.3s;
 
   &:hover {
-    color: #4ACFFC;
+    color: #4acffc;
+  }
+
+  &--current {
+    color: #4acffc;
   }
 }
 

@@ -8,10 +8,10 @@
 }
 
 .programs__text {
+  margin-bottom: 30px;
   font-size: 12px;
   line-height: 20px;
   color: #000000;
-  margin-bottom: 30px;
 }
 
 .programs__list {
@@ -20,7 +20,6 @@
   justify-content: center;
   grid-row-gap: 40px;
   margin-bottom: 40px;
-
 }
 
 @media (min-width: 768px) {
@@ -38,8 +37,8 @@
   }
 
   .programs__list {
-    grid-template-columns: min-content min-content;
     grid-gap: 25px;
+    grid-template-columns: min-content min-content;
   }
 
   .programs__text {
@@ -50,6 +49,10 @@
 @media (min-width: 1200px) {
   .programs {
     @include page-wrapper;
+  }
+
+  .programs__header {
+    margin-bottom: 60px;
   }
 
   .programs__text {
@@ -63,8 +66,8 @@
   }
 
   .programs__list {
-    grid-template-columns: min-content min-content min-content min-content;
-    grid-row-gap: 25px;
     grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    grid-template-columns: min-content min-content min-content min-content;
   }
 }
