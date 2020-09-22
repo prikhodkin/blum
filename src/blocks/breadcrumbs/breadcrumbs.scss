@@ -1,0 +1,58 @@
+.breadcrumbs {
+  padding: 10px 15px;
+}
+
+.breadcrumbs__list {
+  @include list-reset;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.breadcrumbs__link {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 23px;
+  color: #c1c1c1;
+
+  &::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url("../../img/arrow__breadcrumbs.svg");
+
+    @include pseudo;
+  }
+
+  &:hover {
+    color: #4e4e4e;
+  }
+
+  &:active {
+    color: rgba(78, 78, 78, 0.6);
+  }
+}
+
+.breadcrumbs__link--active {
+  color: #4e4e4e;
+
+  &::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .breadcrumbs {
+    @include page-wrapper;
+  }
+
+  .breadcrumbs__link {
+    font-size: 13px;
+  }
+}
