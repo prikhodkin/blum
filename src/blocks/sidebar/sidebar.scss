@@ -24,7 +24,13 @@
   }
 
   &--active .sidebar__link {
-    font-weight: bold;
+    font-weight: 700;
+  }
+
+  &--category:hover .sidebar__link,
+  &--category:focus .sidebar__link {
+    font-weight: 400;
+    color: #000000;
   }
 }
 
@@ -43,6 +49,10 @@
     background-image: url("../../img/arrow-sidebar.svg");
 
     @include pseudo;
+  }
+
+  &--category::after {
+    display: none;
   }
 }
 
