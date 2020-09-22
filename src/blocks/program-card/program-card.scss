@@ -1,6 +1,7 @@
 .program-card {
-  width: 203px;
+  width: 100%;
   min-height: 336px;
+  padding-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px #e6eef2;
 }
@@ -19,13 +20,14 @@
 .program-card__text {
   margin-right: 5px;
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 18px;
   color: #000000;
 }
 
-.programs__pagination {
-  display: flex;
-  justify-content: center;
+@media (min-width: 768px) {
+  .program-card__text {
+    font-size: 14px;
+  }
 }
 

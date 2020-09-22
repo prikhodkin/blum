@@ -5,3 +5,28 @@
 .myopathy__title {
   margin-bottom: 60px;
 }
+
+.myopathy__sidebar {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .myopathy {
+    @include page-wrapper;
+  }
+
+  .myopathy__container {
+    display: flex;
+  }
+
+  .myopathy__sidebar {
+    width: 275px;
+    min-width: 275px;
+    margin-bottom: 0;
+  }
+
+  .myopathy__box {
+    max-width: 870px;
+    margin-left: auto;
+  }
+}

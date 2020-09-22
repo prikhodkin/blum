@@ -17,9 +17,15 @@
 .programs__list {
   @include list-reset;
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   grid-row-gap: 40px;
+  grid-template-columns: 45% 45%;
   margin-bottom: 40px;
+}
+
+.programs__pagination {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -39,6 +45,11 @@
   .programs__list {
     grid-gap: 25px;
     grid-template-columns: min-content min-content;
+  }
+
+  .programs__item {
+    width: 203px;
+    min-width: 203px;
   }
 
   .programs__text {
