@@ -11,3 +11,37 @@
     transition: opacity 1.2s;
   }
 }
+
+.tabs__list {
+  @include list-reset;
+  display: flex;
+  overflow: auto;
+  margin: -10px;
+}
+
+.tabs__item {
+  font-size: 12px;
+  line-height: 155%;
+  padding: 9px 29px;
+  background: #FBFBFB;
+  border: 1px solid #CDF0FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px;
+  white-space: nowrap;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &--active {
+    background: #27A2F8;
+    border: 1px solid #CDF0FF;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabs__list {
+    overflow: unset;
+    flex-wrap: wrap;
+  }
+}

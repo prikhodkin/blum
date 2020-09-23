@@ -23,7 +23,7 @@ module.exports = function html() {
     .pipe(replace('../',''))
     .pipe(gulpif(production, replace('.css','.min.css')))
     .pipe(gulpif(production, replace(".js", ".min.js")))
-    .pipe(webpHtml())
+    // .pipe(webpHtml())
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.reload({
       stream: true

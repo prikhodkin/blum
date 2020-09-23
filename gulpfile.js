@@ -26,7 +26,7 @@ module.exports.dev = gulp.series(
     style,
     scripts,
     sprite,
-    webp,
+    // webp,
     vendor
   ),
   gulp.parallel(
@@ -46,7 +46,7 @@ module.exports.build = gulp.series(
     style,
     scripts,
     sprite,
-    webp,
+    // webp,
     vendor
   ),
   hash

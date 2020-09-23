@@ -1,0 +1,28 @@
+.reviews {
+  padding: 30px 15px;
+}
+
+.reviews__title {
+  margin-bottom: 30px;
+}
+
+.reviews__tabs {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    @include page-wrapper;
+    padding-top: 110px;
+    padding-bottom: 75px;
+  }
+
+  .reviews__tabs {
+    margin-bottom: 60px;
+  }
+
+  .reviews__title {
+    margin-bottom: 70px;
+  }
+
+}
