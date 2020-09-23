@@ -1,12 +1,11 @@
 .slider {
   padding-bottom: 30px;
-  overflow: hidden;
 }
 
 .slider__img-main {
   width: 100%;
   margin-bottom: 20px;
-  overflow: hidden;
+
   border-radius: 15px;
 }
 
@@ -16,10 +15,11 @@
 
 .slider__list {
   position: relative;
+  display: flex;
+  overflow: hidden;
 
   @include list-reset;
-  display: flex;
-  margin-right: -15px;
+  // margin-right: -15px;
 
   &::after {
     content: "";
@@ -56,6 +56,7 @@
   }
 
   .slider__item {
+    width: 93px;
     min-width: 93px;
     height: 52px;
     overflow: hidden;

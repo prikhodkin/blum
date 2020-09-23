@@ -116,50 +116,81 @@
       font-size: 14px;
       line-height: 24px;
     }
+  }
 
-    .description__list {
-      display: flex;
-      align-items: center;
+  .description__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .description__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
 
-    .description__item {
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-
-      &:not(:first-child) {
-        margin-left: auto;
-      }
-    }
-
-    .description__note {
-      max-width: 625px;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-    .description__image {
-      margin-bottom: 50px;
+    &:not(:first-child) {
+      margin-left: auto;
     }
   }
 
-  @media (min-width: 1200px) {
-    .description__list {
-      &::after {
-        content: "";
-        width: 805px;
-        height: 1px;
-      }
+  .description__note {
+    max-width: 625px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .description__image {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description__inner {
+    min-height: 201px;
+
+    &--biography {
+      padding: 30px 80px;
+      padding-right: 100px;
+    }
+  }
+
+  .description__list {
+    padding-right: 35px;
+
+    padding-left: 35px;
+
+    &::after {
+      content: "";
+      width: 805px;
+      height: 1px;
     }
 
-    .description__icon {
-      width: 66px;
-      height: 66px;
+    &--biography {
+      padding-right: 0;
+      padding-left: 0;
     }
 
-    .description__video {
-      height: 489px;
-      margin-bottom: 30px;
+    &--biography::after {
+      width: 831px;
+    }
+  }
+
+  .description__slider--biography {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .description__icon {
+    width: 66px;
+    height: 66px;
+  }
+
+  .description__video {
+    height: 489px;
+    margin-bottom: 30px;
+
+    &--biography {
+      padding: 0 100px;
     }
   }
 }
