@@ -1,8 +1,8 @@
 .description {
   & p {
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 22px;
   }
 
   & h3 {
@@ -15,9 +15,14 @@
 }
 
 .description__inner {
+  margin-bottom: 50px;
   padding: 30px 0;
   background: rgba(122, 215, 255, 0.1);
   border-radius: 10px;
+
+  &--research-two {
+    margin-bottom: 77px;
+  }
 }
 
 .description__list {
@@ -62,7 +67,10 @@
   font-size: 12px;
   line-height: 16px;
   color: #676767;
-  text-transform: uppercase;
+
+  &--up {
+    text-transform: uppercase;
+  }
 
   & b {
     font-size: 36px;
@@ -84,17 +92,108 @@
   color: #676767;
 }
 
-@media (min-width: 1200px) {
+.description__video {
+  height: 53vw;
+  margin-bottom: 30px;
+}
+
+.description__image {
+  width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.description__img {
+  display: block;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .description {
+    & p {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    & p.description__text--60 {
+      margin-bottom: 60px;
+    }
+  }
+
   .description__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .description__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: auto;
+    }
+  }
+
+  .description__note {
+    max-width: 625px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .description__image {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description__inner {
+    min-height: 201px;
+
+    &--biography {
+      padding: 30px 80px;
+      padding-right: 100px;
+    }
+  }
+
+  .description__list {
+    padding-right: 35px;
+    padding-left: 35px;
+
     &::after {
       content: "";
       width: 805px;
       height: 1px;
     }
+
+    &--biography {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &--biography::after {
+      width: 831px;
+    }
+  }
+
+  .description__slider--biography {
+    padding-right: 80px;
+    padding-left: 80px;
   }
 
   .description__icon {
     width: 66px;
     height: 66px;
+  }
+
+  .description__video {
+    height: 489px;
+    margin-bottom: 30px;
+
+    &--biography {
+      padding: 0 100px;
+    }
   }
 }

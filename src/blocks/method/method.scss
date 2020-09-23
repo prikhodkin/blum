@@ -1,0 +1,47 @@
+.method {
+  padding: 10px 15px;
+  padding-bottom: 30px;
+}
+
+.method__title {
+  margin-bottom: 30px;
+}
+
+.method__sidebar {
+  margin-bottom: 30px;
+}
+
+.method__list {
+  @include list-reset;
+}
+
+.method__item {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .method__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .method {
+    @include page-wrapper;
+  }
+
+  .method__container {
+    display: flex;
+  }
+
+  .method__sidebar {
+    width: 275px;
+    max-width: 275px;
+  }
+
+  .method__box {
+    max-width: 870px;
+    margin-left: auto;
+  }
+}

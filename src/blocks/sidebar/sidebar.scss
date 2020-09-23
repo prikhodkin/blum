@@ -24,7 +24,33 @@
   }
 
   &--active .sidebar__link {
-    font-weight: bold;
+    font-weight: 700;
+  }
+
+  &--category:hover .sidebar__link,
+  &--category:focus .sidebar__link {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &--year {
+    padding: 20px 35px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+
+  &--year:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--year:hover,
+  &--year:active {
+    background-color: #f4f6f8;
+    border: 1px solid #27a2f8;
+  }
+
+  &--year:hover .sidebar__link {
+    font-weight: 700;
   }
 }
 
@@ -44,6 +70,18 @@
 
     @include pseudo;
   }
+
+  &--category::after {
+    display: none;
+  }
+
+  &--year {
+    color: #3c64b1;
+  }
+
+  &--year::after {
+    display: none;
+  }
 }
 
 .sidebar__img {
@@ -53,6 +91,14 @@
 
 .sidebar__name {
   margin-left: 15px;
+
+  &--category {
+    margin-left: 0;
+  }
+
+  &--year {
+    margin: 0 auto;
+  }
 }
 
 .sidebar__sublist {
@@ -88,6 +134,10 @@
 
   .sidebar__item {
     padding: 11px 14px;
+
+    &--year {
+      padding: 20px 35px;
+    }
   }
 
   .sidebar__img {
@@ -97,6 +147,10 @@
 
   .sidebar__name {
     margin-left: 30px;
+
+    &--year {
+      margin: 0 auto;
+    }
   }
 
   .sidebar__sablink {
