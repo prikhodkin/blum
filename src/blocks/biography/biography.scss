@@ -1,32 +1,32 @@
-.myopathy {
+.biography {
   padding: 10px 15px;
 }
 
-.myopathy__title {
+.biography__title {
   margin-bottom: 60px;
 }
 
-.myopathy__sidebar {
+.biography__sidebar {
   margin-bottom: 50px;
 }
 
 @media (min-width: 1200px) {
-  .myopathy {
+  .biography {
     @include page-wrapper;
   }
 
-  .myopathy__container {
+  .biography__container {
     display: flex;
   }
 
-  .myopathy__sidebar {
-    width: 275px;
-    min-width: 275px;
+  .biography__sidebar {
+    width: 106px;
+    min-width: 106px;
     margin-bottom: 0;
   }
 
-  .myopathy__box {
-    max-width: 870px;
+  .biography__box {
+    max-width: 1014px;
     margin-left: auto;
   }
 }
