@@ -4,6 +4,15 @@
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 10px;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 10px #eefbff;
+  }
+
+  &:hover .disease__text {
+    color: #27a2f8;
+  }
 }
 
 .disease__link {
@@ -29,4 +38,5 @@
   padding-right: 8px;
   font-size: 14px;
   line-height: 18px;
+  transition: all 0.3s;
 }
