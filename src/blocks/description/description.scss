@@ -144,7 +144,11 @@
   }
 
   .description__image {
-    margin-bottom: 0;
+    margin-bottom: 50px;
+
+    &--800 {
+      padding-right: 70px;
+    }
   }
 }
 

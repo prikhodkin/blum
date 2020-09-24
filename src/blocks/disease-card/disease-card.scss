@@ -1,4 +1,4 @@
-.disease {
+.disease-card {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -10,28 +10,29 @@
     box-shadow: 0 0 10px #eefbff;
   }
 
-  &:hover .disease__text {
+  &:hover .disease-card__text {
     color: #27a2f8;
   }
 }
 
-.disease__link {
+.disease-card__link {
   display: flex;
+  min-height: 100%;
 }
 
-.disease__img-box {
+.disease-card__img-box {
   width: 37%;
   min-width: 37%;
   min-height: 100%;
 }
 
-.disease__img {
+.disease-card__img {
   display: block;
   object-fit: cover;
   height: 100%;
 }
 
-.disease__text {
+.disease-card__text {
   display: flex;
   align-items: center;
   padding: 10px;
