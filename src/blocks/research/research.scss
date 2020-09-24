@@ -16,9 +16,10 @@
 }
 
 .research__item {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
-
 
 @media (min-width: 768px) {
   .research__title {
