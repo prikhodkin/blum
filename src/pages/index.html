@@ -34,13 +34,13 @@
     </div>
     <img src="../img/promo__doctor.png" alt="doctor" class="promo__img">
   </section>
-  <section class="reviews tabs">
+  <section class="reviews tabs" data-tabs>
     <h2 class="reviews__title title title--index">посмотрите истории и отзывы <span>наших пациентов, чтобы убедиться</span></h2>
     <ul class="reviews__tabs tabs__list">
-      <li class="tabs__item" data-tab="1">Все</li>
+      <li class="tabs__item tabs__item--active" data-tab="1">Все</li>
       <li class="tabs__item" data-tab="2">Инсульт</li>
       <li class="tabs__item" data-tab="3">Детская реабилитация</li>
-      <li class="tabs__item tabs__item--active" data-tab="4">После операций</li>
+      <li class="tabs__item" data-tab="4">После операций</li>
       <li class="tabs__item" data-tab="5">Сколиоз</li>
       <li class="tabs__item" data-tab="6">Дорсалгия</li>
       <li class="tabs__item" data-tab="7">Артрит</li>
@@ -49,6 +49,218 @@
       <li class="tabs__item" data-tab="10">Радикулит</li>
       <li class="tabs__item"><a href="#">Ещё ...</a></li>
     </ul>
+    <div class="reviews__content tabs__content tabs__content--active" data-content="1">
+      <div class="reviews__slider" data-controller="slider">
+        <ul class="reviews__list" data-target="slider.list">
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Полина</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Полина</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__button--prev" data-target="slider.prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--next" data-target="slider.next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="reviews__content tabs__content" data-content="2">
+      <div class="reviews__slider" data-controller="slider">
+        <ul class="reviews__list" data-target="slider.list">
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video" data-target="slider.video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Андрей</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Антон</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__button--prev" data-target="slider.prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--next" data-target="slider.next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="people">
+    <h2 class="people__title title title--index">мы гордимся людьми, которые приезжают к нам восстанавливаться</h2>
+    <div class="people__inner" data-controller="slider-five">
+      <ul class="people__list" data-target="slider-five.list">
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/p1.jpg" alt="">
+            </div>
+            <p class="program-card__text">Новак Джокович, теннисист, первая ракетка мира в одиночном разряде</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/r2.jpg" alt="">
+            </div>
+            <p class="program-card__text">Михаил Южный, теннисист, бывшая восьмая ракетка в одиночном разряде</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/p3.png" alt="">
+            </div>
+            <p class="program-card__text">Андрей Кузнецов, теннисист, бывшая третья ракетка мира в юниорском рейтинге</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/p4.jpg" alt="">
+            </div>
+            <p class="program-card__text">Петр Осипов, основатель "Бизнес Молодость"</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/p5.jpg" alt="">
+            </div>
+            <p class="program-card__text">Александр Волчек, соучредитель "Бизнес молодость"</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="../img/p1.jpg" alt="">
+            </div>
+            <p class="program-card__text">Александр Волчек, соучредитель "Бизнес молодость"</p>
+          </a>
+        </li>
+      </ul>
+      <div class="people__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-five.prev">
+          <svg aria-label="prev">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+        <button class="controls__button controls__button--next" data-target="slider-five.next">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section class="video">
+    <div class="video__top">
+      <div class="video__left">
+        <h2 class="video__title">Центр биомеханики Доктора Блюма</h2>
+        <p class="video__desc">Авторская методика и климат Средиземноморья для восстановления здоровья</p>
+      </div>
+      <div class="video__right">
+        <p>Испанский город Марбелья - это райское место в прибрежной зоне Коста-дель-Соль с видом на далекое побережье Африки. Средиземное море приносит соленый ветер, в теплый климат настраивает отпустить заботы и поддаться испанскому образу жизни с улыбкой и сиестами.</p>
+        <p>Евгений Блюм пришел к выводу, что реабилитация протекает быстрее в странах с мягким и теплым климатом. Самым подходящим регионом  для работы круглый год оказалось Средиземноморье. Так появилась идея открыть центр в Марбелье у подножия горы Ла Конча.</p>
+      </div>
+    </div>
+    <div class="video__bottom">
+      <img src="../img/video.jpg" alt="">
+      <button class="video__play">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+        </svg>
+      </button>
+    </div>
   </section>
 </main>
 @@include('../blocks/footer/footer.html')

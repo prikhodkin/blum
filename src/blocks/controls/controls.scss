@@ -1,0 +1,38 @@
+.controls {
+  display: flex;
+}
+
+.controls__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  background: linear-gradient(180deg, #eef3f8 0%, #eef3f8 100%);
+  border: none;
+  border-radius: 50%;
+  box-shadow: unset;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &--prev {
+    transform: rotate(-180deg);
+  }
+
+  &:hover {
+    background: #27a2f8;
+    box-shadow: 0 4px 4px rgba(217, 217, 217, 0.25);
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  svg {
+    width: 9px;
+    height: 17px;
+    transition: all 0.3s;
+    fill: #27a2f8;
+  }
+}
