@@ -4,7 +4,7 @@
 
 .sidebar__item {
   margin-bottom: -1px;
-  padding: 14px 12px;
+
   background-color: #fefefe;
   border: 1px solid #ebf0f1;
   transition: all 0.3s;
@@ -25,6 +25,7 @@
 
   &--active .sidebar__link {
     font-weight: 700;
+    color: #000000;
   }
 
   &--category:hover .sidebar__link,
@@ -34,7 +35,6 @@
   }
 
   &--year {
-    padding: 20px 35px;
     background-color: #f9f9f9;
     border-radius: 5px;
   }
@@ -57,9 +57,11 @@
 .sidebar__link {
   display: flex;
   align-items: center;
+  padding: 14px 12px;
   font-size: 14px;
   line-height: 16px;
   color: #373737;
+  transition: all 0.3s;
 
   &::after {
     content: "";
@@ -76,6 +78,7 @@
   }
 
   &--year {
+    padding: 20px 35px;
     color: #3c64b1;
   }
 
@@ -90,10 +93,8 @@
 }
 
 .sidebar__name {
-  margin-left: 15px;
-
-  &--category {
-    margin-left: 0;
+  &--program {
+    margin-left: 15px;
   }
 
   &--year {
@@ -103,7 +104,8 @@
 
 .sidebar__sublist {
   @include list-reset;
-  padding-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
 }
 
 .sidebar__subitem {
@@ -128,25 +130,28 @@
 
 @media (min-width: 1200px) {
   .sidebar__link {
+    padding: 16px 15px;
     font-size: 15px;
     line-height: 22px;
-  }
 
-  .sidebar__item {
-    padding: 11px 14px;
+    &--category {
+      padding: 19px 15px;
+    }
 
     &--year {
-      padding: 20px 35px;
+      padding: 19px 15px;
     }
   }
 
   .sidebar__img {
-    width: 33px;
-    height: 33px;
+    width: 32px;
+    height: 32px;
   }
 
   .sidebar__name {
-    margin-left: 30px;
+    &--program {
+      margin-left: 30px;
+    }
 
     &--year {
       margin: 0 auto;
