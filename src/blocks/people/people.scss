@@ -52,15 +52,17 @@
   .people__inner {
     position: relative;
   }
+}
 
+@media (min-width: 1360px) {
   .people__controls {
     position: absolute;
     top: 50%;
-    left: -100px;
+    left: -90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% + 200px);
+    width: calc(100% + 180px);
     transform: translateY(-50%);
 
     .controls__button {

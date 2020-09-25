@@ -1,0 +1,151 @@
+.intro {
+  padding: 30px 15px;
+  padding-top: 0;
+}
+
+.intro__subtitle {
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro__img {
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.intro__text {
+  margin-bottom: 35px;
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1f1e1e;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.intro__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.intro__position {
+  font-size: 17px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.intro__people {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.intro__inner {
+  margin-bottom: 50px;
+}
+
+.intro__list {
+  @include list-reset;
+}
+
+.intro__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #cee8f9;
+  border-radius: 50%;
+
+  img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+}
+
+.intro__desc {
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+
+  b {
+    display: block;
+  }
+}
+
+.intro__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro__img {
+    float: left;
+    width: 50%;
+    min-width: 50%;
+    margin-right: 20px;
+  }
+
+  .intro__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .intro__item {
+    width: calc((100% / 3) - 20px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    padding-top: 50px;
+    padding-bottom: 45px;
+
+    @include page-wrapper;
+  }
+
+  .intro__item {
+    width: calc((100% / 3) - 25px);
+    padding: 60px 20px 80px 20px;
+
+    border-radius: 30px;
+
+    &:nth-child(2) {
+      box-shadow: 0 0 10px #e8e9eb;
+    }
+  }
+
+  .intro__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 115px;
+  }
+
+  .intro__title {
+    margin-bottom: 22px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 93px;
+    font-size: 44px;
+    line-height: 57px;
+  }
+
+  .intro__img {
+    float: unset;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
