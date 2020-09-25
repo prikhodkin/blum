@@ -1,47 +1,47 @@
-.research {
+.hernia {
   padding: 10px 15px;
   padding-bottom: 30px;
 }
 
-.research__title {
+.hernia__title {
   margin-bottom: 30px;
 }
 
-.research__sidebar {
+.hernia__sidebar {
   margin-bottom: 30px;
 }
 
-.research__list {
+.hernia__list {
   @include list-reset;
 }
 
-.research__item {
+.hernia__item {
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 768px) {
-  .research__title {
+  .hernia__title {
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 1200px) {
-  .research {
+  .hernia {
     @include page-wrapper;
   }
 
-  .research__container {
+  .hernia__container {
     display: flex;
   }
 
-  .research__sidebar {
+  .hernia__sidebar {
     width: 275px;
     max-width: 275px;
   }
 
-  .research__box {
+  .hernia__box {
     max-width: 870px;
     margin-left: auto;
   }

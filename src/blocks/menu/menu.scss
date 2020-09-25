@@ -97,6 +97,7 @@
   .menu__mega {
     position: absolute;
     left: calc(50% - 585px);
+    z-index: 100;
     width: 1170px;
     margin-top: 33px;
     opacity: 0;

@@ -1,0 +1,60 @@
+.encyclopedia-diseases {
+  padding: 10px 15px;
+  padding-bottom: 30px;
+}
+
+.encyclopedia-diseases__title {
+  margin-bottom: 30px;
+}
+
+.encyclopedia-diseases__sidebar {
+  margin-bottom: 30px;
+}
+
+.encyclopedia-diseases__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.encyclopedia-diseases__item {
+  min-height: 100px;
+}
+
+
+@media (min-width: 768px) {
+  .encyclopedia-diseases__title {
+    margin-bottom: 60px;
+  }
+
+  .encyclopedia-diseases__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .encyclopedia-diseases {
+    @include page-wrapper;
+  }
+
+  .encyclopedia-diseases__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .encyclopedia-diseases__container {
+    display: flex;
+  }
+
+  .encyclopedia-diseases__sidebar {
+    width: 275px;
+    max-width: 275px;
+  }
+
+  .encyclopedia-diseases__box {
+    max-width: 870px;
+    margin-left: auto;
+  }
+}

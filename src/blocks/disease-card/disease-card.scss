@@ -1,0 +1,43 @@
+.disease-card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 10px #eefbff;
+  }
+
+  &:hover .disease-card__text {
+    color: #27a2f8;
+  }
+}
+
+.disease-card__link {
+  display: flex;
+  min-height: 100%;
+}
+
+.disease-card__img-box {
+  width: 37%;
+  min-width: 37%;
+  min-height: 100%;
+}
+
+.disease-card__img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.disease-card__text {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all 0.3s;
+}
