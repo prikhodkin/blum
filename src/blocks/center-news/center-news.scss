@@ -1,0 +1,42 @@
+.center-news {
+  padding: 10px 15px;
+}
+
+.center-news__title {
+  margin-bottom: 60px;
+}
+
+.center-news__sidebar {
+  margin-bottom: 50px;
+}
+
+.center-news__list {
+  @include list-reset;
+}
+
+.center-news__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .center-news {
+    @include page-wrapper;
+  }
+
+  .center-news__container {
+    display: flex;
+  }
+
+  .center-news__sidebar {
+    width: 106px;
+    min-width: 106px;
+    margin-bottom: 0;
+  }
+
+  .center-news__box {
+    width: auto;
+    margin-left: 50px;
+  }
+}

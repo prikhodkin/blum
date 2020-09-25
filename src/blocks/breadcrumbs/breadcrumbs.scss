@@ -5,11 +5,12 @@
 .breadcrumbs__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__item {
-  &:not(:first-child) {
-    margin-left: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 }
 
