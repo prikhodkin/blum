@@ -8,6 +8,17 @@
 
 .people__list {
   @include list-reset;
+  padding-bottom: 20px;
+}
+
+.people__controls {
+  justify-content: center;
+
+  .controls__button {
+    &:last-child {
+      margin-left: 14px;
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -57,6 +68,10 @@
       height: 57px;
       background: transparent;
       border: 1px solid #0d95e8;
+
+      &:last-child {
+        margin-left: 0;
+      }
 
       &:hover {
         background-color: #0d95e8;
