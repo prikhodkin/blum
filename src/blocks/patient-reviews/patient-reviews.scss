@@ -1,0 +1,194 @@
+.patient-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  padding-top: 40px;
+}
+
+.patient-reviews__title {
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-feature-settings: "cpsp"on, "kern"off;
+}
+
+.patient-reviews__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.patient-reviews__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.patient-reviews__link {
+  display: block;
+  padding: 9px 28px;
+  font-size: 14px;
+  line-height: 155%;
+  background-color: #fbfbfb;
+  border: 1px solid #cdf0ff;
+  border-radius: 5px;
+}
+
+.patient-reviews__video-list {
+  @include list-reset;
+  display: grid;
+}
+
+.patient-reviews__video {
+  position: relative;
+  min-height: 50vw;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--1 {
+    background-image: url("../../img/description__video.jpg");
+  }
+
+  &--2 {
+    background-image: url("../../img/patient-reviews__img-1.jpg");
+  }
+
+  &--3 {
+    background-image: url("../../img/patient-reviews__img-2.jpg");
+  }
+
+  &--4 {
+    background-image: url("../../img/patient-reviews__img-3.jpg");
+  }
+
+  &--5 {
+    background-image: url("../../img/patient-reviews__img-4.jpg");
+  }
+
+  &--6 {
+    background-image: url("../../img/patient-reviews__img-5.jpg");
+  }
+
+  &--7 {
+    background-image: url("../../img/patient-reviews__img-2.jpg");
+  }
+
+  &--8 {
+    background-image: url("../../img/patient-reviews__img-1.jpg");
+  }
+
+  &--9 {
+    background-image: url("../../img/patient-reviews__img-4.jpg");
+  }
+}
+
+.patient-reviews__video-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 73px;
+  background-color: rgba(51, 71, 78, 0.76);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+}
+
+.patient-reviews__text {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 155%;
+  color: #000000;
+}
+
+.patient-reviews__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .patient-reviews__list {
+    flex-direction: row;
+    max-width: 1085px;
+    margin: -15px -10px;
+    margin-bottom: 70px;
+  }
+
+  .patient-reviews__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    margin: 15px 10px;
+  }
+
+  .patient-reviews__box {
+    max-width: 970px;
+  }
+
+  .patient-reviews__video-list {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .patient-reviews__video-item {
+    &--main {
+      grid-column-end: 3;
+      grid-column-start: 1;
+      margin-bottom: 35px;
+    }
+  }
+
+  .patient-reviews__video {
+    min-height: 264px;
+
+    &--1 {
+      min-height: 545px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .patient-reviews {
+    @include page-wrapper;
+  }
+
+  .patient-reviews__title {
+    margin-bottom: 70px;
+    font-size: 30px;
+  }
+
+  .patient-reviews__list {
+    max-width: 1085px;
+    margin: -15px -10px;
+    margin-bottom: 70px;
+  }
+
+  .patient-reviews__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    margin: 15px 10px;
+  }
+}
