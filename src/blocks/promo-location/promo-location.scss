@@ -1,0 +1,49 @@
+.promo-location {
+  height: 40vw;
+  min-height: 200px;
+  padding: 30px 15px;
+  background-image: url("../../img/location__promo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.promo-location__title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(143, 143, 143, 0.25), 0 0 10px rgba(66, 66, 66, 0.75);
+}
+
+.promo-location__text {
+  font-size: 16px;
+  line-height: 31px;
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(82, 82, 82, 0.25), 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .promo-location {
+    height: 28vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo-location {
+    @include page-wrapper;
+    padding-top: 110px;
+  }
+
+  .promo-location__title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .promo-location__text {
+    font-size: 24px;
+  }
+}

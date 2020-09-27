@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЦЕНТР РЕАБИЛИТАЦИИ ДОКТОРА БЛЮМА</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @@include('../blocks/favicon/favicon.html')
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+@@include('../blocks/header/header.html')
+<!--<div class="search">-->
+<!--  <form class="search__form">-->
+<!--    <input type="search" class="search__input">-->
+<!--  </form>-->
+<!--  <svg class="search__icon">-->
+<!--    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>-->
+<!--  </svg>-->
+<!--</div>-->
+<main>
+  <section class="promo-location">
+    <h1 class="promo-location__title title">расположение центра</h1>
+    <p class="promo-location__text">Испания, г. Марбелья</p>
+  </section>
+
+  <section class="area-work">
+    <div class="area-work__wrap area-work__wrap--top">
+      <h2 class="area-work__title title">Реабилитация и восстановление</h2>
+      <p class="area-work__desc">Профильные направления работы центра</p>
+    </div>
+
+    <div class="area-work__wrap area-work__wrap--bottom">
+      <div class="area-work__image"></div>
+      <div class="area-work__box">
+        <ul class="area-work__list">
+          <li class="area-work__item">Реабилитация после длительной госпитализации, <br> иммобилизации конечностей</li>
+          <li class="area-work__item">Реабилитация детей при сколиозах и нарушениях <br> осанки</li>
+          <li class="area-work__item">Реабилитация детей с ДЦП</li>
+          <li class="area-work__item">Восстановление детей при дегенаративно-дистрофических заболеваниях опорно-двигательного аппарата: гипер-пластичность, нестабильность суставов и связок, колосапость, развернутые стопы, неустойчивая поза  и ходьба, вальгусно-варусная деформация стоп, X-образные, О-образные ноги.</li>
+        </ul>
+        <div class="area-work__controls controls">
+          <button class="controls__button controls__button--area controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--area controls__button--next" data-target="slider.next" aria-controls="tns1" tabindex="-1" data-controls="next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="place-power">
+    <div class="place-power__wrap place-power__wrap--top">
+      <h2 class="place-power__title title">Место силы</h2>
+      <p class="place-power__desc">Испанский город Марбелья - это райское место в прибрежной зоне Коста-дель-Соль с видом на далекое побережье Африки.</p>
+    </div>
+    <div class="place-power__wrap place-power__wrap--bottom">
+      <div class="place-power__box">
+        <p class="place-power__text">Сочетание кедрового леса и морского бриза оказывает оздоровляющее <br> влияние на организм человека. Благодаря отрицательным ионам и фитонцидам, воздух обладает антимикробной силой, способствуют улучшению обмена веществ и повышению жизненного тонуса.</p>
+        <p class="place-power__text place-power__text--main">Сочетание кедрового леса и морского бриза оказывает оздоровляющее влияние на организм человека. Благодаря отрицательным ионам и фитонцидам, воздух обладает антимикробной силой, способствуют улучшению обмена веществ и повышению жизненного тонуса.</p>
+        <p class="place-power__text"> Испанский город Марбелья - это райское место в прибрежной зоне Коста-дель-Соль с видом на далекое побережье Африки. Средиземное море приносит соленый ветер, а климат настраивает отпустить заботы и поддаться испанскому образу жизни с улыбкой и сиестами.</p>
+      </div>
+      <img class="place-power__img" src="../img/place-power__img.jpg" alt="">
+    </div>
+  </section>
+</main>
+@@include('../blocks/footer/footer.html')
+</body>
+</html>

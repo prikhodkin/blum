@@ -35,4 +35,15 @@
     transition: all 0.3s;
     fill: #27a2f8;
   }
+
+  &--area {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--area svg {
+    width: 6px;
+    height: 13px;
+    fill: #122e68;
+  }
 }
