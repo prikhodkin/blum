@@ -31,34 +31,50 @@
       </ul>
     </div>
 
-    <section class="main__myopathy myopathy">
-      <h2 class="myopathy__title title">Миопатия</h2>
-      <div class="myopathy__container">
-        <aside class="myopathy__sidebar sidebar">
+    <section class="main__myopathy myopathy page-layout">
+      <div class="page-layout__header">
+        <h2 class="page-layout__title title">Миопатия</h2>
+      </div>
+      <div class="page-layout__container">
+        <aside class="page-layout__sidebar sidebar" data-controller="accordion">
           <ul class="sidebar__list">
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-all.png">
+              <a class="sidebar__link sidebar__link--program" href="#" data-target="accordion.all">
+                <img class="sidebar__img" src="../img/sidebar__program-all.png">
                 <span class="sidebar__name sidebar__name--program">Все</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-1.png">
+              <a class="sidebar__link sidebar__link--program" href="#" data-target="accordion.target">
+                <img class="sidebar__img" src="../img/sidebar__program-1.png">
                 <span class="sidebar__name sidebar__name--program">Специальные программы</span>
               </a>
-            </li>
-            <li class="sidebar__item sidebar__item--active">
-              <a class="sidebar__link">
-                  <img class="sidebar__img" src="../img/sidebar__program-2.png">
-                <span class="sidebar__name sidebar__name--program">Поддерживающие программы</span>
-              </a>
-              <ul class="sidebar__sublist">
+              <ul class="sidebar__sublist" data-target="accordion.list">
                 <li class="sidebar__subitem">
                   <a class="sidebar__sablink" href="#">Рассеянный склероз</a>
                 </li>
                 <li class="sidebar__subitem">
-                  <a class="sidebar__sablink sidebar__sablink--current">Миопатия</a>
+                  <a class="sidebar__sablink" href="myopathy.html">Миопатия</a>
+                </li>
+                <li class="sidebar__subitem">
+                  <a class="sidebar__sablink" href="#">Боковой амиотрофический склероз</a>
+                </li>
+                <li class="sidebar__subitem">
+                  <a class="sidebar__sablink" href="#">Физические программы для пожилых людей</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar__item sidebar__item--active">
+              <a class="sidebar__link sidebar__link--program" data-target="accordion.target">
+                <img class="sidebar__img" src="../img/sidebar__program-2.png">
+                <span class="sidebar__name sidebar__name--program">Поддерживающие программы</span>
+              </a>
+              <ul class="sidebar__sublist" data-target="accordion.list">
+                <li class="sidebar__subitem">
+                  <a class="sidebar__sablink" href="#">Рассеянный склероз</a>
+                </li>
+                <li class="sidebar__subitem">
+                  <a class="sidebar__sablink" href="myopathy.html">Миопатия</a>
                 </li>
                 <li class="sidebar__subitem">
                   <a class="sidebar__sablink" href="#">Боковой амиотрофический склероз</a>
@@ -69,50 +85,50 @@
               </ul>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-3.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-3.png">
                 <span class="sidebar__name sidebar__name--program">Для мужчин</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-4.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-4.png">
                 <span class="sidebar__name sidebar__name--program">Для женщин</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-5.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-5.png">
                 <span class="sidebar__name sidebar__name--program">Для детей</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-6.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-6.png">
                 <span class="sidebar__name sidebar__name--program">Для спортсменов</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-7.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-7.png">
                 <span class="sidebar__name sidebar__name--program">Для программистов</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-8.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-8.png">
                 <span class="sidebar__name sidebar__name--program">Для бизнесменов</span>
               </a>
             </li>
             <li class="sidebar__item">
-              <a class="sidebar__link" href="#">
-                  <img class="sidebar__img" src="../img/sidebar__program-9.png">
+              <a class="sidebar__link sidebar__link--program" href="#">
+                <img class="sidebar__img" src="../img/sidebar__program-9.png">
                 <span class="sidebar__name sidebar__name--program">Для корпораций</span>
               </a>
             </li>
           </ul>
         </aside>
-        <div class="myopathy__box">
+        <div class="page-layout__box">
           <div class="myopathy__content description">
             <p class="description__text">Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.
               Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке модели развития. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия. Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
@@ -252,7 +268,7 @@
           <!-- ЗДЕСЬ БУДЕТ ФОРМА
         <form class="myopathy__form form"></form> -->
 
-          <div class="myopathy__service additional-service">
+          <div class="page-layout__service additional-service">
             <h3 class="additional-service__title">Другие услуги</h3>
             <ul class="additional-service__list">
               <li class="additional-service__item program-card">
@@ -291,11 +307,7 @@
           </div>
         </div>
       </div>
-
-
     </section>
-
-
   </main>
   @@include('../blocks/footer/footer.html')
 </body>

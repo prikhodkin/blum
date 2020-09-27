@@ -27,14 +27,336 @@
         </li>
       </ul>
     </div>
-
-    <section class="main__research research">
-      <div class="research__header">
-        <h2 class="research__title title">Статьи и исследования</h2>
-        <div class="research__filter filter"></div>
+    <section class="main__research page-layout research">
+      <div class="page-layout__header">
+        <h2 class="page-layout__title title">Статьи и исследования</h2>
+        <div class="page-layout__filter filter" data-controller="filter">
+          <div class="filter__col">
+            <a href="#" class="filter__target" data-target="filter.target">вид заболевания</a>
+            <div class="filter__wrapper">
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Травма позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Грыжа межпозвонкового диска </span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Нестабильность, листез</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артроз</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артрит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Синовиит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Внутрисуставной перелом</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом костей</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Замена сустава</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Паралич</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Травма позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Грыжа межпозвонкового диска </span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Нестабильность, листез</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артроз</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артрит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Синовиит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Внутрисуставной перелом</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом костей</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Замена сустава</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Паралич</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter__col">
+            <a href="#" class="filter__target" data-target="filter.target">симптомы</a>
+            <div class="filter__wrapper">
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Травма позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Грыжа межпозвонкового диска </span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Нестабильность, листез</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артроз</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артрит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Синовиит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Внутрисуставной перелом</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом костей</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Замена сустава</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Паралич</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Травма позвоночника</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Грыжа межпозвонкового диска </span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Нестабильность, листез</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артроз</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Артрит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Синовиит</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Внутрисуставной перелом</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Перелом костей</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Замена сустава</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox" class="filter__input">
+                    <span class="filter__checkbox"></span>
+                    <span>Паралич</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="research__container">
-        <aside class="research__sidebar sidebar">
+      <div class="page-layout__container">
+        <aside class="page-layout__sidebar sidebar">
           <ul class="sidebar__list">
             <li class="sidebar__item sidebar__item--category">
               <a class="sidebar__link sidebar__link--category" href="#">
@@ -73,7 +395,7 @@
             </li>
           </ul>
         </aside>
-        <div class="research__box">
+        <div class="page-layout__box">
           <ul class="research__list">
             <li class="research__item article">
               <div class="article__content">
@@ -126,7 +448,7 @@
               </div>
             </li>
           </ul>
-          <div class="programs__pagination pagination">
+          <div class="page-layout__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item pagination__item--back">
                 <a class="pagination__link pagination__link--icon" href="#">
@@ -162,7 +484,6 @@
         </div>
       </div>
     </section>
-
   </main>
   @@include('../blocks/footer/footer.html')
 </body>
