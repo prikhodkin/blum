@@ -1,0 +1,37 @@
+.file__button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .file__text {
+      color: #0d95e8;
+    }
+
+    .file__icon {
+      fill: #0d95e8;
+    }
+  }
+}
+
+.file__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #122E68;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.file__icon {
+  fill: #122E68;
+  width: 18px;
+  height: 18px;
+  margin-right: 13px;
+  transition: all 0.3s;
+}
+
+.file__input {
+  position: absolute;
+  left: -9999px;
+}
