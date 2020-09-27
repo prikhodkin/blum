@@ -11,18 +11,19 @@
 
   &--bottom {
     display: flex;
+    flex-direction: column;
   }
 }
 
 .place-power__title {
   margin-bottom: 35px;
-  font-size: 32px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .place-power__desc {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -30,23 +31,58 @@
 .place-power__text {
   font-size: 14px;
   line-height: 155%;
+  text-align: justify;
   color: #000000;
 
   &--main {
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
     line-height: 155%;
+  }
+
+  &--main::before {
+    content: "";
+    width: 2px;
+    height: 150px;
+    margin-right: 10px;
+    background-color: #27a2f8;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
   }
 }
 
+@media (min-width: 768px) {
+  .place-power__img {
+    position: absolute;
+    right: 20px;
+    z-index: -1;
+    width: 45%;
+    object-fit: contain;
+  }
+
+  .place-power__title {
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  .place-power__desc {
+    max-width: 690px;
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .place-power__text {
+    max-width: 50%;
+  }
+}
 
 @media (min-width: 1200px) {
   .place-power {
     @include page-wrapper;
     margin-top: -400px;
-  }
-
-  .place-power__desc {
-    max-width: 690px;
   }
 
   .place-power__img {
@@ -65,7 +101,6 @@
     color: #000000;
 
     &--main {
-      display: flex;
       max-width: 575px;
       margin-left: 85px;
       font-size: 18px;
@@ -73,11 +108,7 @@
     }
 
     &--main::before {
-      content: "";
-      width: 2px;
-      height: 150px;
       margin-right: 30px;
-      background-color: #27a2f8;
     }
 
     &:not(:last-child) {
