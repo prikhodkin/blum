@@ -15,20 +15,20 @@
 }
 
 .file__text {
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #122E68;
-  font-weight: 700;
+  color: #122e68;
   transition: all 0.3s;
 }
 
 .file__icon {
-  fill: #122E68;
   width: 18px;
   height: 18px;
   margin-right: 13px;
   transition: all 0.3s;
+  fill: #122e68;
 }
 
 .file__input {

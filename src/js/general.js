@@ -6,6 +6,7 @@ import Tabs from "%modules%/tabs/tabs"
 import {$$} from "./util";
 import $ from "jquery";
 import intlTelInput from 'intl-tel-input';
+import PerfectScrollbar from 'perfect-scrollbar';
 
 
 global.jQuery = $;
@@ -21,10 +22,20 @@ application.load(definitionsFromContext(context));
 const tabs = $$(`[data-tabs]`);
 const input = document.querySelector("#phone");
 
+if(input) {
+  intlTelInput(input, {
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/utils.js",
+  });
+}
 
-intlTelInput(input, {
-  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/utils.js",
-});
+const filters = document.querySelectorAll(`.filter__list`);
+
+filters.forEach((item) => new PerfectScrollbar(item, {
+  wheelSpeed: 2,
+  wheelPropagation: true,
+  minScrollbarLength: 20
+}));
+
 
 
 tabs.map((item) => new Tabs(item));

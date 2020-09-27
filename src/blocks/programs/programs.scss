@@ -3,8 +3,12 @@
   padding-bottom: 30px;
 }
 
+.programs__title {
+  margin-bottom: 20px;
+}
+
 .programs__header {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .programs__text {
@@ -18,14 +22,18 @@
   @include list-reset;
   display: grid;
   justify-content: space-between;
-  grid-row-gap: 40px;
-  grid-template-columns: 45% 45%;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 40px;
 }
 
 .programs__pagination {
   display: flex;
   justify-content: center;
+}
+
+.programs__sidebar {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -63,7 +71,14 @@
   }
 
   .programs__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 60px;
+  }
+
+  .programs__title {
+    margin-bottom: 0;
   }
 
   .programs__text {

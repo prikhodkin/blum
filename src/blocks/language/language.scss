@@ -1,8 +1,10 @@
 .language {
   display: inline-flex;
-  padding: 6px;
-  background-color: rgba(#009ada, 0.15);
+  //background-color: rgba(#009ada, 0.15);
   border-radius: 3px;
+  min-width: 54px;
+  min-height: 34px;
+  position: relative;
 
   &::after {
     @include pseudo;
@@ -13,23 +15,41 @@
     background-image: url("../../img/language__arrow.png");
     background-size: contain;
     transition: all 0.3s;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 3px;
+    top: 5px;
   }
 
   &--active {
+    position: relative;
     &::after {
-      transform: rotate(-180deg);
+      transform: rotate(-90deg);
+    }
+
+    .language__list {
+      position: absolute;
+    }
+
+    .language__item:nth-child(n+2) {
+      display: block;
     }
   }
 }
 
 .language__list {
   @include list-reset;
+  background-color: rgba(#009ada, 0.15);
+  border-radius: 3px;
+  width: 100%;
+  padding: 6px;
 }
 
 .language__item {
   font-size: 18px;
   line-height: 23px;
-  text-align: center;
+  text-align: left;
+  padding-left: 3px;
   color: #727272;
   text-transform: uppercase;
 
