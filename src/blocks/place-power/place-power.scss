@@ -17,8 +17,8 @@
 
 .place-power__title {
   margin-bottom: 35px;
-  font-size: 20px;
   line-height: 26px;
+  color: #000000;
 }
 
 .place-power__desc {
@@ -64,7 +64,6 @@
   }
 
   .place-power__title {
-    font-size: 32px;
     line-height: 28px;
   }
 
@@ -83,6 +82,7 @@
   .place-power {
     @include page-wrapper;
     margin-top: -400px;
+    padding-bottom: 55px;
   }
 
   .place-power__img {
@@ -96,9 +96,6 @@
   .place-power__text {
     max-width: 373px;
     margin-left: 115px;
-    font-size: 14px;
-    line-height: 155%;
-    color: #000000;
 
     &--main {
       max-width: 575px;
