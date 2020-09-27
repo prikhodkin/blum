@@ -1,0 +1,25 @@
+.process {
+  padding: 30px 0;
+}
+
+.process__title {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .process {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .process__title {
+    margin-bottom: 74px;
+
+    @include page-wrapper;
+  }
+
+  .process__inner {
+    position: relative;
+  }
+}
