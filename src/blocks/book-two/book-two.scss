@@ -1,0 +1,113 @@
+.book-two {
+  padding: 10px 15px;
+  padding-bottom: 30px;
+}
+
+.book-two__title {
+  margin-bottom: 30px;
+}
+
+.book-two__sidebar {
+  margin-bottom: 30px;
+}
+
+.book-two__wrapper {
+  padding: 20px;
+  border: 1px solid #e4e3e3;
+  border-radius: 5px;
+}
+
+.book-two__list {
+  @include list-reset;
+}
+
+.book-two__name {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.book-two__desc {
+  font-size: 14px;
+  line-height: 155%;
+  color: #000000;
+}
+
+.book-two__inner > .book-two__desc {
+  margin-bottom: 20px;
+}
+
+.book-two__link {
+  font-size: 14px;
+  line-height: 155%;
+  color: #1074ba;
+  border-bottom: 1px dashed #1074ba;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.book-two__wrap {
+  &--header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(208, 208, 208, 0.42);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .book-two__title {
+    margin-bottom: 60px;
+  }
+
+  .book-two__wrap--header {
+    display: flex;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .book-two__image {
+    max-width: 273px;
+    line-height: 0;
+  }
+
+  .book-two__inner {
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-two {
+    @include page-wrapper;
+  }
+
+  .book-two__container {
+    display: flex;
+  }
+
+  .book-two__sidebar {
+    width: 275px;
+    max-width: 275px;
+  }
+
+  .book-two__wrapper {
+    padding: 40px 35px;
+  }
+
+  .book-two__inner {
+    padding-top: 25px;
+  }
+
+  .book-two__box {
+    max-width: 870px;
+    margin-left: auto;
+  }
+
+  .book-two__img {
+    width: 273px;
+  }
+}

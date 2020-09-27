@@ -1,0 +1,25 @@
+.back {
+  display: inline-block;
+}
+
+.back__link {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 155%;
+  color: #000000;
+  transition: all 0.3s;
+
+  &::before {
+    @include pseudo;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-image: url("../../img/arrow__back.svg");
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

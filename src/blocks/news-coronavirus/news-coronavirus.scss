@@ -1,0 +1,47 @@
+.news-coronavirus {
+  padding: 10px 15px;
+  padding-bottom: 30px;
+}
+
+.news-coronavirus__title {
+  margin-bottom: 30px;
+}
+
+.news-coronavirus__sidebar {
+  margin-bottom: 30px;
+}
+
+.news-coronavirus__list {
+  @include list-reset;
+}
+
+.news-coronavirus__item {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .news-coronavirus__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news-coronavirus {
+    @include page-wrapper;
+  }
+
+  .news-coronavirus__container {
+    display: flex;
+  }
+
+  .news-coronavirus__sidebar {
+    width: 106px;
+    max-width: 106px;
+  }
+
+  .news-coronavirus__box {
+    max-width: 1014px;
+    margin-left: auto;
+  }
+}
