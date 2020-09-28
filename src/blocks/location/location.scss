@@ -1,0 +1,21 @@
+.location__slider {
+  padding: 15px;
+}
+
+.location__service {
+  padding: 0 15px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .location__slider {
+    @include page-wrapper;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .location__service {
+    @include page-wrapper;
+    padding-bottom: 100px;
+  }
+}

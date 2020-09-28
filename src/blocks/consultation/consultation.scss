@@ -80,6 +80,11 @@
     background-repeat: no-repeat;
     background-position: right;
 
+    &--location {
+      padding-bottom: 30px;
+      background-image: none;
+    }
+
     @include page-wrapper;
   }
 
