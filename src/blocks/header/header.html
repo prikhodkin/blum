@@ -1,4 +1,4 @@
-<header class="page__header header">
+<header class="page__header header" data-controller="search">
   <a href="#" class="header__logo logo">
     <svg width="154" height="62" viewBox="0 0 154 62" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9322 34.1556C32.9322 30.7084 30.05 29.3185 27.9985 29.3185C25.7807 29.3185 6.43405 29.2632 6.43405 29.2632V39.5473C6.43405 39.5473 24.3947 39.6026 27.9985 39.6026C31.2696 39.6026 32.9322 37.6017 32.9322 34.1556ZM32.9322 50.2215C32.9322 46.7743 30.05 45.3844 27.9985 45.3844C25.7807 45.3844 6.43405 45.3291 6.43405 45.3291V55.6132C6.43405 55.6132 24.3947 55.6696 27.9985 55.6696C31.2696 55.6696 32.9322 53.6687 32.9322 50.2215ZM38.6976 50.8325C38.6976 61.4514 27.9985 61.5066 27.9985 61.5066H0.613525V23.4814H28.0536C28.0536 23.4814 38.6976 23.5017 38.6976 34.2672C38.6976 42.1604 34.8723 42.3824 34.8723 42.3824C34.8723 42.3824 38.6976 42.5493 38.6976 50.8325ZM99.4557 39.491C101.617 39.491 103.208 40.7704 103.208 43.1603V61.4514H109.007V43.1603C109.007 40.8257 110.431 39.491 113.37 39.491C116.308 39.491 117.731 41.0139 117.731 43.1603V61.4514H123.531V43.1603C123.531 38.2679 121.13 34.2108 114.089 34.2108C107.769 34.2108 106.052 36.9907 106.052 36.9907C106.052 36.9907 104.223 34.2672 100.175 34.2672C96.1295 34.2672 88.6285 34.2108 88.6285 34.2108V61.4514H94.4276V39.491H99.4557ZM74.6583 61.4514C79.9247 61.4514 83.406 57.17 83.406 52.3892V34.2311H77.6068V52.3892C77.6068 54.3349 76.7648 55.7541 74.6583 55.7541H64.4471C62.3406 55.7541 61.4986 54.3349 61.4986 52.3892V34.2311H55.6994V52.3892C55.6994 57.17 59.1819 61.4514 64.4471 61.4514H74.6583ZM44.5575 61.4514H50.3555V23.5017H44.5575V61.4514Z" fill="#828282"/>
@@ -252,16 +252,32 @@
       <li class="menu__item"><a href="#">Отзывы</a></li>
     </ul>
   </nav>
-  <svg class="header__search">
+  <svg class="header__search"  data-action="click->search#show">
     <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
   </svg>
-  <div class="header__language language">
+  <div class="header__language language" data-controller="language">
     <ul class="language__list">
-      <li class="language__item"><a href="#">Ru</a></li>
+      <li class="language__item" data-target="language.target"><a href="#">Ru</a></li>
       <li class="language__item"><a href="#">En</a></li>
       <li class="language__item"><a href="#">Es</a></li>
     </ul>
   </div>
   <a href="tel: 88005051415" class="header__phone">8-800-505-14-15</a>
   <a href="#" class="header__button button">задать вопрос</a>
+  <section class="search"  data-target="search.overlay">
+    <button class="search__close" data-action="click->search#close">
+      <svg>
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+    <form action="" class="search__form">
+      <label class="search__label">
+        <input type="text" class="search__input" placeholder="Что вы ищете?">
+        <svg class="search__icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+        </svg>
+      </label>
+    </form>
+  </section>
 </header>
+

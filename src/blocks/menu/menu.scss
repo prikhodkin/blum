@@ -1,8 +1,11 @@
 .menu__list {
   @include list-reset;
   position: absolute;
+  top: 85px;
+  z-index: 300;
   display: none;
   padding: 20px 15px;
+  background-color: #ffffff;
 
   &--active {
     left: 0;

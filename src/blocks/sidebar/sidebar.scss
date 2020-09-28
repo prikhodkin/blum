@@ -1,3 +1,13 @@
+.sidebar {
+  &--mobile {
+    .sidebar__item {
+      &:nth-child(1n + 2) {
+        display: none;
+      }
+    }
+  }
+}
+
 .sidebar__list {
   @include list-reset;
 }
@@ -21,16 +31,25 @@
 
   &--active {
     background-color: #f4f6f8;
+
+    .sidebar__link {
+      font-weight: 700;
+      color: #000000;
+
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+
+    & > .sidebar__sublist {
+      display: block;
+    }
   }
 
   &--active-year {
     border: 1px solid #27a2f8;
   }
 
-  &--active .sidebar__link {
-    font-weight: 700;
-    color: #000000;
-  }
 
   &--active-year .sidebar__link {
     font-weight: 700;
@@ -113,6 +132,7 @@
 
 .sidebar__sublist {
   @include list-reset;
+  display: none;
   padding: 20px;
   padding-top: 10px;
 }

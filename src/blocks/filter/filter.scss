@@ -1,0 +1,136 @@
+.filter__checkbox {
+  @include pseudo;
+  box-sizing: border-box;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-right: 11px;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+}
+
+.filter__wrapper {
+  @include list-reset;
+  position: absolute;
+  width: calc(100% - 30px);
+  padding: 35px 25px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  background: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(173, 173, 173, 0.25);
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 10;
+    width: calc(100% - 13px);
+    height: 35px;
+    background: linear-gradient(180deg, rgba(252, 252, 252, 0) 0%, rgba(252, 252, 252, 0.96) 73.28%, #fcfcfc 181.43%);
+    border-radius: 0 0 10px 10px;
+    pointer-events: none;
+  }
+}
+
+.filter__list {
+  @include list-reset;
+  position: relative;
+  height: 300px;
+}
+
+
+.filter__label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.filter__input {
+  position: absolute;
+  left: -9999px;
+
+  &:checked + .filter__checkbox {
+    background-color: #56ccf2;
+    background-image: url("../../img/check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #56ccf2;
+  }
+}
+
+.filter__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.filter__target {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #717171;
+  text-transform: uppercase;
+
+  &::after {
+    @include pseudo;
+    width: 13px;
+    height: 13px;
+    margin-left: 17px;
+    background-image: url("../../img/next.png");
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s;
+  }
+
+  &--active {
+    &::after {
+      transform: rotate(-180deg);
+    }
+
+    & + .filter__wrapper {
+      opacity: 1;
+      pointer-events: unset;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .filter {
+    display: flex;
+  }
+
+  .filter__col {
+    position: relative;
+    z-index: 20;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    &:last-child {
+      .filter__wrapper {
+        right: 0;
+      }
+    }
+  }
+
+  .filter__wrapper {
+    width: 290px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter__target {
+    padding-top: 20px;
+  }
+}

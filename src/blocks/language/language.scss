@@ -1,35 +1,56 @@
 .language {
+  position: relative;
   display: inline-flex;
-  padding: 6px;
-  background-color: rgba(#009ada, 0.15);
+  min-width: 54px;
+  min-height: 34px;
+  //background-color: rgba(#009ada, 0.15);
   border-radius: 3px;
 
   &::after {
     @include pseudo;
+    position: absolute;
+    top: 5px;
+    right: 3px;
     width: 10px;
     height: 5px;
     margin-top: 9px;
     margin-left: 6px;
     background-image: url("../../img/language__arrow.png");
     background-size: contain;
+    transform: rotate(90deg);
     transition: all 0.3s;
   }
 
   &--active {
+    position: relative;
+
     &::after {
-      transform: rotate(-180deg);
+      transform: rotate(-90deg);
+    }
+
+    .language__list {
+      position: absolute;
+    }
+
+    .language__item:nth-child(n+2) {
+      display: block;
     }
   }
 }
 
 .language__list {
   @include list-reset;
+  width: 100%;
+  padding: 6px;
+  background-color: rgba(#009ada, 0.15);
+  border-radius: 3px;
 }
 
 .language__item {
+  padding-left: 3px;
   font-size: 18px;
   line-height: 23px;
-  text-align: center;
+  text-align: left;
   color: #727272;
   text-transform: uppercase;
 

@@ -82,10 +82,11 @@
   .mission {
     padding-top: 55px;
     padding-bottom: 185px;
-    background-image: url("../../img/mission__background.png");
+    background-image: url("../../img/mission__background.png"),
+      url("../../img/mission__background-2.png");
     background-repeat: no-repeat;
-    background-position: right 140px;
-    background-size: 540px;
+    background-position: right 140px, left 250px;
+    background-size: 540px, 251px;
   }
 
   .mission__container {
