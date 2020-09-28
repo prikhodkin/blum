@@ -1,5 +1,7 @@
 .convenience {
   padding: 15px;
+  padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .convenience__box {
@@ -33,14 +35,15 @@
 }
 
 .convenience__item {
+  min-width: 100%;
+
   &:not(:first-child) {
     margin-left: 28px;
   }
 }
 
 .convenience__img {
-  width: 282px;
-  min-width: 282px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -86,5 +89,14 @@
 
   .convenience__slider {
     margin-left: 100px;
+  }
+
+  .convenience__item {
+    min-width: inherit;
+  }
+
+  .convenience__img {
+    width: 282px;
+    min-width: 282px;
   }
 }
