@@ -1,0 +1,48 @@
+.hotel-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.hotel-location__text {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.hotel-location__box {
+  width: 100%;
+  height: 87vw;
+  background-image: url("../../img/hotel-location__background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .hotel-location {
+    flex-direction: row;
+  }
+
+  .hotel-location__text {
+    font-size: 24px;
+  }
+
+  .hotel-location__box {
+    width: 377px;
+    height: 24vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hotel-location {
+    @include page-wrapper;
+    padding-top: 115px;
+  }
+
+  .hotel-location__box {
+    width: 377px;
+    height: 377px;
+  }
+}
