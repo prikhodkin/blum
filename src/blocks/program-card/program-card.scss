@@ -7,6 +7,10 @@
   &:hover .program-card__text {
     color: #27a2f8;
   }
+
+  &--hotel {
+    box-shadow: none;
+  }
 }
 
 .program-card__link {
@@ -15,6 +19,11 @@
   padding-right: 5px;
   padding-bottom: 20px;
   padding-left: 10px;
+
+  &--hotel {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .program-card__image {
@@ -25,6 +34,13 @@
   margin-left: -10px;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+
+  &--hotel {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
 }
 
 .program-card__text {
@@ -32,11 +48,34 @@
   line-height: 18px;
   color: #000000;
   transition: all 0.3s;
+
+  &--hotel {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.program-card__desc {
+  font-size: 14px;
+  line-height: 23px;
+  color: #919191;
 }
 
 @media (min-width: 768px) {
   .program-card__text {
     font-size: 14px;
+
+    &--hotel {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  .program-card__image {
+    &--hotel {
+      margin-bottom: 30px;
+    }
   }
 }
-
