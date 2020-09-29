@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЦЕНТР РЕАБИЛИТАЦИИ ДОКТОРА БЛЮМА</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @@include('../blocks/favicon/favicon.html')
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+@@include('../blocks/header/header.html')
+<!--<div class="search">-->
+<!--  <form class="search__form">-->
+<!--    <input type="search" class="search__input">-->
+<!--  </form>-->
+<!--  <svg class="search__icon">-->
+<!--    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>-->
+<!--  </svg>-->
+<!--</div>-->
+<main>
+  <section class="promo-hotel">
+    <div class="promo-hotel__box">
+      <h1 class="promo-hotel__title title">Sierra Blanca Resort Spa</h1>
+      <p class="promo-hotel__text">Отель реабилитационного центра</p>
+    </div>
+    <div class="promo-hotel__controls controls">
+      <button class="promo-hotel__button controls__button controls__button--prev" data-target="slider-three.prev">
+        <svg aria-label="prev">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+        </svg>
+      </button>
+      <button class="promo-hotel__button controls__button controls__button--next" data-target="slider-three.next">
+        <svg aria-label="next">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+</main>
+@@include('../blocks/footer/footer.html')
+</body>
+</html>
