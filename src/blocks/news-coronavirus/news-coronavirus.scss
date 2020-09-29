@@ -3,8 +3,8 @@
   padding-bottom: 30px;
 
   .sidebar {
-    overflow: hidden;
     margin-right: -15px;
+    overflow: hidden;
   }
 
   .sidebar__list {
@@ -40,8 +40,8 @@
 @media (min-width: 768px) {
   .news-coronavirus {
     .sidebar {
-      margin-right: 0;
       display: none;
+      margin-right: 0;
     }
 
     .sidebar__list {
@@ -50,11 +50,12 @@
 
     .sidebar__item {
       &:not(:last-child) {
-        margin-bottom: 20px;
         margin-right: 0;
+        margin-bottom: 20px;
       }
     }
   }
+
   .news-coronavirus__title {
     margin-bottom: 60px;
   }

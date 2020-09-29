@@ -2,8 +2,8 @@
   padding: 10px 15px;
 
   .sidebar {
-    overflow: hidden;
     margin-right: -15px;
+    overflow: hidden;
   }
 
   .sidebar__list {
@@ -40,8 +40,8 @@
 @media (min-width: 768px) {
   .center-news {
     .sidebar {
-      margin-right: 0;
       display: none;
+      margin-right: 0;
     }
 
     .sidebar__list {
@@ -50,8 +50,8 @@
 
     .sidebar__item {
       &:not(:last-child) {
-        margin-bottom: 20px;
         margin-right: 0;
+        margin-bottom: 20px;
       }
     }
   }
