@@ -1,0 +1,51 @@
+.hotel-numbers {
+  padding: 15px;
+}
+
+.hotel-numbers__title {
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 62px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-numbers__text {
+  max-width: 1040px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.hotel-numbers__list {
+  @include list-reset;
+}
+
+.hotel-numbers__item {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hotel-numbers {
+    padding: 50px 0;
+
+    @include page-wrapper;
+  }
+
+  .hotel-numbers__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+  }
+
+  .hotel-numbers__text {
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
