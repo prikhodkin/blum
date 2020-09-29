@@ -58,10 +58,10 @@
     transform: translate(-50%, -50%);
   }
 
-  &:hover::before,
-  &:hover::after {
-    display: block;
-  }
+  //&:hover::before,
+  //&:hover::after {
+  //  display: block;
+  //}
 }
 
 .books__box {
