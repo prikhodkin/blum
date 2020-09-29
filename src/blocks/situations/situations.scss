@@ -30,6 +30,17 @@
   border-radius: 15px;
   transition: all 0.3s;
 
+  &--hotel {
+    height: 380px;
+    padding: 25px 15px;
+  }
+
+  &--end {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
   &:hover {
     background-size: 110%;
   }
@@ -52,6 +63,30 @@
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+
+  &--hotel {
+    font-size: 16px;
+    line-height: 168.69%;
+    text-transform: uppercase;
+  }
+
+  &--hotel:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  &--order {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  &--order::after {
+    @include pseudo;
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    background-image: url("../../img/arrow__white.svg");
+  }
 }
 
 @media (min-width: 768px) {
@@ -61,6 +96,10 @@
 
   .situations__list {
     grid-template-columns: repeat(2, 1fr);
+
+    &--hotel {
+      grid-template-columns: repeat(3, 270px);
+    }
   }
 
   .situations__header {
@@ -75,6 +114,10 @@
 @media (min-width: 900px) {
   .situations__list {
     grid-template-columns: repeat(3, 1fr);
+
+    &--hotel {
+      grid-template-columns: repeat(3, 270px);
+    }
   }
 }
 
@@ -89,6 +132,12 @@
   .situations__list {
     grid-gap: 18px;
     margin-bottom: 60px;
+
+    &--hotel {
+      grid-column-gap: 30px;
+      grid-row-gap: 42px;
+      grid-template-columns: repeat(4, 270px);
+    }
   }
 
   .situations__title {

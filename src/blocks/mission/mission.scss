@@ -1,0 +1,117 @@
+.mission {
+  padding: 30px 15px;
+  padding-bottom: 60px;
+}
+
+.mission__wrapper {
+  margin-bottom: 40px;
+}
+
+.mission__title {
+  margin-bottom: 35px;
+  color: #000000;
+}
+
+.mission__text {
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: justify;
+  color: #000000;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.mission__button {
+  height: 60px;
+}
+
+.mission__slider {
+  position: relative;
+  width: 75%;
+  min-width: 75%;
+}
+
+.mission__img {
+  border-radius: 10px;
+
+  &--2 {
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+  }
+}
+
+.mission__controls {
+  position: absolute;
+  left: 35px;
+  transform: translateY(-50%);
+}
+
+.mission__control-button {
+  width: 40px;
+  height: 40px;
+
+  &:last-child {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mission__container {
+    display: flex;
+  }
+
+  .mission__wrapper {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .mission__slider {
+    order: -1;
+    width: 35%;
+    min-width: 35%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mission {
+    padding-top: 55px;
+    padding-bottom: 185px;
+    background-image: url("../../img/mission__background.png"),
+      url("../../img/mission__background-2.png");
+    background-repeat: no-repeat;
+    background-position: right 140px, left 250px;
+    background-size: 540px, 251px;
+  }
+
+  .mission__container {
+    @include page-wrapper;
+  }
+
+  .mission__wrapper {
+    width: inherit;
+    margin-bottom: 0;
+    margin-left: 205px;
+    padding-top: 60px;
+  }
+
+  .mission__slider {
+    width: 45%;
+
+    min-width: 45%;
+  }
+
+  .mission__img {
+    &--2 {
+      position: absolute;
+      top: 50%;
+      width: 60%;
+      transform: translateX(-50%);
+    }
+  }
+}

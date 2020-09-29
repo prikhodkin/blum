@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЦЕНТР РЕАБИЛИТАЦИИ ДОКТОРА БЛЮМА</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @@include('../blocks/favicon/favicon.html')
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+@@include('../blocks/header/header.html')
+<!--<div class="search">-->
+<!--  <form class="search__form">-->
+<!--    <input type="search" class="search__input">-->
+<!--  </form>-->
+<!--  <svg class="search__icon">-->
+<!--    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>-->
+<!--  </svg>-->
+<!--</div>-->
+<main>
+  <section class="promo-hotel">
+    <div class="promo-hotel__box">
+      <h1 class="promo-hotel__title title">Sierra Blanca Resort Spa</h1>
+      <p class="promo-hotel__text">Отель реабилитационного центра</p>
+    </div>
+    <div class="promo-hotel__controls controls">
+      <button class="promo-hotel__button controls__button controls__button--prev" data-target="slider-three.prev">
+        <svg aria-label="prev">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+        </svg>
+      </button>
+      <button class="promo-hotel__button controls__button controls__button--next" data-target="slider-three.next">
+        <svg aria-label="next">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="hotel-location">
+    <h2 class="visually-hidden">Расположение отеля</h2>
+    <p class="hotel-location__text">Бутик-отель «Sierra Blanca Resort Spa» находится <br> в Марбелье в окружении и природного кедрового парка Нагуэлес у подножия горы La Concha.</p>
+    <div class="hotel-location__box"></div>
+  </section>
+
+  <section class="hotel-info">
+    <div class="hotel-info__container">
+      <div class="hotel-info__box">
+        <h2 class="hotel-info__title title">Расположенный в раю</h2>
+        <p class="hotel-info__text">Современный отель-бутик создан с использованием натурального камня и дерева рассчитан на 16 номеров. Вид на море с террасы, подогреваемый бассейн с морской водой, SPA на основе императорского нефрита, прогулочные дорожки по горной тропе сделают отдых незабываемым. </p>
+        <p class="hotel-info__text">Средиземноморский стиль отеля подчеркивает природную ценность юга Испании. С одной стороны простираются старинные кедры, с другой открывается вид на далекий берег Африки и Гибралтар. Воздух наполняют ароматы эвкалиптовых рощ и морского бриза. Красота местной природы превращается из объекта наблюдения в источник внутренней̆ силы. Здание естественно вписано в пейзаж величественного горного массива и природный лес природного парка Sierra de las Nieves.</p>
+      </div>
+      <div class="hotel-info__slider">
+        <ul class="hotel-info__list">
+          <li class="hotel-info__item">
+            <p class="hotel-info__number">01</p>
+            <img class="hotel-info__img" src="../img/hotel-info__img-1.jpg" alt="">
+          </li>
+          <li class="hotel-info__item">
+            <p class="hotel-info__number">02</p>
+            <img class="hotel-info__img" src="../img/hotel-info__img-2.jpg" alt="">
+          </li>
+        </ul>
+        <div class="hotel-info__controls controls">
+          <button class="hotel-info__controls-button controls__button controls__button--prev" data-target="slider-three.prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="hotel-info__controls-button controls__button controls__button--next" data-target="slider-three.next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotel-numbers">
+    <h2 class="hotel-numbers__title title">Номера</h2>
+    <p class="hotel-numbers__text">Интерьеры комнат сочетают в себе традиционную испанскую эстетику и современный комфорт: двери из массивного дуба, созданные специально для отеля испанскими дизайнерами, тепло природного дерева, мягкий блеск латуни. В интерьере преобладают светлые природные оттенки, натуральные ткани: лен и хлопок.</p>
+    <ul class="number-hotel__list">
+      <li class="number-hotel__item number-hotel">
+        <p class="number-hotel__name">standart</p>
+        <div class="number-hotel__box">
+          <img class="number-hotel__img" src="../img/hotel-number__img-1.jpg" alt="">
+          <div class="number-hotel__box">
+            <div class="number-hotel__inner">
+              <p class="number-hotel__desc">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+              <a class="number-hotel__button button" href="#">забронировать</a>
+              <p class="number-hotel__price">&euro;300/сутки</p>
+            </div>
+            <ul class="number-hotel__list">
+              <li class="number-hotel__item number-hotel__item--1">Кровать: VISPRING ELITE, 180x200 СМ</li>
+              <li class="number-hotel__item number-hotel__item--2">Площадь номер: 40 кв.м.</li>
+              <li class="number-hotel__item number-hotel__item--3">Максимальное количество человек: 4</li>
+              <li class="number-hotel__item number-hotel__item--4">Минибар</li>
+              <li class="number-hotel__item number-hotel__item--5">Диван-кровать: 190x70</li>
+              <li class="number-hotel__item number-hotel__item--6">Плазменный телевизор</li>
+              <li class="number-hotel__item number-hotel__item--7">Система умный дом</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="number-hotel__item number-hotel">
+        <p class="number-hotel__name">suite</p>
+        <div class="number-hotel__box">
+          <img class="number-hotel__img" src="../img/hotel-number__img-2.jpg" alt="">
+          <div class="number-hotel__box">
+            <div class="number-hotel__inner">
+              <p class="number-hotel__desc">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+              <a class="number-hotel__button button" href="#">забронировать</a>
+              <p class="number-hotel__price">&euro;300/сутки</p>
+            </div>
+            <ul class="number-hotel__list">
+              <li class="number-hotel__item number-hotel__item--1">Кровать: VISPRING ELITE, 180x200 СМ</li>
+              <li class="number-hotel__item number-hotel__item--2">Площадь номер: 40 кв.м.</li>
+              <li class="number-hotel__item number-hotel__item--3">Максимальное количество человек: 4</li>
+              <li class="number-hotel__item number-hotel__item--4">Минибар</li>
+              <li class="number-hotel__item number-hotel__item--5">Диван-кровать: 190x70</li>
+              <li class="number-hotel__item number-hotel__item--6">Плазменный телевизор</li>
+              <li class="number-hotel__item number-hotel__item--7">Система умный дом</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="number-hotel__item number-hotel">
+        <p class="hotel-numbers__name">suite terrace</p>
+        <div class="hotel-numbers__box">
+          <img class="hotel-numbers__img" src="../img/hotel-number__img-3.jpg" alt="">
+          <div class="hotel-numbers__box">
+            <div class="hotel-numbers__inner">
+              <p class="hotel-numbers__desc">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+              <a class="hotel-numbers__button button" href="#">забронировать</a>
+              <p class="hotel-numbers__price">&euro;300/сутки</p>
+            </div>
+            <ul class="number-hotel__list">
+              <li class="number-hotel__item number-hotel__item--1">Кровать: VISPRING ELITE, 180x200 СМ</li>
+              <li class="number-hotel__item number-hotel__item--2">Площадь номер: 40 кв.м.</li>
+              <li class="number-hotel__item number-hotel__item--3">Максимальное количество человек: 4</li>
+              <li class="number-hotel__item number-hotel__item--4">Минибар</li>
+              <li class="number-hotel__item number-hotel__item--5">Диван-кровать: 190x70</li>
+              <li class="number-hotel__item number-hotel__item--6">Плазменный телевизор</li>
+              <li class="number-hotel__item number-hotel__item--7">Система умный дом</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="number-hotel__item number-hotel">
+        <p class="hotel-numbers__name">family</p>
+        <div class="hotel-numbers__box">
+          <img class="hotel-numbers__img" src="../img/hotel-number__img-4.jpg" alt="">
+          <div class="hotel-numbers__box">
+            <div class="hotel-numbers__inner">
+              <p class="hotel-numbers__desc">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+              <a class="hotel-numbers__button button" href="#">забронировать</a>
+              <p class="hotel-numbers__price">&euro;300/сутки</p>
+            </div>
+            <ul class="number-hotel__list">
+              <li class="number-hotel__item number-hotel__item--1">Кровать: VISPRING ELITE, 180x200 СМ</li>
+              <li class="number-hotel__item number-hotel__item--2">Площадь номер: 40 кв.м.</li>
+              <li class="number-hotel__item number-hotel__item--3">Максимальное количество человек: 4</li>
+              <li class="number-hotel__item number-hotel__item--4">Минибар</li>
+              <li class="number-hotel__item number-hotel__item--5">Диван-кровать: 190x70</li>
+              <li class="number-hotel__item number-hotel__item--6">Плазменный телевизор</li>
+              <li class="number-hotel__item number-hotel__item--7">Система умный дом</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="programs-hotel">
+    <div class="programs-hotel__container">
+      <h2 class="programs-hotel__title title">Специальные программы лечения с проживанием в отеле</h2>
+      <div class="programs-hotel__slider">
+        <ul class="programs-hotel__list">
+          <li class="programs-hotel__item program-card program-card--hotel">
+            <a class="program-card__link program-card__link--hotel" href="#">
+              <div class="program-card__image program-card__image--hotel">
+                <img class="program-card__img program-card__img" src="../img/program-hotel__img-1.jpg" alt="">
+              </div>
+              <p class="program-card__text program-card__text--hotel">Наименование программы лечения №1</p>
+              <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
+            </a>
+          </li>
+          <li class="programs-hotel__item program-card program-card--hotel">
+            <a class="program-card__link program-card__link--hotel" href="#">
+              <div class="program-card__image program-card__image--hotel">
+                <img class="program-card__img program-card__img" src="../img/program-hotel__img-2.jpg" alt="">
+              </div>
+              <p class="program-card__text program-card__text--hotel">Наименование программы лечения №1</p>
+              <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
+            </a>
+          </li>
+          <li class="programs-hotel__item program-card program-card--hotel">
+            <a class="program-card__link program-card__link--hotel" href="#">
+              <div class="program-card__image program-card__image--hotel">
+                <img class="program-card__img program-card__img" src="../img/program-hotel__img-3.jpg" alt="">
+              </div>
+              <p class="program-card__text program-card__text--hotel">Наименование программы лечения №1</p>
+              <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
+            </a>
+          </li>
+          <li class="programs-hotel__item program-card program-card--hotel">
+            <a class="program-card__link program-card__link--hotel" href="#">
+              <div class="program-card__image program-card__image--hotel">
+                <img class="program-card__img program-card__img" src="../img/program-hotel__img-4.jpg" alt="">
+              </div>
+              <p class="program-card__text program-card__text--hotel">Наименование программы лечения №1</p>
+              <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
+            </a>
+          </li>
+        </ul>
+        <div class="programs-hotel__controls controls">
+          <button class="controls__button controls__button--prev" data-target="slider-five.prev" aria-controls="tns3" tabindex="-1" data-controls="prev" disabled="">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--next" data-target="slider-five.next" aria-controls="tns3" tabindex="-1" data-controls="next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <a class="programs-hotel__button button" href="#">Посмотреть все программы</a>
+    </div>
+  </section>
+
+  <section class="conditions conditions--restaurant">
+    <div class="conditions__top">
+      <h2 class="conditions__title conditions__title--restaurant title title--hotel">Ресторан</h2>
+    </div>
+    <div class="conditions__inner slider-center" data-controller="slider-center">
+      <ul class="conditions__list slider-center__list" data-target="slider-center.list">
+        <li class="slider-center__item"><img src="../img/restaurant__img-1.jpg" alt=""></li>
+        <li class="slider-center__item"><img src="../img/restaurant__img-2.jpg" alt=""></li>
+        <li class="slider-center__item"><img src="../img/restaurant__img-3.jpg" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f4.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f5.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f6.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f7.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f8.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f9.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f10.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f11.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f12.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f13.png" alt=""></li>
+        <li class="slider-center__item"><img src="../img/f14.png" alt=""></li>
+      </ul>
+      <div class="slider-center__controls conditions__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-center.prev">
+          <svg aria-label="prev">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+        <button class="controls__button controls__button--next" data-target="slider-center.next">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="conditions__menu">
+      <p class="conditions__name">меню</p>
+      <ul class="conditions__list">
+        <li class="conditions__item">
+          <p class="conditions__appellation conditions__appellation--1">Меню</p>
+        </li>
+        <li class="conditions__item">
+          <p class="conditions__appellation conditions__appellation--2">Завтраки</p>
+        </li>
+        <li class="conditions__item">
+          <p class="conditions__appellation conditions__appellation--3">Детское меню</p>
+        </li>
+      </ul>
+      <div class="conditions__box">
+        <p class="conditions__text">*Для детей действует специальное детское меню с полезными и вкусными блюдами.</p>
+        <p class="conditions__text">**Специально для вас по запросу можно заказать detox меню на 7, 14 или 21 день.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="situations">
+    <h2 class="situations__title title title--index">дополнительные услуги </h2>
+    <ul class="situations__list situations__list--hotel">
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-1.jpg)">
+          <p class="situations__header situations__header--hotel">Организация мероприятий</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-2.jpg)">
+          <p class="situations__header situations__header--hotel">детская зона отдыха </p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-3.jpg)">
+          <p class="situations__header situations__header--hotel">трансфер</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-4.jpg)">
+          <p class="situations__header situations__header--hotel">интеллектуальная программа</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-5.jpg)">
+          <p class="situations__header situations__header--hotel">детская кровать</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-6.jpg)">
+          <p class="situations__header situations__header--hotel">заказ билетов</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel" style="background-image: url(../img/complementary-services__img-7.jpg)">
+          <p class="situations__header situations__header--hotel">химчистка и прачечная</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner situations__inner--hotel situations__inner--end" style="background-image: url(../img/complementary-services__img-8.jpg)">
+          <p class="situations__header situations__header--hotel">обслуживание номеров</p>
+          <p class="situations__header situations__header--hotel situations__header--order">Заказать услугу</p>
+        </a>
+      </li>
+
+  </section>
+
+</main>
+@@include('../blocks/footer/footer.html')
+</body>
+</html>

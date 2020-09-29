@@ -1,5 +1,5 @@
 .additional-service {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .additional-service__title {
@@ -40,5 +40,14 @@
     justify-content: inherit;
     grid-column-gap: 20px;
     grid-template-columns: 203px 203px 203px 203px;
+
+    &--location {
+      grid-column-gap: 39px;
+      grid-template-columns: 203px 203px 203px 203px 203px;
+    }
+  }
+
+  .additional-service__title--location {
+    margin-bottom: 30px;
   }
 }
