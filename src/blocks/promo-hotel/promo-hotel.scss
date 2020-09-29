@@ -42,6 +42,14 @@
     height: 100%;
     fill: #ffffff;
   }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:hover svg {
+    fill: #27a2f8;
+  }
 }
 
 @media (min-width: 768px) {
