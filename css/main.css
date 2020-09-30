@@ -2720,6 +2720,7 @@ a {
     list-style: none;
     position: absolute;
     left: 0;
+    z-index: 300;
     display: block;
     min-width: 242px;
     margin-top: 33px;
@@ -7707,5 +7708,8 @@ a {
     margin-top: 20px; }
     .gallery__sub-list li:not(:last-child) {
       margin-right: 10px; } }
+
+.modal {
+  display: none; }
 
 /*# sourceMappingURL=maps/main.css.map */
