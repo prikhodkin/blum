@@ -1,5 +1,22 @@
 .biography {
   padding: 10px 15px;
+
+  .sidebar {
+    margin-right: -15px;
+    overflow: hidden;
+  }
+
+  .sidebar__list {
+    display: flex;
+    overflow: auto;
+  }
+
+  .sidebar__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .biography__title {
@@ -10,9 +27,39 @@
   margin-bottom: 50px;
 }
 
+@media (min-width: 768px) {
+  .biography {
+    .sidebar {
+      display: none;
+      margin-right: 0;
+    }
+
+    .sidebar__list {
+      display: block;
+    }
+
+    .sidebar__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .biography {
     @include page-wrapper;
+
+    .sidebar {
+      display: block;
+      width: 110px;
+      min-width: 110px;
+    }
+
+    .page-layout__box {
+      margin-left: 50px;
+    }
   }
 
   .biography__container {

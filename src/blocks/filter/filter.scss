@@ -113,7 +113,7 @@
     position: relative;
     z-index: 20;
 
-    &:first-child {
+    &:not(:last-child) {
       margin-right: 35px;
     }
 

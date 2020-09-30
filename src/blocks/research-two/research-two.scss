@@ -1,6 +1,10 @@
 .research-two {
   padding: 10px 15px;
   padding-bottom: 30px;
+
+  .sidebar {
+    display: none;
+  }
 }
 
 .research-two__title {
@@ -24,11 +28,25 @@
   .research-two__title {
     margin-bottom: 60px;
   }
+
+  .research-two {
+    .page-layout__box {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .research-two {
     @include page-wrapper;
+
+    .sidebar {
+      display: block;
+    }
+
+    .page-layout__box {
+      margin-left: 25px;
+    }
   }
 
   .research-two__container {

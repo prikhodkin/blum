@@ -31,13 +31,12 @@
       </ul>
     </div>
 
-    <section class="main__knee knee">
-      <div class= "knee__header">
-        <h2 class= "knee__title title">Боль в колене (коленном суставе)</h2>
-        <div class= "knee__filter filter"></div>
+    <section class="main__knee page-layout knee">
+      <div class= "page-layout__header">
+        <h2 class= "page-layout__title title">Боль в колене (коленном суставе)</h2>
       </div>
-      <div class= "knee__container">
-        <aside class="knee__sidebar sidebar">
+      <div class= "page-layout__container">
+        <aside class="page-layout__sidebar sidebar">
           <ul class="sidebar__list">
             <li class="sidebar__item sidebar__item--category">
               <a class="sidebar__link sidebar__link--category" href="#">
@@ -81,7 +80,7 @@
             </li>
           </ul>
         </aside>
-        <div class= "knee__box">
+        <div class= "page-layout__box">
           <div class="knee__content description">
             <p class="description__text">Товарищи! постоянное информационно-пропагандистское обеспечение нашей
               деятельности позволяет выполнять важные задания по разработке модели развития. С другой стороны укрепление
@@ -286,41 +285,9 @@
               дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений.
             </p>
 
-            <div class="description__slider slider">
-              <div class="slider__img-main">
-                <img class="slider__main-image" src="../img/slider__img-1.jpg" alt="">
-              </div>
-              <ul class="slider__list">
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-1.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-2.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-3.jpg" alt="">
-                </li>
-                <li class="slider__item slider__item--4">
-                  <img class="slider__image" src="../img/slider__img-4.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-5.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-6.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-7.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-8.jpg" alt="">
-                </li>
-                <li class="slider__item">
-                  <img class="slider__image" src="../img/slider__img-9.jpg" alt="">
-                </li>
-              </ul>
-            </div>
+            @@include('../blocks/gallery/gallery.html')
           </div>
+          @@include('../blocks/consultation/consultation.html')
           <div class="additional-service">
             <h3 class="additional-service__title">Другие услуги</h3>
             <ul class="additional-service__list">
