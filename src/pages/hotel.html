@@ -78,15 +78,18 @@
       <li class="hotel-numbers__item number-hotel">
         <p class="number-hotel__name">standart</p>
         <div class="number-hotel__wrap">
-          <div class="number-hotel__wrapper">
-            <img class="number-hotel__img" src="../img/hotel-number__img-1.jpg" alt="">
+          <div class="number-hotel__wrapper" data-controller="slider">
+            <div data-target="slider.list">
+              <img class="number-hotel__img" src="../img/hotel-number__img-1.jpg" alt="">
+              <img class="number-hotel__img" src="../img/hotel-number__img-1.jpg" alt="">
+            </div>
             <div class="number-hotel__controls controls">
-              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider-three.prev">
+              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider.prev">
                 <svg aria-label="prev">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
               </button>
-              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider-three.next">
+              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider.next">
                 <svg aria-label="next">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
@@ -114,15 +117,18 @@
       <li class="hotel-numbers__item number-hotel">
         <p class="number-hotel__name">suite</p>
         <div class="number-hotel__wrap">
-          <div class="number-hotel__wrapper">
-            <img class="number-hotel__img" src="../img/hotel-number__img-2.jpg" alt="">
+          <div class="number-hotel__wrapper" data-controller="slider">
+            <div data-target="slider.list">
+              <img class="number-hotel__img" src="../img/hotel-number__img-2.jpg" alt="">
+              <img class="number-hotel__img" src="../img/hotel-number__img-2.jpg" alt="">
+            </div>
             <div class="number-hotel__controls controls">
-              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider-three.prev">
+              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider.prev">
                 <svg aria-label="prev">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
               </button>
-              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider-three.next">
+              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider.next">
                 <svg aria-label="next">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
@@ -150,15 +156,18 @@
       <li class="hotel-numbers__item number-hotel">
         <p class="number-hotel__name">suite terrace</p>
         <div class="number-hotel__wrap">
-          <div class="number-hotel__wrapper">
-            <img class="number-hotel__img" src="../img/hotel-number__img-3.jpg" alt="">
+          <div class="number-hotel__wrapper" data-controller="slider">
+            <div data-target="slider.list">
+              <img class="number-hotel__img" src="../img/hotel-number__img-3.jpg" alt="">
+              <img class="number-hotel__img" src="../img/hotel-number__img-3.jpg" alt="">
+            </div>
             <div class="number-hotel__controls controls">
-              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider-three.prev">
+              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider.prev">
                 <svg aria-label="prev">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
               </button>
-              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider-three.next">
+              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider.next">
                 <svg aria-label="next">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
@@ -186,15 +195,18 @@
       <li class="hotel-numbers__item number-hotel">
         <p class="number-hotel__name">family</p>
         <div class="number-hotel__wrap">
-          <div class="number-hotel__wrapper">
-            <img class="number-hotel__img" src="../img/hotel-number__img-4.jpg" alt="">
+          <div class="number-hotel__wrapper" data-controller="slider">
+            <div data-target="slider.list">
+              <img class="number-hotel__img" src="../img/hotel-number__img-4.jpg" alt="">
+              <img class="number-hotel__img" src="../img/hotel-number__img-4.jpg" alt="">
+            </div>
             <div class="number-hotel__controls controls">
-              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider-three.prev">
+              <button class="number-hotel__controls-button controls__button controls__button--prev" data-target="slider.prev">
                 <svg aria-label="prev">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
               </button>
-              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider-three.next">
+              <button class="number-hotel__controls-button controls__button controls__button--next" data-target="slider.next">
                 <svg aria-label="next">
                   <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
                 </svg>
@@ -225,8 +237,8 @@
   <section class="programs-hotel">
     <div class="programs-hotel__container">
       <h2 class="programs-hotel__title title">Специальные программы лечения с проживанием в отеле</h2>
-      <div class="programs-hotel__slider">
-        <ul class="programs-hotel__list">
+      <div class="programs-hotel__slider" data-controller="slider-four">
+        <ul class="programs-hotel__list" data-target="slider-four.list">
           <li class="programs-hotel__item program-card program-card--hotel">
             <a class="program-card__link program-card__link--hotel" href="#">
               <div class="program-card__image program-card__image--hotel">
@@ -263,14 +275,23 @@
               <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
             </a>
           </li>
+          <li class="programs-hotel__item program-card program-card--hotel">
+            <a class="program-card__link program-card__link--hotel" href="#">
+              <div class="program-card__image program-card__image--hotel">
+                <img class="program-card__img program-card__img" src="../img/program-hotel__img-4.jpg" alt="">
+              </div>
+              <p class="program-card__text program-card__text--hotel">Наименование программы лечения №1</p>
+              <p class="program-card__desc">Краткое описание программы лечения с небольшим количеством символов. </p>
+            </a>
+          </li>
         </ul>
         <div class="programs-hotel__controls controls">
-          <button class="programs-hotel__button controls__button controls__button--prev" data-target="slider-five.prev" aria-controls="tns3" tabindex="-1" data-controls="prev" disabled="">
+          <button class="programs-hotel__button controls__button controls__button--prev" data-target="slider-four.prev" aria-controls="tns3" tabindex="-1" data-controls="prev" disabled="">
             <svg aria-label="prev">
               <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
             </svg>
           </button>
-          <button class="programs-hotel__button controls__button controls__button--next" data-target="slider-five.next" aria-controls="tns3" tabindex="-1" data-controls="next">
+          <button class="programs-hotel__button controls__button controls__button--next" data-target="slider-four.next" aria-controls="tns3" tabindex="-1" data-controls="next">
             <svg aria-label="next">
               <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
             </svg>

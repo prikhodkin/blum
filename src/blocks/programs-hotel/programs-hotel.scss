@@ -13,10 +13,10 @@
 
 .programs-hotel__list {
   @include list-reset;
-  display: grid;
-  grid-column-gap: 15px;
-  grid-template-columns: 100% 100% 100% 100%;
-  overflow: hidden;
+  //display: grid;
+  //grid-column-gap: 15px;
+  //grid-template-columns: 100% 100% 100% 100%;
+  //overflow: hidden;
 }
 
 .programs-hotel__slider {
@@ -52,6 +52,10 @@
     background-repeat: no-repeat;
     background-position: 106% -40px;
     background-size: 426px 309px;
+  }
+
+  .programs-hotel__item {
+    padding: 0 10px;
   }
 
   .programs-hotel__list {

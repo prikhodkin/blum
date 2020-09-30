@@ -60,13 +60,19 @@ Array.prototype.forEach.call(inputs, function (input) {
   });
 });
 
-const gallery = tns({
-  "container": ".gallery__list",
-  "items": 1,
-  "navContainer": ".gallery__sub-list",
-  "navAsThumbnails": true,
-  "autoplay": false,
-  "swipeAngle": false,
-  "speed": 400,
-  "controls": false
-})
+const galleryList = document.querySelector(`.gallery__list`);
+
+if (galleryList) {
+  const gallery = tns({
+    "container": ".gallery__list",
+    "items": 1,
+    "navContainer": ".gallery__sub-list",
+    "navAsThumbnails": true,
+    "autoplay": false,
+    "swipeAngle": false,
+    "speed": 400,
+    "controls": false
+  })
+}
+
+
