@@ -2,6 +2,16 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 83px;
+}
+
+.page__header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 2000;
 }
 
 .page__footer {

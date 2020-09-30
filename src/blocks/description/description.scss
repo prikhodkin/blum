@@ -168,7 +168,7 @@
 
     &::after {
       content: "";
-      width: 805px;
+      width: 100%;
       height: 1px;
     }
 
@@ -177,9 +177,9 @@
       padding-left: 0;
     }
 
-    &--biography::after {
-      width: 831px;
-    }
+    //&--biography::after {
+    //  width: 831px;
+    //}
   }
 
   .description__slider--biography {

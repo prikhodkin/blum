@@ -1,6 +1,10 @@
 .research {
   padding: 10px 15px;
   padding-bottom: 30px;
+
+  .sidebar {
+    display: none;
+  }
 }
 
 .research__title {
@@ -25,11 +29,25 @@
   .research__title {
     margin-bottom: 60px;
   }
+
+  .research {
+    .page-layout__box {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .research {
     @include page-wrapper;
+
+    .sidebar {
+      display: block;
+    }
+
+    .page-layout__box {
+      margin-left: 25px;
+    }
   }
 
   .research__container {

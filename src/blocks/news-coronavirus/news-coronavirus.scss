@@ -1,6 +1,23 @@
 .news-coronavirus {
   padding: 10px 15px;
   padding-bottom: 30px;
+
+  .sidebar {
+    margin-right: -15px;
+    overflow: hidden;
+  }
+
+  .sidebar__list {
+    display: flex;
+    overflow: auto;
+  }
+
+  .sidebar__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .news-coronavirus__title {
@@ -21,6 +38,24 @@
 
 
 @media (min-width: 768px) {
+  .news-coronavirus {
+    .sidebar {
+      display: none;
+      margin-right: 0;
+    }
+
+    .sidebar__list {
+      display: block;
+    }
+
+    .sidebar__item {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   .news-coronavirus__title {
     margin-bottom: 60px;
   }
@@ -29,6 +64,13 @@
 @media (min-width: 1200px) {
   .news-coronavirus {
     @include page-wrapper;
+
+    .sidebar {
+      display: block;
+      width: 110px;
+      min-width: 110px;
+      padding-top: 0;
+    }
   }
 
   .news-coronavirus__container {

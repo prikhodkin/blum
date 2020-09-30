@@ -7,7 +7,7 @@ import {$$} from "./util";
 import $ from "jquery";
 import intlTelInput from 'intl-tel-input';
 import PerfectScrollbar from 'perfect-scrollbar';
-
+import { tns } from "tiny-slider/src/tiny-slider"
 
 global.jQuery = $;
 
@@ -59,3 +59,20 @@ Array.prototype.forEach.call(inputs, function (input) {
       label.querySelector('.file__text').innerText = labelVal;
   });
 });
+
+const galleryList = document.querySelector(`.gallery__list`);
+
+if (galleryList) {
+  const gallery = tns({
+    "container": ".gallery__list",
+    "items": 1,
+    "navContainer": ".gallery__sub-list",
+    "navAsThumbnails": true,
+    "autoplay": false,
+    "swipeAngle": false,
+    "speed": 400,
+    "controls": false
+  })
+}
+
+
