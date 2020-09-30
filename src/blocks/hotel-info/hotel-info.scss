@@ -52,9 +52,14 @@
   color: #e5f2f7;
 }
 
+.hotel-info__controls {
+  display: flex;
+  justify-content: center;
+}
+
 .hotel-info__controls-button {
   &:not(:first-child) {
-    margin-left: auto;
+    margin-left: 14px;
   }
 }
 
