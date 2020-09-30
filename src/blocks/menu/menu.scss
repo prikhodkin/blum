@@ -70,6 +70,7 @@
     @include list-reset;
     position: absolute;
     left: 0;
+    z-index: 300;
     display: block;
     min-width: 242px;
     margin-top: 33px;
