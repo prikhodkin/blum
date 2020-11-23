@@ -1,0 +1,18 @@
+.page-n {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// .page-n__header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 2000;
+//   width: 100%;
+//   background-color: #ffffff;
+// }
+
+.page-n__footer {
+  margin-top: auto;
+}

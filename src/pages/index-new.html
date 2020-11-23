@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЦЕНТР РЕАБИЛИТАЦИИ ДОКТОРА БЛЮМА</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @@include('../blocks/favicon/favicon.html')
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-n">
+  <header class="header-n">
+    <nav class="header-n__menu menu-n" data-controller="menu">
+      <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
+        <span class="burger__inner">Открыть меню</span>
+      </button>
+      <ul class="menu-n__list">
+        <li class="menu-n__item">
+          <a href="#">О центре</a>
+          <ul class="menu-n__sub-list">
+            <li class="menu-n__sub-item"><a href="location .html">Расположение</a></li>
+            <li class="menu-n__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
+            <li class="menu-n__sub-item"><a href="center-news.html">Новости</a></li>
+            <li class="menu-n__sub-item"><a href="research.html">Статьи и исследования</a></li>
+            <li class="menu-n__sub-item"><a href="certificates.html">Патенты и лицензии</a></li>
+            <li class="menu-n__sub-item"><a href="encyclopedia.html">Энциклопедия заболеваний</a></li>
+            <li class="menu-n__sub-item"><a href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li class="menu-n__item">
+          <a href="#">О докторе</a>
+          <ul class="menu-n__sub-list">
+            <li class="menu-n__sub-item"><a href="biography.html">Биография</a></li>
+            <li class="menu-n__sub-item"><a href="method.html">Методика</a></li>
+            <li class="menu-n__sub-item"><a href="lectures.html">Лекции</a></li>
+            <li class="menu-n__sub-item"><a href="books.html">Книги</a></li>
+          </ul>
+        </li>
+        <li class="menu-n__item menu-n__item--mega">
+          <a href="#">Услуги и цены</a>
+          <div class="menu-n__mega mega-menu-n">
+            <ul class="mega-menu-n__list" data-target="menu.list">
+              <li class="mega-menu-n__item mega-menu-n__item--active">
+                <a href="#">
+                  <img src="../img/programm_01.png" alt="pr">
+                  <span>Специальные программы</span>
+                </a>
+                <div class="mega-menu-n__inner">
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">Программы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">заболевания</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">симптомы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Двоение перед глазами</a></li>
+                    </ul>
+                    <a href="symptoms.html" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_02.png" alt="pr">
+                  <span>поддерживающие программы</span>
+                </a>
+                <div class="mega-menu-n__inner">
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">Программы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">заболевания</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">симптомы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Двоение перед глазами</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_03.png" alt="pr">
+                  <span>для мужчин</span>
+                </a>
+                <div class="mega-menu-n__inner">
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">Программы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">заболевания</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                  <div class="mega-menu-n__col">
+                    <p class="mega-menu-n__header">симптомы</p>
+                    <ul class="mega-menu-n__sub-list">
+                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                      <li class="mega-menu-n__sub-item"><a href="#">Двоение перед глазами</a></li>
+                    </ul>
+                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_04.png" alt="pr">
+                  <span>для детей</span>
+                </a>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_05.png" alt="pr">
+                  <span>для спортсменов</span>
+                </a>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_06.png" alt="pr">
+                  <span>для программистов</span>
+                </a>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_07.png" alt="pr">
+                  <span>для бизнесменов</span>
+                </a>
+              </li>
+              <li class="mega-menu-n__item">
+                <a href="#">
+                  <img src="../img/programm_08.png" alt="pr">
+                  <span>для корпораций</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-n__item"><a href="program.html">Программы</a></li>
+        <li class="menu-n__item"><a href="#">контакты</a></li>
+      </ul>
+    </nav>
+    <svg class="header-n__search"  data-action="click->search#show">
+      <use xlink:href="img/sprites/sprite.svg#icon__search-n"></use>
+    </svg>
+    <div class="header-n__language language-n" data-controller="language">
+      <ul class="language-n__list">
+        <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
+        <li class="language-n__item"><a href="#">En</a></li>
+        <li class="language-n__item"><a href="#">Es</a></li>
+      </ul>
+    </div>
+    <div class="header-n__box">
+      <a class="header-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
+      <p class="header-n__text">круглосуточно</p>
+    </div>
+
+    <a class="header-n__button button-n" href="#" >записаться  на  прием</a>
+    <section class="search"  data-target="search.overlay">
+      <button class="search__close" data-action="click->search#close">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+      <form action="" class="search__form">
+        <label class="search__label">
+          <input type="text" class="search__input" placeholder="Что вы ищете?">
+          <svg class="search__icon">
+            <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+          </svg>
+        </label>
+      </form>
+    </section>
+  </header>
+</body>
+</html>
