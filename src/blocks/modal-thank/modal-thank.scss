@@ -1,0 +1,26 @@
+.modal-thank {
+  align-items: center;
+}
+
+
+.modal-thank__img {
+  margin-bottom: 40px;
+}
+
+
+.modal-thank__title {
+  margin-bottom: 20px;
+}
+
+
+.modal-thank__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #7b7b7b;
+}
+
+@media (min-width: 1200px) {
+  .modal-thank {
+    flex-direction: column;
+  }
+}

@@ -689,19 +689,36 @@
 </main>
 @@include('../blocks/footer/footer.html')
 <section class="modal">
-  <h2 class="modal__title">Получите бесплатную консультацию</h2>
-  <div class="modal__wrap">
-    <svg class="modal__icon">
-      <use xlink:href="img/sprites/sprite.svg#icon__modal"></use>
-    </svg>
+
+    <img class="modal__img" src="../img/modal__img.png" alt="">
     <div class="modal__box">
+      <h2 class="modal__title">Получите бесплатную консультацию</h2>
       <p class="modal__text">Оставьте заявку и наш специалист свяжется с вами в ближайшее время.</p>
       <form class="modal__form" action="#">
-        <input class="consultation__input" type="text" id="phone">
+        <input class="modal__input modal__input--name" type="text" placeholder="Ваше имя" id="name">
+        <input class="modal__input consultation__input" type="text" placeholder="+7 (999) 999-99-99" id="phone">
+        <button class="modal__button button" type="submit">Получить бесплатную консультацию</button>
+        <p class="consultation__politic">Нажимая на кнопку,  вы соглашаетесь на обработку  персональных данных</p>
       </form>
     </div>
-  </div>
+  <button class="modal__close">
+    <span class="visually-hidden">Закрыть</span>
+    <svg class="modal__icon">
+      <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+    </svg>
+  </button>
+</section>
 
+<section class="modal-thank modal">
+  <img class="modal-thank__img modal__img" src="../img/modal__img.png" alt="">
+  <h2 class="modal-thank__title modal__title">Спасибо за заявку</h2>
+  <div class="modal-thank__text">Мы перезвоним вам в ближайшее время</div>
+  <button class="modal__close">
+    <span class="visually-hidden">Закрыть</span>
+    <svg class="modal__icon">
+      <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+    </svg>
+  </button>
 </section>
 </body>
 </html>

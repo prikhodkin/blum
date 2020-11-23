@@ -21,7 +21,6 @@
 .number-hotel__wrapper {
   position: relative;
   width: calc(100% + 30px);
-  //height: 60vw;
   margin-right: -20px;
   margin-bottom: 10px;
   margin-left: -10px;
@@ -29,7 +28,6 @@
 
 .number-hotel__img {
   border-radius: 10px 10px 0 0;
-  //object-fit: cover;
 }
 
 .number-hotel__inner {
@@ -184,12 +182,7 @@
     margin-right: -60px;
     margin-bottom: 55px;
     margin-left: -30px;
-    //height: 60vw;
-    margin-right: -60px;
-    margin-bottom: 55px;
-    margin-left: -30px;
     border-radius: 10px 10px 0 0;
-    //object-fit: cover;
   }
 
   .number-hotel__list {
