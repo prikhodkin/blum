@@ -46,4 +46,18 @@
     height: 13px;
     fill: #122e68;
   }
+
+  &--up {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 3.5px solid #ffffff;
+    border-radius: 50%;
+
+    & svg {
+      width: 13px;
+      height: 21px;
+      fill: #ffffff;
+    }
+  }
 }
