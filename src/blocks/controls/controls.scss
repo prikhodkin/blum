@@ -60,4 +60,26 @@
       fill: #ffffff;
     }
   }
+
+  &--new {
+    width: 43px;
+    min-width: 43px;
+    height: 43px;
+    background: #ffffff;
+    border-radius: 50%;
+
+    & svg {
+      width: 13px;
+      height: 21px;
+      fill: $new-color;
+    }
+
+    &:hover {
+      background: $new-color;
+
+      & svg {
+        fill: #ffffff;
+      }
+    }
+  }
 }

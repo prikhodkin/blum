@@ -39,3 +39,12 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: uppercase;
+  }
+}

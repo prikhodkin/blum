@@ -1,0 +1,72 @@
+.patient-histories {
+  position: relative;
+  padding: 70px 0;
+  padding-right: calc(50% - 860px);
+  padding-left: calc(50% - 860px);
+  overflow: hidden;
+  background-color: #f9f7f3;
+}
+
+.patient-histories__title {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.patient-histories__wrap {
+  margin-bottom: 70px;
+  padding-left: 45px;
+}
+
+.patient-histories__slider {
+  position: relative;
+}
+
+.patient-histories__list {
+  @include list-reset;
+  display: flex;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+.patient-histories__item {
+  width: 553px;
+  min-width: 553px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.patient-histories__video {
+  margin-bottom: 25px;
+}
+
+.patient-histories__text {
+  font-size: 24px;
+  line-height: 32px;
+
+  & b {
+    font-weight: 700;
+  }
+}
+
+.patient-histories__link {
+  font-size: 24px;
+  line-height: 32px;
+  color: $new-color;
+
+
+  & svg {
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+.patient-histories__controls {
+  position: absolute;
+  top: 130px;
+  left: -20px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 40px);
+}
