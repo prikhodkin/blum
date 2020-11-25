@@ -82,4 +82,23 @@
       }
     }
   }
+
+  &--new-border {
+    background: #ffffff;
+    box-shadow: 0 0 4px #aeaeae;
+
+    & svg {
+      width: 9px;
+      height: 17px;
+      fill: $new-color;
+    }
+
+    &:hover {
+      background: $new-color;
+
+      & svg {
+        fill: #ffffff;
+      }
+    }
+  }
 }

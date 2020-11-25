@@ -1,0 +1,39 @@
+.info-card {
+  padding-right: 5px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e6eef2;
+}
+
+.info-card__image {
+  width: calc(100% + 20px);
+  margin-bottom: 20px;
+  margin-left: -15px;
+
+  & img {
+    object-fit: cover;
+  }
+}
+
+.info-card__name {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.info-card__text {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.info-card__link {
+  font-size: 20px;
+  line-height: 18px;
+}
