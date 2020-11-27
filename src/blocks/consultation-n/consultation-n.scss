@@ -1,0 +1,134 @@
+.consultation-n {
+  padding: 70px;
+  background-color: #f9f7f3;
+}
+
+.consultation-n__title {
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.consultation-n__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultation-n__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 516px;
+  min-width: 516px;
+  padding: 35px 25px;
+  padding-bottom: 55px;
+  background-color: #ffffff;
+  border: 1px solid #ded5cc;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(67, 70, 70, 0.3);
+}
+
+.consultation-n__input {
+  width: 100%;
+  height: 54px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #f9f7f3;
+  border: none;
+
+  &::placeholder {
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+  }
+}
+
+.consultation-n__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  & .iti {
+    width: 100%;
+  }
+}
+
+.consultation-n__box {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+}
+
+.consultation-n__label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #797b87;
+  letter-spacing: 0.03em;
+}
+
+.consultation-n__textarea {
+  height: 165px;
+  padding: 15px;
+  background-color: #f9f7f3;
+  border: none;
+  border-bottom: 1px solid $new-color;
+  appearance: none;
+  resize: none;
+}
+
+.consultation-n__wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.consultation-n__info {
+  margin-bottom: 25px;
+  text-align: end;
+
+  & svg {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    fill: $new-color;
+  }
+}
+
+.consultation-n__politic {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #878da2;
+  letter-spacing: 0.03em;
+}
+
+.consultation-n__button {
+  width: 280px;
+  height: 52px;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+}
+
+.consultation-n__content {
+  max-width: 465px;
+  margin-left: 45px;
+  font-size: 24px;
+  line-height: 35px;
+
+  & p:first-of-type {
+    font-weight: 700;
+    color: #383838;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
