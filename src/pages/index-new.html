@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="page-n">
-  <header class="header-n">
+  <header class="header-n" id="header-link">
     <nav class="header-n__menu menu-n" data-controller="menu">
       <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
         <span class="burger__inner">Открыть меню</span>
@@ -275,25 +275,30 @@
       <p class="special-project__text">Спецпроект COVID-19. Устранение поражения легких</p>
     </section>
     <section class="promo-n">
-      <ul class="promo-n__slider">
-        <li class="promo-n__box">
-          <img class="promo-n__img" src="../img/promo__doctor.png" alt="doctor" >
-          <div class="promo-n__wrap">
-            <h2 class="promo-n__title">медико-реабилитационый центр доктора блюма <br> в испании</h2>
-            <p class="promo-n__text">Восстанавливаем 98% пациентов <br> с тяжелыми заболеваниями, <br> от которых другие клиники отказываются</p>
-            <a class="promo-n__link" href="#" >
-              Смотреть полный список заболеваний
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-            <a class="promo-n__button button-n" href="#" >получить  консультацию  профессора</a>
-            <div class="promo-n__inner">
-              <p class="promo-n__desc">Блюм Евгений Эвальевич, <br> профессор, доктор медицинских наук</p>
+      <div class="promo-n__container">
+        <a class="promo-n__logo logo-n">
+          <img src="img/new/logo___blum.png" alt="">
+        </a>
+        <ul class="promo-n__slider">
+          <li class="promo-n__box">
+            <img class="promo-n__img" src="../img/promo__doctor.png" alt="doctor" >
+            <div class="promo-n__wrap">
+              <h2 class="promo-n__title">медико-реабилитационый центр доктора блюма <br> в испании</h2>
+              <p class="promo-n__text">Восстанавливаем 98% пациентов <br> с тяжелыми заболеваниями, <br> от которых другие клиники отказываются</p>
+              <a class="promo-n__link" href="#" >
+                Смотреть полный список заболеваний
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
+                </svg>
+              </a>
+              <a class="promo-n__button button-n" href="#" >получить  консультацию  профессора</a>
+              <div class="promo-n__inner">
+                <p class="promo-n__desc">Блюм Евгений Эвальевич, <br> профессор, доктор медицинских наук</p>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
       <div class="promo-n__controls controls">
         <button class="controls__button controls__button--up controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
           <svg aria-label="prev">
@@ -1027,7 +1032,7 @@
           <fieldset class="consultation-n__box">
             <div class="consultation-n__group">
               <label class="consultation-n__label" for="phone">Ваш телефон</label>
-              <div class="iti--allow-dropdown"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="iti-0__country-listbox" aria-expanded="false" tabindex="0" title="United States: +1" aria-activedescendant="iti-0__item-us-preferred"><div class="iti__flag iti__us"></div><div class="iti__arrow"></div></div></div><input class="consultation-n__input" type="text" id="phone" autocomplete="off" data-intl-tel-input-id="0" placeholder="+7 (999) 999-99-99"></div>
+              <div class="iti iti--allow-dropdown"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="iti-0__country-listbox" aria-expanded="false" tabindex="0" title="United States: +1" aria-activedescendant="iti-0__item-us-preferred"><div class="iti__flag iti__us"></div><div class="iti__arrow"></div></div></div><input class="consultation-n__input" type="text" id="phone" autocomplete="off" data-intl-tel-input-id="0" placeholder="+7 (999) 999-99-99"></div>
             </div>
             <div class="consultation-n__group">
               <label class="consultation-n__label" for="cons-text" >Опишите состояние пациента (необязательно)</label>
@@ -1052,5 +1057,77 @@
       </div>
     </section>
   </main>
+  <footer class="page__footer footer-n">
+    <div class="footer-n__top">
+      <div class="footer-n__left">
+        <a href="index-new.html" class="footer-n__logo">
+          <img src="img/new/logo___blum.png" alt="">
+        </a>
+      </div>
+      <nav class="footer-n__nav">
+        <div class="footer-n__col">
+          <p class="footer-n__header">Разделы каталога:</p>
+          <ul class="footer-n__list">
+            <li class="footer-n__item"><a href="#">О центре</a></li>
+            <li class="footer-n__item"><a href="#">О докторе</a></li>
+            <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
+            <li class="footer-n__item"><a href="program.html">Программы</a></li>
+            <li class="footer-n__item"><a href="#">Отзывы</a></li>
+            <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
+          </ul>
+        </div>
+        <div class="footer-n__col">
+          <p class="footer-n__header">Услуги:</p>
+          <ul class="footer-n__list">
+            <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
+            <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
+            <li class="footer-n__item"><a href="#">Еще</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-n__contacts">
+        <p class="footer-n__header">Круглосуточно</p>
+        <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
+        <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
+        <a href="#" class="footer-n__callback">Напишите нам</a>
+        <ul class="footer-n__social social">
+          <li class="social__item">
+            <a href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer-n__btn" href="#header-link">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-n__bottom">
+      <p class="footer-n__copyright">© 2007-2020, ООО “Доктор Блюм”.  Все права защищены</p>
+      <a href="#" class="footer-n__politic">Политика конфиденциальности</a>
+      <p class="footer-n__dev">Создание сайта <a href="#">ARS Creative</a></p>
+    </div>
+  </footer>
 </body>
 </html>
