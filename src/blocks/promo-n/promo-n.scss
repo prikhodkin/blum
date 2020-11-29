@@ -9,6 +9,19 @@
   min-height: 784px;
 }
 
+.promo-n__container {
+  position: relative;
+}
+
+.promo-n__logo {
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  z-index: 100;
+  width: 167px;
+  height: 198px;
+}
+
 .promo-n__box {
   position: relative;
   display: block;
@@ -19,16 +32,6 @@
   background-image: url("../../img/new/promo-n__img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  &::before {
-    @include pseudo;
-    position: absolute;
-    left: calc(50% - 860px);
-    width: 168px;
-    height: 192px;
-    background-image: url("../../img/new/logo___blum.png");
-    background-size: cover;
-  }
 }
 
 .promo-n__img {
