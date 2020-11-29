@@ -1,0 +1,36 @@
+.tabs-n__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7px;
+}
+
+.tabs-n__item {
+  margin: 7px;
+  padding: 9px 29px;
+  font-size: 20px;
+  line-height: 155%;
+  text-align: center;
+  color: #000000;
+  background-color: #fbfbfb;
+  border: 1px solid $new-color;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s;
+
+
+  &:hover {
+    color: #ffffff;
+    background-color: $new-color;
+    border: 1px solid #cdf0ff;
+    opacity: 1;
+  }
+}
+
+.tabs-n__item--active {
+  color: #ffffff;
+  background-color: $new-color;
+  border: 1px solid #cdf0ff;
+  opacity: 1;
+}

@@ -1,0 +1,39 @@
+.video-n {
+  position: relative;
+}
+
+.video-n__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-n__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 70px;
+  background-color: #f4f2f1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $new-color;
+
+    & .video-n__icon {
+      fill: #f4f2f1;
+    }
+  }
+}
+
+.video-n__icon {
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  transition: all 0.3s;
+  fill: $new-color;
+}

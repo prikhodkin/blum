@@ -46,4 +46,59 @@
     height: 13px;
     fill: #122e68;
   }
+
+  &--up {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 3.5px solid #ffffff;
+    border-radius: 50%;
+
+    & svg {
+      width: 13px;
+      height: 21px;
+      fill: #ffffff;
+    }
+  }
+
+  &--new {
+    width: 43px;
+    min-width: 43px;
+    height: 43px;
+    background: #ffffff;
+    border-radius: 50%;
+
+    & svg {
+      width: 13px;
+      height: 21px;
+      fill: $new-color;
+    }
+
+    &:hover {
+      background: $new-color;
+
+      & svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &--new-border {
+    background: #ffffff;
+    box-shadow: 0 0 4px #aeaeae;
+
+    & svg {
+      width: 9px;
+      height: 17px;
+      fill: $new-color;
+    }
+
+    &:hover {
+      background: $new-color;
+
+      & svg {
+        fill: #ffffff;
+      }
+    }
+  }
 }

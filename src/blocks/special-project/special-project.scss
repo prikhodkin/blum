@@ -1,0 +1,16 @@
+.special-project {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  padding-left: 150px;
+  background-color: #134237;
+}
+
+.special-project__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: $add-font, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}

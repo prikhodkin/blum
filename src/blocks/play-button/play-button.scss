@@ -1,0 +1,25 @@
+.play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  min-width: 62px;
+  height: 62px;
+  background-color: $new-color;
+  border-radius: 50%;
+
+  & svg {
+    width: 34%;
+    min-width: 34%;
+    height: 34%;
+    fill: #ffffff;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+
+    & svg {
+      fill: $new-color;
+    }
+  }
+}

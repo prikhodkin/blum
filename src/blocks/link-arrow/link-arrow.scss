@@ -1,0 +1,14 @@
+.link-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: $new-color;
+
+  & svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    fill: $new-color;
+  }
+}

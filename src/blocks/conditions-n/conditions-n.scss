@@ -1,0 +1,55 @@
+.conditions-n {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.conditions-n__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.conditions-n__text {
+  margin-bottom: 65px;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: $new-color;
+  text-transform: lowercase;
+}
+
+.conditions-n__slider {
+  position: relative;
+}
+
+.conditions-n__list {
+  @include list-reset;
+  display: flex;
+}
+
+.conditions-n__item {
+  min-width: 1170px;
+  height: 31vw;
+  margin-left: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.conditions-n__img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.conditions-n__controls {
+  position: absolute;
+  top: 50%;
+  left: 230px;
+  justify-content: space-between;
+  width: calc(100% - 460px);
+  transform: translateY(-50%);
+
+  & button {
+    width: 57px;
+    min-width: 57px;
+    height: 57px;
+  }
+}

@@ -1,0 +1,113 @@
+.promo-n {
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-n__slider {
+  @include list-reset;
+  display: flex;
+  min-height: 784px;
+}
+
+.promo-n__box {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 113px;
+  padding-left: calc(50% - 585px);
+  background-image: url("../../img/new/promo-n__img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    left: calc(50% - 860px);
+    width: 168px;
+    height: 192px;
+    background-image: url("../../img/new/logo___blum.png");
+    background-size: cover;
+  }
+}
+
+.promo-n__img {
+  position: absolute;
+  top: 45px;
+  right: calc(50% - 815px);
+  width: 687px;
+}
+
+.promo-n__wrap {
+  max-width: 985px;
+}
+
+.promo-n__title {
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 64px;
+  font-family: $add-font, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.promo-n__text {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $add-font, sans-serif;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(104, 104, 104, 0.25);
+}
+
+.promo-n__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $add-font, sans-serif;
+  color: #ffffff;
+  text-shadow: 0 4px 4px rgba(104, 104, 104, 0.25);
+
+  & svg {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    fill: #ffffff;
+  }
+}
+
+.promo-n__button {
+  width: 421px;
+  min-height: 75px;
+}
+
+.promo-n__inner {
+  position: absolute;
+  right: calc(50% - 455px);
+  bottom: 25px;
+  width: 532px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.promo-n__desc {
+  padding: 17px 35px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.promo-n__controls {
+  position: absolute;
+  top: 50%;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: calc(50% - 910px);
+  padding-left: calc(50% - 910px);
+}

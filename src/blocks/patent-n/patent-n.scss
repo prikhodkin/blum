@@ -1,0 +1,57 @@
+.patent-n {
+  padding-top: 50px;
+  padding-right: calc(50% - 860px);
+  padding-left: calc(50% - 860px);
+}
+
+.patent-n__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.patent-n__slider {
+  position: relative;
+}
+
+.patent-n__list {
+  @include list-reset;
+}
+
+.patent-n__sublist {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -10px;
+}
+
+.patent-n__subitem {
+  width: 154px;
+  min-width: 154px;
+  height: 224px;
+  margin: 20px 10px;
+}
+
+.patent-n__inner {
+  display: block;
+  height: 100%;
+
+  & img {
+    height: 100%;
+  }
+}
+
+.patent-n__controls {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  justify-content: space-between;
+  width: calc(100% + 160px);
+  transform: translateY(-50%);
+
+
+  & button {
+    width: 57px;
+    min-width: 57px;
+    height: 57px;
+  }
+}
