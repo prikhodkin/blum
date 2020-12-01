@@ -47,6 +47,7 @@
   min-height: 341px;
   padding: 50px 20px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 110%;
   transition: all 0.3s;
 
@@ -64,12 +65,17 @@
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.116) 0%, rgba(0, 0, 0, 0.4) 100%);
   }
 
+  &--center::before {
+    background: linear-gradient(0deg, rgba(159, 34, 36, 0.55), rgba(159, 34, 36, 0.55));
+  }
+
   &:hover {
     background-size: 100%;
   }
 }
 
 .situations-n__header {
+  z-index: 100;
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;

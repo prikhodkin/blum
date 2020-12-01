@@ -1,6 +1,6 @@
 .news-n {
   padding-top: 65px;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
   padding-left: calc(50% - 860px);
   overflow: hidden;
 }
@@ -26,6 +26,7 @@
 .news-n__box {
   width: 370px;
   min-width: 370px;
+  padding-bottom: 70px;
   padding-left: 25px;
 
   &:not(:first-child) {
@@ -47,11 +48,16 @@
     &:not(:first-child) {
       margin-left: 10px;
     }
+
+    & svg {
+      fill: #122e68;
+    }
   }
 }
 
 .news-n__img {
   width: calc(100% + 30px);
+  height: 266px;
   margin-bottom: 20px;
   margin-left: -25px;
 }
