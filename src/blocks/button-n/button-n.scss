@@ -16,8 +16,9 @@
   cursor: pointer;
   transition: all 0.3s;
   appearance: none;
+  white-space: break-spaces;
 
   &:hover {
-    background-color: #1c92e6;
+    background-color: rgba(15, 146, 124, 0.7);
   }
 }

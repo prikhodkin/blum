@@ -24,6 +24,7 @@
 .conditions-n__list {
   @include list-reset;
   display: flex;
+  margin-left: -825px;
 }
 
 .conditions-n__item {
