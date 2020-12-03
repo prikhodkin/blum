@@ -110,13 +110,12 @@
 .mega-menu-n__inner {
   position: absolute;
   top: 0;
-  left: 509px;
+  left: 475px;
 
   display: flex;
   width: calc(100% - 509px);
   height: 100%;
   padding: 39px;
-  padding-left: 0;
   opacity: 0;
   transition: all 0.3s;
   pointer-events: none;
