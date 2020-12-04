@@ -75,4 +75,30 @@ if (galleryList) {
   })
 }
 
+// Slider-new
+import Swiper from 'swiper/bundle';
+
+// var mySwiper = new Swiper('.swiper-container', {
+//   // Optional parameters
+//   loop: true,
+
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.controls__button--next',
+//     prevEl: '.controls__button--prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
+
+
+
 
