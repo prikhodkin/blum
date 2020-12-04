@@ -596,10 +596,10 @@ var _default = /*#__PURE__*/function (_Controller) {
       var _this = this;
 
       this.listTarget.addEventListener("mouseover", function () {
-        var active = _this.listTarget.querySelector(".mega-menu__item--active");
+        var active = _this.listTarget.querySelector(".mega-menu-n__item--active");
 
         if (active) {
-          active.classList.remove("mega-menu__item--active");
+          active.classList.remove("mega-menu-n__item--active");
         }
       });
       this.listTarget.addEventListener("mouseout", function () {
@@ -1224,6 +1224,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(intl_tel_input__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
 /* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 
 
 
@@ -1289,7 +1290,26 @@ if (galleryList) {
     "speed": 400,
     "controls": false
   });
-}
+} // Slider-new
+
+
+ // var mySwiper = new Swiper('.swiper-container', {
+//   // Optional parameters
+//   loop: true,
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.controls__button--next',
+//     prevEl: '.controls__button--prev',
+//   },
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
