@@ -2633,7 +2633,7 @@ a {
       text-align: center;
       text-transform: uppercase; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1520px) {
   .title {
     font-weight: 700;
     font-size: 48px;
