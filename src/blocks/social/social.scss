@@ -4,6 +4,7 @@
 }
 
 .social__item {
+
   &:not(:last-child) {
     margin-right: 20px;
   }
@@ -31,5 +32,9 @@
     height: 20px;
     transition: all 0.3s;
     fill: $main-color;
+  }
+
+  &--n a:hover{
+    background-color: $new-color;
   }
 }
