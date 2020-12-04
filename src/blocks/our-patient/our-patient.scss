@@ -18,11 +18,12 @@
   @include list-reset;
   display: flex;
   overflow: hidden;
+  padding: 5px ;
 }
 
 .our-patient__item {
-  width: 262px;
-  min-width: 262px;
+  width: 260px;
+  min-width: 260px;
 
   &:not(:first-child) {
     margin-left: 30px;

@@ -22,9 +22,9 @@ export default class extends Controller {
 
   hideOnHover() {
     this.listTarget.addEventListener(`mouseover`, () => {
-      const active = this.listTarget.querySelector(`.mega-menu__item--active`);
+      const active = this.listTarget.querySelector(`.mega-menu-n__item--active`);
       if (active) {
-        active.classList.remove(`mega-menu__item--active`);
+        active.classList.remove(`mega-menu-n__item--active`);
       }
     })
 
