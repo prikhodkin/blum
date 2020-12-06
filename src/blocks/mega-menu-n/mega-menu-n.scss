@@ -2,7 +2,7 @@
   z-index: 300;
   display: block;
   padding: 39px;
-  background: #f4f6f8;
+  background-color: #f4f6f8;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 0 5px rgba(205, 205, 205, 0.71);
 }
@@ -44,14 +44,14 @@
   }
 
   &--active {
-    & > .mega-menu-n__inner {
+    &>.mega-menu-n__inner {
       opacity: 1;
       pointer-events: none;
     }
 
     background-color: $new-color;
 
-    & > a {
+    &>a {
       color: #ffffff;
     }
 
@@ -63,14 +63,14 @@
   }
 
   &:hover {
-    & > .mega-menu-n__inner {
+    &>.mega-menu-n__inner {
       opacity: 1;
       pointer-events: auto;
     }
 
     background-color: $new-color;
 
-    & > a {
+    &>a {
       color: #ffffff;
     }
 
@@ -173,4 +173,94 @@
   &:not(:last-child) {
     margin-bottom: 18px;
   }
+}
+
+@media (max-width: 1900px) {
+  .mega-menu-n {
+    padding: 30px;
+    padding-bottom: 36px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .mega-menu-n__list {
+    max-width: 305px;
+    padding-top: 10px;
+  }
+
+  .mega-menu-n__item {
+    font-size: 15px;
+    line-height: 19px;
+
+    & a {
+      padding: 10px 15px;
+    }
+
+    & img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    a.mega-menu-n__link {
+      font-size: 18px;
+      line-height: 23px;
+      min-height: 70px;
+      border: none;
+      position: relative;
+
+      &::before {
+        @include pseudo;
+        width: calc(100% - 28px);
+        height: 1px;
+        background-color: #EEEEEE;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .mega-menu-n__inner {
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 36px;
+    left: 335px;
+    width: calc(100% - 360px);
+  }
+
+  .mega-menu-n__col {
+    width: 280px;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  .mega-menu-n__header {
+    padding: 23px 10px;
+  }
+
+  .mega-menu-n__sub-list {
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    a {
+      padding: 0;
+      font-size: 15px;
+      line-height: 19px;
+      color: #000000;
+    }
+  }
+
+  .mega-menu-n__sub-item {
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+
+
 }
