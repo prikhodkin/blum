@@ -38,3 +38,16 @@
   transition: all 0.3s;
   fill: $new-color;
 }
+
+@media (max-width: 1900px) {
+  .video-n__play {
+    width: 68px;
+    height: 67px;
+  }
+
+  .video-n__icon {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+}

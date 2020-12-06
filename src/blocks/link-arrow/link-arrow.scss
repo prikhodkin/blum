@@ -12,3 +12,11 @@
     fill: $new-color;
   }
 }
+
+@media (max-width: 1900px) {
+  .link-arrow {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+}

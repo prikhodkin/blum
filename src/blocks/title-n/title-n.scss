@@ -1,0 +1,14 @@
+.title-n {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1900px) {
+  .title-n {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+}

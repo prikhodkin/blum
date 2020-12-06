@@ -82,3 +82,50 @@
     fill: $new-color;
   }
 }
+
+@media (max-width: 1900px) {
+  .about-doctor {
+    padding-top: 70px;
+    padding-right: calc(50% - 585px);
+    padding-bottom: 27px;
+    padding-left: calc(50% - 585px);
+  }
+
+  .about-doctor__img {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .about-doctor__list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 35px;
+  }
+
+  .about-doctor__item {
+
+    &:hover .about-doctor__box {
+      max-width: 325px;
+      padding: 10px 10px 34px 10px;
+    }
+  }
+
+  .about-doctor__box {
+    min-width: 325px;
+    margin-top: -10px;
+    margin-left: 5px;
+    padding: 10px 10px 34px 10px;
+  }
+
+  .about-doctor__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .about-doctor__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

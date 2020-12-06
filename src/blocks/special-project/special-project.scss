@@ -13,3 +13,14 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+
+@media (max-width: 1900px) {
+  .special-project {
+    padding: 10px;
+  }
+
+  .special-project__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
