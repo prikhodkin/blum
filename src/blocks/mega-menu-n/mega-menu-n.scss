@@ -166,8 +166,10 @@
   text-transform: none;
   transition: all 0.3s;
 
-  &:hover {
-    color: $link-color;
+  a {
+    &:hover {
+      color: $new-color;
+    }
   }
 
   &:not(:last-child) {

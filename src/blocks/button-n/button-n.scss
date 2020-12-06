@@ -19,6 +19,6 @@
   white-space: break-spaces;
 
   &:hover {
-    background-color: rgba(15, 146, 124, 0.7);
+    background-color: darken($new-color, 4);
   }
 }
