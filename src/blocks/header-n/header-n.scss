@@ -60,6 +60,26 @@
   min-width: 274px;
   min-height: 55px;
   margin-left: 35px;
-  white-space: break-spaces;
 }
 
+@media (max-width: 1900px) {
+  .header-n {
+    padding-right: calc(50% - 610px);
+    padding-left: calc(50% - 610px);
+  }
+
+  .header-n__box {
+    margin-left: 25px;
+  }
+
+  .header-n__language {
+    margin-left: 25px;
+  }
+
+  .header-n__button {
+    width: 240px;
+    min-width: 240px;
+    margin-left: 20px;
+    padding: 0 17px;
+  }
+}

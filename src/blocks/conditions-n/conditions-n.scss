@@ -54,3 +54,32 @@
     height: 57px;
   }
 }
+
+@media (max-width: 1900px) {
+  .conditions-n {
+    padding: 30px 0;
+    overflow: hidden;
+  }
+
+  .conditions-n__title {
+    margin-bottom: 15px;
+  }
+
+  .conditions-n__text {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .conditions-n__item {
+    min-width: 748px;
+    height: 30vw;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+  .conditions-n__controls {
+    left: 155px;
+    width: calc(100% - 310px);
+  }
+}

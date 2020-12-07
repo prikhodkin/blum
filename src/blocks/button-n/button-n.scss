@@ -10,13 +10,13 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  white-space: break-spaces;
   background-color: $new-color;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
   appearance: none;
-  white-space: break-spaces;
 
   &:hover {
     background-color: darken($new-color, 4);

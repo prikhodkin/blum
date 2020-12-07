@@ -1,7 +1,7 @@
 .news-n {
   padding-top: 65px;
   padding-bottom: 70px;
-  padding-left: calc(50% - 860px);
+
   overflow: hidden;
 }
 
@@ -12,6 +12,7 @@
 
 .news-n__wrap {
   position: relative;
+  padding-left: calc(50% - 860px);
 }
 
 .news-n__tabs {
@@ -32,11 +33,11 @@
   &:not(:first-child) {
     margin-left: 30px;
   }
+}
 
-  & .info-card__link {
-    font-size: 24px;
-    line-height: 32px;
-  }
+.news-n__link {
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .news-n__controls {
@@ -60,4 +61,43 @@
   height: 266px;
   margin-bottom: 20px;
   margin-left: -25px;
+}
+
+@media (max-width: 1900px) {
+  .news-n {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .news-n__wrap {
+    padding-left: calc(50% - 585px);
+  }
+
+  .news-n__title {
+    margin-bottom: 50px;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+  }
+
+  .news-n__tabs {
+    margin-bottom: 56px;
+  }
+
+  .news-n__img {
+    margin-bottom: 25px;
+  }
+
+  .news-n__box {
+    padding-bottom: 55px;
+
+    & > p:nth-last-child(2) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .news-n__link {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }

@@ -82,3 +82,51 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (max-width: 1900px) {
+  .situations-n {
+    padding-top: 65px;
+    padding-right: calc(50% - 585px);
+    padding-bottom: 30px;
+    padding-left: calc(50% - 585px);
+  }
+
+  .situations-n__title {
+    margin-bottom: 15px;
+    letter-spacing: 0;
+  }
+
+  .situations-n__text {
+    &--top {
+      justify-content: center;
+      margin-bottom: 50px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &--bottom {
+      font-size: 20px;
+      line-height: 45px;
+    }
+  }
+
+  .situations-n__list {
+    grid-template-columns: repeat(3, 376px);
+    margin-bottom: 45px;
+    gap: 20px;
+  }
+
+  .situations-n__item {
+    border-radius: 10px;
+  }
+
+  .situations-n__inner {
+    min-height: 232px;
+    padding: 40px 20px;
+  }
+
+  .situations-n__header {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

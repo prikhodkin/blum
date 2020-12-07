@@ -1,4 +1,6 @@
 .info-card {
+  display: flex;
+  flex-direction: column;
   padding-right: 5px;
   padding-bottom: 40px;
   padding-left: 15px;
@@ -38,4 +40,45 @@
 .info-card__link {
   font-size: 20px;
   line-height: 18px;
+}
+
+.info-card__header {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+@media (max-width: 1900px) {
+  .info-card {
+    padding-bottom: 27px;
+  }
+
+  .info-card__name {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .info-card__text {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .info-card__link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .info-card__image {
+    margin-bottom: 25px;
+  }
+
+  .info-card__header {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 30px;
+  }
 }

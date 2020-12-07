@@ -90,3 +90,22 @@
   pointer-events: none;
 }
 
+@media (max-width: 1900px) {
+  .menu-n__item {
+    & > a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  .menu-n__mega {
+    left: 0;
+    width: 100%;
+  }
+}

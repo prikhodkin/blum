@@ -17,18 +17,27 @@
   @include list-reset;
 }
 
+.patent-n__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
 .patent-n__sublist {
   @include list-reset;
   display: flex;
-  flex-wrap: wrap;
-  margin: -20px -10px;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .patent-n__subitem {
   width: 154px;
   min-width: 154px;
   height: 224px;
-  margin: 20px 10px;
+
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
 }
 
 .patent-n__inner {
@@ -53,5 +62,45 @@
     width: 57px;
     min-width: 57px;
     height: 57px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .patent-n {
+    padding-top: 40px;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+  }
+
+  .patent-n__title {
+    margin-bottom: 50px;
+    font-size: 38.5948px;
+    line-height: 50px;
+  }
+
+  .patent-n__subitem {
+    width: 150px;
+    min-width: 150px;
+    height: 216px;
+
+    &:not(:first-child) {
+      margin-left: 18px;
+    }
+  }
+
+  .patent-n__controls {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    justify-content: space-between;
+    width: calc(100% + 30px);
+    transform: translateY(-50%);
+
+
+    & button {
+      width: 43px;
+      min-width: 43px;
+      height: 43px;
+    }
   }
 }

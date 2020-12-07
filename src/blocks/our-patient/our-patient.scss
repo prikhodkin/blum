@@ -17,8 +17,8 @@
 .our-patient__list {
   @include list-reset;
   display: flex;
+  padding: 5px;
   overflow: hidden;
-  padding: 5px ;
 }
 
 .our-patient__item {
@@ -50,5 +50,42 @@
     width: 57px;
     min-width: 57px;
     height: 57px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .our-patient {
+    padding-top: 65px;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+  }
+
+  .our-patient__title {
+    margin-bottom: 63px;
+  }
+
+  .our-patient__list {
+    padding: 0;
+  }
+
+  .our-patient__item {
+    width: 262px;
+    min-width: 262px;
+
+    &:not(:first-child) {
+      margin-left: 39px;
+    }
+  }
+
+  .our-patient__controls {
+    top: 57%;
+    left: -20px;
+    width: calc(100% + 40px);
+
+    & button {
+      width: 43px;
+      min-width: 43px;
+      height: 43px;
+    }
   }
 }

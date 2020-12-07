@@ -62,10 +62,53 @@
   color: #000000;
 }
 
-.info-card__header {
-  margin-bottom: 25px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #000000;
+
+@media (max-width: 1900px) {
+  .intro-n {
+    padding: 45px 0;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 610px);
+  }
+
+  .intro-n__image {
+    width: 388px;
+    min-width: 388px;
+  }
+
+  .intro-n__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  .intro-n__box {
+    margin-bottom: 35px;
+  }
+
+  .intro-n__wrap {
+    margin-left: 34px;
+  }
+
+  .intro-n__text {
+    font-size: 18px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  .intro-n__inner {
+    padding-left: 25px;
+  }
+
+  .intro-n__name {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .intro-n__desc {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }

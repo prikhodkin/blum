@@ -56,3 +56,56 @@
   min-width: 3.3vw;
   height: 3.3vw;
 }
+
+@media (max-width: 1900px) {
+  .blum-method {
+    padding-top: 30px;
+  }
+
+  .blum-method__wrapper {
+    display: flex;
+    margin-bottom: 70px;
+    padding-right: calc(50% - 585px);
+    padding-left: calc(50% - 585px);
+  }
+
+  .blum-method__title {
+    margin-bottom: 40px;
+  }
+
+  .blum-method__box {
+    max-width: 495px;
+  }
+
+  .blum-method__desc {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blum-method__content {
+    max-width: 595px;
+  }
+
+  .blum-method__text {
+    font-size: 18px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .blum-method__play {
+    right: 172px;
+    bottom: 53px;
+    width: 4.9vw;
+    min-width: 4.9vw;
+    height: 4.9vw;
+
+    & svg {
+      width: 30%;
+      min-width: 30%;
+      height: 30%;
+    }
+  }
+}
