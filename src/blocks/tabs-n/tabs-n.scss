@@ -34,3 +34,15 @@
   border: 1px solid #cdf0ff;
   opacity: 1;
 }
+
+@media (max-width: 1900px) {
+  .tabs-n__list {
+    margin: -8px;
+  }
+
+  .tabs-n__item {
+    margin: 8px;
+    margin-bottom: 12px;
+    padding: 8px 28px;
+  }
+}

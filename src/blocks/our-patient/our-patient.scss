@@ -17,8 +17,8 @@
 .our-patient__list {
   @include list-reset;
   display: flex;
-  overflow: hidden;
   padding: 5px;
+  overflow: hidden;
 }
 
 .our-patient__item {
@@ -77,7 +77,15 @@
     }
   }
 
-  .info-card__name {
-    margin-bottom: 15px;
+  .our-patient__controls {
+    top: 57%;
+    left: -20px;
+    width: calc(100% + 40px);
+
+    & button {
+      width: 43px;
+      min-width: 43px;
+      height: 43px;
+    }
   }
 }

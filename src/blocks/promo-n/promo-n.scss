@@ -134,10 +134,10 @@
   }
 
   .promo-n__logo {
-    width: 111px;
-    height: 128px;
     top: 80px;
     left: calc(50% - 575px);
+    width: 111px;
+    height: 128px;
   }
 
 
@@ -147,9 +147,9 @@
   }
 
   .promo-n__text {
+    margin-bottom: 15px;
     font-size: 20px;
     line-height: 21px;
-    margin-bottom: 15px;
   }
 
   .promo-n__link {
@@ -191,8 +191,8 @@
   }
 
   .promo-n__desc {
+    padding: 12px 23px;
     font-size: 16px;
     line-height: 21px;
-    padding: 12px 23px;
   }
 }

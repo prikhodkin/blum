@@ -51,7 +51,6 @@
 }
 
 .patient-histories__link {
-
   & svg {
     margin: 0;
     margin-right: 10px;
@@ -79,13 +78,13 @@
   }
 
   .patient-histories__wrap {
+    margin-bottom: 58px;
     padding-left: 0;
-    margin-bottom: 65px;
   }
 
   .patient-histories__list {
     margin-bottom: 30px;
-}
+  }
 
   .patient-histories__item {
     width: 570px;
@@ -104,5 +103,4 @@
   .patient-histories__controls {
     top: 140px;
   }
-
 }

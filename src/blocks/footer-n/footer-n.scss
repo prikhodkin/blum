@@ -130,3 +130,86 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 1900px) {
+  .footer-n {
+    padding-top: 62px;
+    padding-bottom: 45px;
+  }
+
+  .footer-n__top {
+    padding-right: calc(50% - 565px);
+    padding-bottom: 55px;
+    padding-left: calc(50% - 610px);
+  }
+
+  .footer-n__col {
+    &:not(:first-child) {
+      margin-left: 80px;
+    }
+  }
+
+  .footer-n__logo {
+    display: block;
+    width: 151px;
+  }
+
+  .footer-n__header {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer-n__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    & a {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .footer-n__contacts {
+    margin-left: 80px;
+  }
+
+  .footer-n__phone {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer-n__email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer-n__callback {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer-n__bottom {
+    padding-top: 50px;
+    padding-right: calc(50% - 605px);
+    padding-left: calc(50% - 605px);
+  }
+
+  .footer-n__copyright {
+    font-size: 16px;
+  }
+
+  .footer-n__politic {
+    font-size: 15px;
+  }
+
+  .footer-n__dev {
+    font-size: 16px;
+  }
+
+  .footer-n__btn {
+    right: 30px;
+    bottom: 30px;
+  }
+}

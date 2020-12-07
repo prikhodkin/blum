@@ -44,14 +44,14 @@
   }
 
   &--active {
-    &>.mega-menu-n__inner {
+    & > .mega-menu-n__inner {
       opacity: 1;
       pointer-events: none;
     }
 
     background-color: $new-color;
 
-    &>a {
+    & > a {
       color: #ffffff;
     }
 
@@ -63,14 +63,14 @@
   }
 
   &:hover {
-    &>.mega-menu-n__inner {
+    & > .mega-menu-n__inner {
       opacity: 1;
       pointer-events: auto;
     }
 
     background-color: $new-color;
 
-    &>a {
+    & > a {
       color: #ffffff;
     }
 
@@ -181,7 +181,7 @@
   .mega-menu-n {
     padding: 30px;
     padding-bottom: 36px;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
   }
 
@@ -205,31 +205,31 @@
     }
 
     a.mega-menu-n__link {
+      position: relative;
+      min-height: 70px;
       font-size: 18px;
       line-height: 23px;
-      min-height: 70px;
       border: none;
-      position: relative;
 
       &::before {
         @include pseudo;
-        width: calc(100% - 28px);
-        height: 1px;
-        background-color: #EEEEEE;
         position: absolute;
         top: 0;
         left: 0;
+        width: calc(100% - 28px);
+        height: 1px;
+        background-color: #eeeeee;
       }
     }
   }
 
   .mega-menu-n__inner {
-    padding: 0;
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-bottom: 36px;
     left: 335px;
     width: calc(100% - 360px);
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 36px;
+    padding-left: 25px;
   }
 
   .mega-menu-n__col {
@@ -246,7 +246,7 @@
 
   .mega-menu-n__sub-list {
     padding: 15px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 10px;
 
     a {
@@ -258,11 +258,8 @@
   }
 
   .mega-menu-n__sub-item {
-
     &:not(:last-child) {
       margin-bottom: 11px;
     }
   }
-
-
 }
