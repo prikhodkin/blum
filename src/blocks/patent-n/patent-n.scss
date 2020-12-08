@@ -78,6 +78,12 @@
     line-height: 50px;
   }
 
+  .patent-n__item {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
   .patent-n__subitem {
     width: 150px;
     min-width: 150px;

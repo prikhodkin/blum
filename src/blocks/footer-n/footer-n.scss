@@ -124,10 +124,12 @@
 .footer-n__dev {
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.44);
+
 
   & a {
     font-weight: 700;
+    color: #ffffff;
   }
 }
 

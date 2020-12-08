@@ -24,7 +24,7 @@
 .conditions-n__list {
   @include list-reset;
   display: flex;
-  margin-left: -825px;
+  margin-left: -500px;
 }
 
 .conditions-n__item {
@@ -57,7 +57,8 @@
 
 @media (max-width: 1900px) {
   .conditions-n {
-    padding: 30px 0;
+    padding-top: 35px;
+    padding-bottom: 30px;
     overflow: hidden;
   }
 
