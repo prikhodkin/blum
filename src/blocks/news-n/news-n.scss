@@ -93,11 +93,22 @@
     & > p:nth-last-child(2) {
       font-size: 20px;
       line-height: 28px;
+      margin-bottom: 33px;
     }
   }
 
   .news-n__link {
     font-size: 22px;
     line-height: 32px;
+  }
+
+  .news-n__controls {
+    right: 55px;
+
+    & button {
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
   }
 }

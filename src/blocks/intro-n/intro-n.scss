@@ -73,6 +73,7 @@
   .intro-n__image {
     width: 388px;
     min-width: 388px;
+    border-radius: 10px;
   }
 
   .intro-n__title {
@@ -94,7 +95,7 @@
     line-height: 26px;
 
     &:not(:last-child) {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
   }
 
