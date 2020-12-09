@@ -24,11 +24,11 @@
 .conditions-n__list {
   @include list-reset;
   display: flex;
-  margin-left: -795px;
+  transform: translateX(-43%);
 }
 
 .conditions-n__item {
-  min-width: 1170px;
+  min-width: 61%;
   height: 31vw;
   margin-left: 15px;
   overflow: hidden;

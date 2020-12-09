@@ -98,12 +98,12 @@
   }
 
   .news-n__link {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
   }
 
   .news-n__controls {
-    right: 55px;
+    right: calc(50% - 585px);
 
     & button {
       &:not(:first-child) {
