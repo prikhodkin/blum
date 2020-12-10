@@ -9,7 +9,7 @@
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  background-color: $accent-color;
+  background-color: $new-color;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -17,6 +17,6 @@
   appearance: none;
 
   &:hover {
-    background-color: #1c92e6;
+    background-color: darken($new-color, 4);
   }
 }
