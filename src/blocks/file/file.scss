@@ -5,11 +5,11 @@
 
   &:hover {
     .file__text {
-      color: #0d95e8;
+      color: #0f927c;
     }
 
     .file__icon {
-      fill: #0d95e8;
+      fill: #0f927c;
     }
   }
 }
@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #122e68;
+  color: #333333;
   transition: all 0.3s;
 }
 
@@ -28,7 +28,7 @@
   height: 18px;
   margin-right: 13px;
   transition: all 0.3s;
-  fill: #122e68;
+  fill: #333333;
 }
 
 .file__input {

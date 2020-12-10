@@ -41,8 +41,8 @@
 .book-two__link {
   font-size: 14px;
   line-height: 155%;
-  color: #1074ba;
-  border-bottom: 1px dashed #1074ba;
+  color: $new-color;
+  border-bottom: 1px dashed $new-color;
   transition: all 0.3s;
 
   &:hover {

@@ -43,7 +43,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: $link-color;
+    color: $new-color;
   }
 }
 
@@ -57,7 +57,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: $link-color;
+    color: $new-color;
   }
 }
 
@@ -70,7 +70,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: $link-color;
+    color: $new-color;
   }
 }
 
@@ -111,7 +111,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $link-color;
+      color: $new-color;
     }
   }
 }
@@ -166,7 +166,7 @@
     }
 
     &:hover {
-      color: $link-color;
+      color: $new-color;
     }
   }
 

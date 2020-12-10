@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    background: #27a2f8;
+    background-color: $new-color;
     box-shadow: 0 4px 4px rgba(217, 217, 217, 0.25);
 
     svg {
@@ -33,7 +33,7 @@
     width: 9px;
     height: 17px;
     transition: all 0.3s;
-    fill: #27a2f8;
+    fill: $new-color;
   }
 
   &--area {
@@ -44,7 +44,7 @@
   &--area svg {
     width: 6px;
     height: 13px;
-    fill: #122e68;
+    fill: $new-color;
   }
 
   &--up {
@@ -75,7 +75,7 @@
     }
 
     &:hover {
-      background: $new-color;
+      background-color: $new-color;
 
       & svg {
         fill: #ffffff;
@@ -94,7 +94,7 @@
     }
 
     &:hover {
-      background: $new-color;
+      background-color: $new-color;
 
       & svg {
         fill: #ffffff;

@@ -1,236 +1,156 @@
 .consultation {
-  padding: 30px 15px;
-
-  .iti {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .init__arrow {
-    margin-left: auto;
-  }
-
-  .iti__selected-flag {
-    top: 50%;
-    left: 20px;
-    height: 40px;
-    background: rgba(0, 154, 218, 0.14);
-    border-radius: 3px;
-    transform: translateY(-50%);
-  }
+  padding-top: 61px;
+  padding-bottom: 70px;
+  background-color: #ffffff;
 }
 
 .consultation__title {
-  margin-bottom: 30px;
+  margin-bottom: 75px;
+  text-align: center;
 }
 
-.consultation__textarea {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 19px 29px;
-  background: linear-gradient(180deg, #eef3f8 0%, #eef3f8 100%);
-  border: none;
-  border-radius: 10px;
-  appearance: none;
-}
-
-.consultation__button {
-  width: 100%;
-  height: 70px;
-  margin-bottom: 20px;
-}
-
-.consultation__politic {
-  font-size: 12px;
-  line-height: 20px;
-  color: #959595;
-}
-
-.consultation__content {
-  display: none;
-}
-
-.consultation__file {
-  margin-bottom: 35px;
-}
-
-.consultation__input {
-  display: block;
-  width: 100%;
-  height: 70px;
-  margin-bottom: 20px;
-  padding: 16px 20px;
-  padding-left: 70px;
-  background: linear-gradient(180deg, #eef3f8 0%, #eef3f8 100%);
-  border: none;
-  border-radius: 10px;
-  appearance: none;
-}
-
-.conditions__menu {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  padding-bottom: 20px;
-}
-
-.conditions__name {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 100;
-  padding: 0 65px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 177.19%;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  background-color: #ffffff;
-  transform: translateX(-50%);
-}
-
-.conditions__list {
-  @include list-reset;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 45px;
-}
-
-.conditions__item {
+.consultation__inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(100% / 3);
-  min-height: 126px;
-  border: 1.5px solid #dfdfdf;
-
-  &:not(:first-child) {
-    margin-left: -1px;
-  }
 }
 
-.conditions__appellation {
+.consultation__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 19px;
-  text-align: center;
-  color: #000000;
-  letter-spacing: 0.02em;
+  width: 516px;
+  min-width: 516px;
+  padding: 35px 25px;
+  padding-bottom: 55px;
+  background-color: #ffffff;
+  border: 1px solid #ded5cc;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(67, 70, 70, 0.3);
+}
 
+.consultation__input {
+  width: 100%;
+  height: 54px;
+  padding: 10px;
+  padding-left: 100px;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: #f9f7f3;
+  border: none;
 
-  &::before {
-    @include pseudo;
-    width: 50px;
-    height: 43px;
-  }
-
-  &--1::before {
-    background-image: url("../../img/Shape1.svg");
-  }
-
-  &--2::before {
-    background-image: url("../../img/Shape1.svg");
-  }
-
-  &--3::before {
-    background-image: url("../../img/Shape1.svg");
+  &::placeholder {
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
   }
 }
 
-.conditions__controls {
+.consultation__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  & .iti {
+    width: 100%;
+  }
+}
+
+.consultation__language-n {
+  position: absolute;
+  bottom: 43px;
+  left: 20px;
+  width: 63px;
+  height: 35px;
+}
+
+.consultation__box {
+  width: 100%;
   margin-bottom: 20px;
+  padding: 0;
+  border: none;
 }
 
-.conditions__text {
-  font-size: 14px;
-  line-height: 177.19%;
-  color: #717171;
+.consultation__label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #797b87;
+  letter-spacing: 0.03em;
+}
 
-  &:not(:last-of-type) {
-    margin-bottom: 10px;
+.consultation__textarea {
+  height: 165px;
+  padding: 15px;
+  background-color: #f9f7f3;
+  border: none;
+  border-bottom: 1px solid $new-color;
+  appearance: none;
+  resize: none;
+}
+
+.consultation__wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.consultation__info {
+  margin-bottom: 25px;
+  text-align: end;
+
+  & svg {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    fill: $new-color;
   }
 }
 
-@media (min-width: 1200px) {
+.consultation__politic {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #878da2;
+  letter-spacing: 0.03em;
+}
+
+.consultation__button {
+  width: 280px;
+  height: 52px;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+}
+
+.consultation__content {
+  max-width: 465px;
+  margin-left: 45px;
+  font-size: 24px;
+  line-height: 35px;
+
+  & p:first-of-type {
+    font-weight: 700;
+    color: #383838;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1900px) {
   .consultation {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    //min-height: 962px;
-    //margin-top: -250px;
-    padding-top: 50px;
-    padding-bottom: 88px;
-    //background-image: url("../../img/consultation.png");
-    background-repeat: no-repeat;
-    background-position: right;
-
-    &--location {
-      padding-bottom: 30px;
-      background-image: none;
-    }
-
-    @include page-wrapper;
+    padding-top: 70px;
+    padding-bottom: 85px;
   }
 
   .consultation__title {
-    margin-bottom: 56px;
-  }
-
-  .consultation__inner {
-    display: flex;
-    justify-content: center;
-  }
-
-  .consultation__content {
-    display: block;
-    width: 415px;
-
-    p {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 28px;
-    }
-  }
-
-  .consultation__politic {
-    max-width: 326px;
-  }
-
-  .consultation__form {
-    width: 415px;
-    min-width: 415px;
-    margin-right: 40px;
-  }
-
-  .conditions__menu {
-    @include page-wrapper;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .conditions__list {
-    @include list-reset;
-    display: flex;
-    align-items: center;
-  }
-
-  .conditions__item {
-    width: calc(100% / 3);
-  }
-
-  .conditions__appellation {
-    flex-direction: row;
-
-    &::before {
-      margin-right: 15px;
-    }
+    margin-bottom: 65px;
   }
 }

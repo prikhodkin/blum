@@ -47,13 +47,13 @@
   }
 
   &--active-year {
-    border: 1px solid #27a2f8;
+    border: 1px solid $new-color;
   }
 
 
   &--active-year .sidebar__link {
     font-weight: 700;
-    color: #3c64b1;
+    color: $new-color;
   }
 
   &--category:hover .sidebar__link,
@@ -74,7 +74,7 @@
   &--year:hover,
   &--year:active {
     background-color: #f4f6f8;
-    border: 1px solid #27a2f8;
+    border: 1px solid $new-color;
   }
 
   &--year:hover .sidebar__link {
@@ -107,7 +107,7 @@
 
   &--year {
     padding: 20px 35px;
-    color: #3c64b1;
+    color: $new-color;
   }
 
   &--year::after {
@@ -149,11 +149,11 @@
   transition: all 0.3s;
 
   &:hover {
-    color: #4acffc;
+    color: #0f927c;
   }
 
   &--current {
-    color: #4acffc;
+    color: #0f927c;
   }
 }
 

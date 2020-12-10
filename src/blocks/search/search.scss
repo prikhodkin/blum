@@ -36,7 +36,7 @@
   width: 23px;
   height: 23px;
   transform: translateY(-50%);
-  fill: $accent-color;
+  fill: $new-color;
 }
 
 .search__form {
@@ -73,7 +73,7 @@
 
   &:hover {
     svg {
-      fill: $accent-color;
+      fill: $new-color;
     }
   }
 }

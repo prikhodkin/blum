@@ -57,7 +57,7 @@
     }
 
     &:hover {
-      border-color: $accent-color;
+      border-color: $new-color;
 
       & > .menu__sub-list {
         opacity: 1;
@@ -90,7 +90,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $link-color;
+      color: $new-color;
     }
 
     &:not(:last-child) {

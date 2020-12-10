@@ -1,20 +1,33 @@
 <section class="consultation">
-  <h2 class="consultation__title title title--index">получите консультацию</h2>
+  <h2 class="consultation__title title-n">получите консультацию</h2>
   <div class="consultation__inner">
     <form class="consultation__form">
-      <input class="consultation__input" type="text" id="phone">
-      <textarea placeholder="Опишите состояние пациента" cols="30" rows="10" class="consultation__textarea"></textarea>
-      <div class="consultation__file file">
-        <input name="file" type="file" name="file" id="input__file" class="file__input" multiple>
-        <label for="input__file" class="file__button">
-          <svg class="file__icon">
-            <use xlink:href="img/sprites/sprite.svg#icon__paper-clip"></use>
+      <fieldset class="consultation__box">
+        <div class="consultation__group">
+          <label class="consultation__label" for="phone-n">Ваш телефон</label>
+          <input class="consultation__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
+          <div class="consultation__language-n language-n" data-controller="language">
+            <ul class="language-n__list">
+              <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
+              <li class="language-n__item"><a href="#">En</a></li>
+              <li class="language-n__item"><a href="#">Es</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="consultation__group">
+          <label class="consultation__label" for="cons-text" >Опишите состояние пациента (необязательно)</label>
+          <textarea class="consultation__textarea" cols="30" rows="10" id="cons-text" ></textarea>
+        </div>
+      </fieldset>
+      <div class="consultation__wrap">
+        <a class="consultation__info" href="#">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__information"></use>
           </svg>
-          <span class="file__text">Прикрепить выписку</span>
-        </label>
+        </a>
       </div>
-      <button class="consultation__button button">Получить  консультацию</button>
-      <p class="consultation__politic">Нажимая на кнопку,  вы соглашаетесь на обработку  персональных данных</p>
+      <p class="consultation__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки персональных данных</a> </p>
+      <button class="consultation__button button-n">отправить</button>
     </form>
     <div class="consultation__content">
       <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>

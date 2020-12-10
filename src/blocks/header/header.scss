@@ -73,7 +73,7 @@
     transition: all 0.3s;
 
     &:hover {
-      fill: $link-color;
+      fill: $new-color;
     }
   }
 
@@ -90,7 +90,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $link-color;
+      color: $new-color;
     }
   }
 

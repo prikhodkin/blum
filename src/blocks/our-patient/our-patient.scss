@@ -56,8 +56,8 @@
 @media (max-width: 1900px) {
   .our-patient {
     padding-right: calc(50% - 585px);
-    padding-left: calc(50% - 585px);
     padding-bottom: 25px;
+    padding-left: calc(50% - 585px);
   }
 
   .our-patient__title {
@@ -65,10 +65,10 @@
   }
 
   .our-patient__list {
-    padding: 0;
-    padding-left: 10px;
     margin-left: -10px;
+    padding: 0;
     padding-bottom: 10px;
+    padding-left: 10px;
   }
 
   .our-patient__item {
