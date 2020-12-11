@@ -1212,19 +1212,17 @@ _defineProperty(_default, "targets", ["name"]);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js");
-/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(turbolinks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus */ "./node_modules/stimulus/index.js");
-/* harmony import */ var stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! stimulus/webpack-helpers */ "./node_modules/stimulus/webpack-helpers.js");
-/* harmony import */ var _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/tabs/tabs */ "./src/blocks/tabs/tabs.js");
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util */ "./src/js/util/index.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! intl-tel-input */ "./node_modules/intl-tel-input/index.js");
-/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(intl_tel_input__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
-/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stimulus */ "./node_modules/stimulus/index.js");
+/* harmony import */ var stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus/webpack-helpers */ "./node_modules/stimulus/webpack-helpers.js");
+/* harmony import */ var _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/tabs/tabs */ "./src/blocks/tabs/tabs.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./util */ "./src/js/util/index.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! intl-tel-input */ "./node_modules/intl-tel-input/index.js");
+/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(intl_tel_input__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 
 
 
@@ -1233,38 +1231,36 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-global.jQuery = jquery__WEBPACK_IMPORTED_MODULE_5___default.a;
+global.jQuery = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
 
 __webpack_require__(/*! @fancyapps/fancybox/dist/jquery.fancybox */ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
 
-turbolinks__WEBPACK_IMPORTED_MODULE_0___default.a.start();
-var application = stimulus__WEBPACK_IMPORTED_MODULE_1__["Application"].start();
+var application = stimulus__WEBPACK_IMPORTED_MODULE_0__["Application"].start();
 
 var context = __webpack_require__("./src/js/controllers sync recursive \\.js$");
 
-application.load(Object(stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__["definitionsFromContext"])(context));
-var tabs = Object(_util__WEBPACK_IMPORTED_MODULE_4__["$$"])("[data-tabs]");
+application.load(Object(stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_1__["definitionsFromContext"])(context));
+var tabs = Object(_util__WEBPACK_IMPORTED_MODULE_3__["$$"])("[data-tabs]");
 var input = document.querySelector("#phone");
 
 if (input) {
-  intl_tel_input__WEBPACK_IMPORTED_MODULE_6___default()(input, {
+  intl_tel_input__WEBPACK_IMPORTED_MODULE_5___default()(input, {
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/utils.js"
   });
 }
 
 var filters = document.querySelectorAll(".filter__list");
 filters.forEach(function (item) {
-  return new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_7__["default"](item, {
+  return new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_6__["default"](item, {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20
   });
 });
 tabs.map(function (item) {
-  return new _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["default"](item);
+  return new _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["default"](item);
 });
-jquery__WEBPACK_IMPORTED_MODULE_5___default()('[data-fancybox]').fancybox({
+jquery__WEBPACK_IMPORTED_MODULE_4___default()('[data-fancybox]').fancybox({
   protect: true
 });
 var inputs = document.querySelectorAll('.file__input');
@@ -1280,7 +1276,7 @@ Array.prototype.forEach.call(inputs, function (input) {
 var galleryList = document.querySelector(".gallery__list");
 
 if (galleryList) {
-  var gallery = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_8__["tns"])({
+  var gallery = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_7__["tns"])({
     "container": ".gallery__list",
     "items": 1,
     "navContainer": ".gallery__sub-list",
