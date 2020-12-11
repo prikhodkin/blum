@@ -40,9 +40,126 @@
   }
 }
 
+.conditions__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+
+.conditions__name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  padding: 0 65px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 177.19%;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+
+.conditions__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.conditions__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  min-height: 126px;
+  border: 1.5px solid #dfdfdf;
+
+  &:not(:first-child) {
+    margin-left: -1px;
+  }
+}
+
+.conditions__appellation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 0.02em;
+
+
+  &::before {
+    @include pseudo;
+    width: 50px;
+    height: 43px;
+  }
+
+  &--1::before {
+    background-image: url("../../img/Shape1.svg");
+  }
+
+  &--2::before {
+    background-image: url("../../img/Shape1.svg");
+  }
+
+  &--3::before {
+    background-image: url("../../img/Shape1.svg");
+  }
+}
+
+.conditions__controls {
+  margin-bottom: 20px;
+}
+
+.conditions__text {
+  font-size: 14px;
+  line-height: 177.19%;
+  color: #717171;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+
 
 @media (min-width: 1280px) {
   .conditions__inner {
     position: relative;
+  }
+
+  .conditions__menu {
+    @include page-wrapper;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .conditions__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+  }
+
+  .conditions__item {
+    width: calc(100% / 3);
+  }
+
+  .conditions__appellation {
+    flex-direction: row;
+
+    &::before {
+      margin-right: 15px;
+    }
   }
 }

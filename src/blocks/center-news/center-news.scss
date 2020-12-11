@@ -67,11 +67,17 @@
       min-width: 110px;
       padding-top: 0;
     }
+
+    .sidebar__list {
+      overflow: inherit;
+    }
   }
 
   .center-news__container {
     display: flex;
   }
+
+
 
   .center-news__sidebar {
     width: 106px;
