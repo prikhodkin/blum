@@ -130,13 +130,28 @@
   }
 }
 
-@media (max-width: 1900px) {
-  .form {
-    padding-top: 70px;
-    padding-bottom: 85px;
+@media (max-width: 1279px) {
+  .form__label {
+    margin-bottom: 16px;
   }
 
-  .form__title {
-    margin-bottom: 65px;
+  .form__box {
+    margin-bottom: 25px;
+  }
+
+  .form__wrap {
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+
+  .form__politic {
+    margin-bottom: 38px;
+    font-size: 12px;
+    line-height: 22px;
+
+    & br {
+      display: none;
+    }
   }
 }
+

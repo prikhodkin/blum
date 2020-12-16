@@ -223,3 +223,103 @@
     bottom: 30px;
   }
 }
+
+@media (max-width: 1279px) {
+  .footer-n {
+    padding-top: 50px;
+  }
+
+  .footer-n__left {
+    margin-top: -10px;
+  }
+
+  .footer-n__top {
+    flex-wrap: wrap;
+    padding: 0 30px;
+    padding-bottom: 20px;
+  }
+
+  .footer-n__logo {
+    width: 101px;
+  }
+
+  .footer-n__header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .footer-n__box {
+    margin-left: 20px;
+  }
+
+  .footer-n__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    & a {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .footer-n__nav {
+    margin-bottom: 45px;
+  }
+
+  .footer-n__contacts {
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .footer-n__group {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      margin-left: 62px;
+    }
+
+    & > .footer-n__header {
+      margin-bottom: 25px;
+    }
+  }
+
+  .footer-n__email {
+    margin-bottom: 0;
+  }
+
+  .footer-n__callback {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fbfbfb;
+  }
+
+  .footer-n__bottom {
+    flex-wrap: wrap;
+    padding: 0 30px;
+    padding-top: 25px;
+  }
+
+  .footer-n__copyright {
+    order: 1;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer-n__politic {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer-n__dev {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .footer-n__btn {
+    display: none;
+  }
+}

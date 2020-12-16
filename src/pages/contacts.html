@@ -9,7 +9,7 @@
     <script src="js/general.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
-<body>
+<body class="page-n">
   <header class="header-n" id="header-link">
     <nav class="header-n__menu menu-n" data-controller="menu">
       <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
@@ -271,10 +271,13 @@
   </header>
 
   <main>
+    <section class="special-project special-project--contacts">
+      <p class="special-project__text">Спецпроект COVID-19. Устранение поражения легких</p>
+    </section>
     <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__wrap">
-          <h2 class="contacts__title title">контакты</h2>
+          <h2 class="contacts__title">контакты</h2>
           <div class="contacts__group">
             <div class="contacts__box">
               <p class="contacts__desc">Испания, Марбелья</p>
@@ -282,10 +285,12 @@
             </div>
             <div class="contacts__box">
               <p class="contacts__desc">Россия, Москва</p>
-              <a class="contacts__tel" href="tel:78005051415" >+7 800 505 14 15</a>
-              <a class="contacts__tel" href="tel:78005051415" >+7 800 505 14 15</a>
+              <div class="contacts__wrapper">
+                <a class="contacts__tel" href="tel:78005051415" >+7 800 505 14 15</a>
+                <a class="contacts__tel" href="tel:78005051415" >+7 800 505 14 15</a>
+              </div>
             </div>
-            <div class="contacts__box">
+            <div class="contacts__box contacts__box--mail">
               <p class="contacts__desc">Email</p>
               <a class="contacts__mail" href="mailto:doctor@doctorblum.ru" >doctor@doctorblum.ru</a>
             </div>
@@ -322,47 +327,50 @@
           </ul>
         </div>
         <div class="contacts__inner">
-          <form class="contacts__form form" enctype="multipart/form-data">
-            <fieldset class="form__box">
-              <div class="form__group">
-                <label class="form__label" for="phone-n">Ваш телефон</label>
-                <input class="form__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
-                <div class="form__language-n language-n" data-controller="language">
-                  <ul class="language-n__list">
-                    <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
-                    <li class="language-n__item"><a href="#">En</a></li>
-                    <li class="language-n__item"><a href="#">Es</a></li>
-                  </ul>
+          <div class="contacts__subtitle">получите консультацию</div>
+          <div class="contacts__subinner">
+            <form class="contacts__form form" enctype="multipart/form-data">
+              <fieldset class="form__box">
+                <div class="form__group">
+                  <label class="form__label" for="phone-n">Ваш телефон</label>
+                  <input class="form__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
+                  <div class="form__language-n language-n" data-controller="language">
+                    <ul class="language-n__list">
+                      <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
+                      <li class="language-n__item"><a href="#">En</a></li>
+                      <li class="language-n__item"><a href="#">Es</a></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="form__group">
+                  <label class="form__label" for="cons-text" >Опишите состояние пациента (необязательно)</label>
+                  <textarea class="form__textarea" id="cons-text" ></textarea>
+                </div>
+              </fieldset>
+              <div class="form__wrap">
+                <div class="form__group">
+                  <label class="form__send" for="send-file" >Прикрепите выписку +</label>
+                  <input class="visually-hidden" type="file" id="send-file">
+                </div>
+                <a class="form__info" href="#">
+                  <svg aria-label="next">
+                    <use xlink:href="img/sprites/sprite.svg#icon__information"></use>
+                  </svg>
+                </a>
               </div>
-              <div class="form__group">
-                <label class="form__label" for="cons-text" >Опишите состояние пациента (необязательно)</label>
-                <textarea class="form__textarea" cols="30" rows="10" id="cons-text" ></textarea>
-              </div>
-            </fieldset>
-            <div class="form__wrap">
-              <div class="form__group">
-                <label class="form__send" for="send-file" >Прикрепите выписку +</label>
-                <input class="visually-hidden" type="file" id="send-file">
-              </div>
-              <a class="form__info" href="#">
-                <svg aria-label="next">
-                  <use xlink:href="img/sprites/sprite.svg#icon__information"></use>
-                </svg>
-              </a>
+              <p class="form__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки персональных данных</a> </p>
+              <button class="form__button button-n">отправить</button>
+            </form>
+            <div class="contacts__content">
+              <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
+              <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень медикаментов и т.д.)</p>
+              <p>Пожалуйста, укажите телефон, мы изучим ваш случай и с вами свяжется врач-консультант высшей категории.</p>
             </div>
-            <p class="form__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки персональных данных</a> </p>
-            <button class="form__button button-n">отправить</button>
-          </form>
-          <div class="contacts__content">
-            <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
-            <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень медикаментов и т.д.)</p>
-            <p>Пожалуйста, укажите телефон, мы изучим ваш случай и с вами свяжется врач-консультант высшей категории.</p>
           </div>
         </div>
       </div>
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822.3300843032675!2d60.58233684079012!3d56.83167661188733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef7139bcfa9%3A0x89d4a82129d2041c!2zNTbCsDQ5JzU0LjQiTiA2MMKwMzQnNTkuOSJF!5e0!3m2!1sru!2sru!4v1608110080438!5m2!1sru!2sru" width="100%" height="655" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822.3300843032675!2d60.58233684079012!3d56.83167661188733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16ef7139bcfa9%3A0x89d4a82129d2041c!2zNTbCsDQ5JzU0LjQiTiA2MMKwMzQnNTkuOSJF!5e0!3m2!1sru!2sru!4v1608110080438!5m2!1sru!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -374,58 +382,64 @@
           <img src="../img/new/logo___blum.png" alt="">
         </a>
       </div>
-      <nav class="footer-n__nav">
-        <div class="footer-n__col">
-          <p class="footer-n__header">Разделы каталога:</p>
-          <ul class="footer-n__list">
-            <li class="footer-n__item"><a href="#">О центре</a></li>
-            <li class="footer-n__item"><a href="#">О докторе</a></li>
-            <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
-            <li class="footer-n__item"><a href="program.html">Программы</a></li>
-            <li class="footer-n__item"><a href="patient-reviews.html">Отзывы</a></li>
-            <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
-          </ul>
+      <div class="footer-n__box">
+        <nav class="footer-n__nav">
+          <div class="footer-n__col">
+            <p class="footer-n__header">Разделы каталога:</p>
+            <ul class="footer-n__list">
+              <li class="footer-n__item"><a href="#">О центре</a></li>
+              <li class="footer-n__item"><a href="#">О докторе</a></li>
+              <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
+              <li class="footer-n__item"><a href="program.html">Программы</a></li>
+              <li class="footer-n__item"><a href="patient-reviews.html">Отзывы</a></li>
+              <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
+            </ul>
+          </div>
+          <div class="footer-n__col">
+            <p class="footer-n__header">Услуги:</p>
+            <ul class="footer-n__list">
+              <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
+              <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
+              <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
+              <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
+              <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
+              <li class="footer-n__item"><a href="#">Еще</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-n__contacts">
+          <div class="footer-n__group">
+            <p class="footer-n__header">Круглосуточно</p>
+            <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
+            <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
+          </div>
+          <div class="footer-n__group">
+            <a href="#" class="footer-n__callback">Напишите нам</a>
+            <ul class="footer-n__social social social">
+              <li class="social__item social__item--n">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--n">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--n">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-n__col">
-          <p class="footer-n__header">Услуги:</p>
-          <ul class="footer-n__list">
-            <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
-            <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
-            <li class="footer-n__item"><a href="#">Еще</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="footer-n__contacts">
-        <p class="footer-n__header">Круглосуточно</p>
-        <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
-        <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
-        <a href="#" class="footer-n__callback">Напишите нам</a>
-        <ul class="footer-n__social social social">
-          <li class="social__item social__item--n">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--n">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--n">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
       <a class="footer-n__btn" href="#header-link">
         <svg>

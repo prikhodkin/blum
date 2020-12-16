@@ -109,3 +109,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1279px) {
+  .menu-n__list {
+    display: none;
+  }
+}
