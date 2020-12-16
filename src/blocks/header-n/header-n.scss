@@ -93,3 +93,36 @@
     margin-left: 30px;
   }
 }
+
+@media (max-width: 767px) {
+  .header-n {
+    padding: 15px;
+  }
+
+  .header-n__search {
+    display: none;
+  }
+
+  .header-n__language {
+    display: none;
+  }
+
+  .header-n__box {
+    display: none;
+  }
+
+  .header-n__button {
+    width: 131px;
+    min-width: 131px;
+    min-height: 47px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    white-space: inherit;
+
+    & > span {
+      display: none;
+    }
+  }
+}

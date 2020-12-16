@@ -244,3 +244,87 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .contacts__wrap {
+    padding: 40px 15px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .contacts__box {
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .contacts__desc {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .contacts__tel {
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+
+  .contacts__group {
+    margin-bottom: 32px;
+  }
+
+  .contacts__inner {
+    padding: 50px 15px;
+  }
+
+  .contacts__subtitle {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .contacts__subinner {
+    flex-direction: column;
+  }
+
+  .contacts__content {
+    order: -1;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
+    & p {
+      line-height: 23px;
+
+      &:first-child {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .contacts__form {
+    width: 290px;
+    min-width: 290px;
+  }
+}

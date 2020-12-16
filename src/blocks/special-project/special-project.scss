@@ -41,3 +41,18 @@
     line-height: 32px;
   }
 }
+
+@media (max-width: 767px) {
+  .special-project {
+    padding: 13px;
+  }
+
+  .special-project__text {
+    font-size: 12px;
+    line-height: 15px;
+
+    & > span {
+      display: none;
+    }
+  }
+}
