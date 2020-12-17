@@ -100,6 +100,25 @@ import Swiper from 'swiper/bundle';
 // });
 
 
+//menu
+
+let toggleNav = document.querySelector('.menu-n__button');
+let header = document.querySelector('.header-n');
+let language = document.querySelector('.header-n__language');
+
+toggleNav.addEventListener("click",  () => {
+  header.classList.toggle(`header-n--active`);
+
+  if (header.classList.contains('header-n--active')) {
+    language.classList.add(`language-n--active`);
+  } else {
+    language.classList.remove(`language-n--active`);
+  }
+});
+
+
+
+
 
 
 

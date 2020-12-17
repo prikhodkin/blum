@@ -3,6 +3,10 @@
   justify-content: center;
   padding: 18px;
   background-color: #134237;
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .special-project__text {
@@ -22,5 +26,33 @@
   .special-project__text {
     font-size: 18px;
     line-height: 32px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .special-project {
+    &--contacts {
+      display: flex;
+    }
+  }
+
+  .special-project__text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .special-project {
+    padding: 13px;
+  }
+
+  .special-project__text {
+    font-size: 12px;
+    line-height: 15px;
+
+    & > span {
+      display: none;
+    }
   }
 }
