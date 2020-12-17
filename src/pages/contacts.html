@@ -9,13 +9,16 @@
     <script src="js/general.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
-<body class="page-n">
-  <header class="header-n" id="header-link">
+<body class="page-n ">
+  <header class="header-n " id="header-link">
     <nav class="header-n__menu menu-n" data-controller="menu">
       <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
         <span class="burger__inner">Открыть меню</span>
       </button>
-      <ul class="menu-n__list">
+      <a class="header-n__logo logo-n" href="index.html">
+        <img src="img/logo__menu.png" alt="">
+      </a>
+      <ul class="menu-n__list header-n__list">
         <li class="menu-n__item">
           <a href="#">О центре</a>
           <ul class="menu-n__sub-list">
@@ -240,7 +243,7 @@
     <svg class="header-n__search"  data-action="click->search#show">
       <use xlink:href="img/sprites/sprite.svg#icon__search-n"></use>
     </svg>
-    <div class="header-n__language language-n" data-controller="language">
+    <div class="header-n__language language-n " data-controller="language">
       <ul class="language-n__list">
         <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
         <li class="language-n__item"><a href="#">En</a></li>
@@ -251,6 +254,32 @@
       <a class="header-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
       <p class="header-n__text">круглосуточно</p>
     </div>
+    <div class="header-n__social">
+      <ul class="social">
+        <li class="social__item social__item--n">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--n">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--n">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
 
     <a class="header-n__button button-n" href="#" >записаться <span>на  прием</span> </a>
     <section class="search"  data-target="search.overlay">
