@@ -27,10 +27,20 @@
   margin-left: auto;
 }
 
+.footer-n__box {
+  display: flex;
+  margin-left: auto;
+}
+
 .footer-n__col {
   &:not(:first-child) {
     margin-left: 145px;
   }
+}
+
+.footer-n__group {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-n__header {
@@ -231,7 +241,7 @@
 @media (max-width: 1279px) {
   .footer-n {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .footer-n__left {
@@ -255,6 +265,7 @@
 
   .footer-n__box {
     margin-left: 20px;
+    flex-direction: column;
   }
 
   .footer-n__item {
@@ -332,6 +343,7 @@
 @media (max-width: 767px) {
   .footer-n {
     padding-top: 13px;
+    padding-bottom: 0;
   }
 
   .footer-n__logo {
@@ -358,6 +370,7 @@
 
   .footer-n__nav {
     flex-direction: column;
+    margin-left: 0;
   }
 
   .footer-n__list {
