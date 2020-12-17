@@ -107,8 +107,14 @@ let header = document.querySelector('.header-n');
 let language = document.querySelector('.header-n__language');
 
 toggleNav.addEventListener("click",  () => {
-  header.classList.toggle(`header-n--active`)
+  header.classList.toggle(`header-n--active`);
+
+  if (header.classList.contains('header-n--active')) {
+    language.classList.toggle(`language-n--active`);
+  };
 });
+
+
 
 
 
