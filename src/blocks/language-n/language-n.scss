@@ -56,3 +56,44 @@
     display: none;
   }
 }
+
+@media (max-width: 1279px) {
+  .language-n {
+    &--active {
+      background-color: #ffffff;
+      padding: 30px;
+      width: 100%;
+
+      &::after {
+        display: none;
+      }
+
+      .language-n__item {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        color: #727272;
+        text-transform: uppercase;
+        padding: 0;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        &:nth-child(n+2) {
+          display: block;
+        }
+      }
+
+      .language-n__list {
+        position: static;
+        display: flex;
+        background-color: #ffffff;
+        padding: 0;
+      }
+    }
+  }
+
+
+}
