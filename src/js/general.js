@@ -110,8 +110,10 @@ toggleNav.addEventListener("click",  () => {
   header.classList.toggle(`header-n--active`);
 
   if (header.classList.contains('header-n--active')) {
-    language.classList.toggle(`language-n--active`);
-  };
+    language.classList.add(`language-n--active`);
+  } else {
+    language.classList.remove(`language-n--active`);
+  }
 });
 
 

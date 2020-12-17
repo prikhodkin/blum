@@ -99,8 +99,18 @@
     }
 
     .header-n__logo {
-      width: 179px;
-      display: none;
+      position: absolute;
+      width: calc(100% + 60px);
+      margin: 0 -30px;
+      top: -1000px;
+      display: flex;
+      padding-right: 30px;
+      justify-content: flex-end;
+      padding-bottom: 11px;
+
+      & a {
+        width: 179px;
+      }
     }
 
     &--active {
@@ -116,11 +126,9 @@
       }
 
       .header-n__logo {
-        display: block;
-        margin-left: auto;
-        margin-top: -30px;
-        margin-bottom: 10px;
         transition: all 0.3s;
+        background-color: #ffffff;
+        top: 0;
       }
 
       .search {
@@ -204,13 +212,6 @@
   .header-n__button {
     margin-left: 30px;
   }
-
-  .header-n__logo {
-    width: 179px;
-    display: none;
-  }
-
-
 }
 
 @media (max-width: 767px) {
