@@ -114,8 +114,16 @@
   .menu-n__list {
     flex-direction: column;
     margin: 0 -30px;
-    width: calc(100% + 60px);
+    width: 100%;
     background-color: #ffffff;
+  }
+
+  .menu-n__mega {
+    position: static;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    display: none;
   }
 
   .menu-n__item {
@@ -123,9 +131,14 @@
     border: 0;
     border-top: 1px solid #EAEAEA;
 
+    &:active {
+      & > a {
+        color: $new-color;
+      }
+    }
+
     &:not(:last-child) {
       margin: 0;
-
     }
 
     &:last-child {
@@ -140,4 +153,6 @@
       line-height: 20px;
     }
   }
+
+
 }
