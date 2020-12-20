@@ -154,3 +154,38 @@
     margin-bottom: 65px;
   }
 }
+
+@media (max-width: 1279px) {
+  .consultation-n {
+    padding: 50px 30px;
+    padding-bottom: 45px;
+  }
+
+  .consultation-n__title {
+    margin-bottom: 50px;
+  }
+
+  .consultation-n__form {
+    width: 344px;
+    min-width: 344px;
+    padding: 35px 15px;
+    padding-bottom: 45px;
+  }
+
+  .consultation-n__content {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+
+    & p:first-of-type {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 35px;
+      color: #383838;
+    }
+
+    & p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

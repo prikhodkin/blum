@@ -43,14 +43,14 @@
   }
 
   &--active {
-    &>.mega-menu-n__inner {
+    & > .mega-menu-n__inner {
       opacity: 1;
       pointer-events: none;
     }
 
     background-color: $new-color;
 
-    &>a {
+    & > a {
       color: #ffffff;
     }
 
@@ -62,14 +62,14 @@
   }
 
   &:hover {
-    &>.mega-menu-n__inner {
+    & > .mega-menu-n__inner {
       opacity: 1;
       pointer-events: auto;
     }
 
     background-color: $new-color;
 
-    &>a {
+    & > a {
       color: #ffffff;
     }
 
@@ -200,7 +200,7 @@ a.mega-menu-n__header {
     font-size: 15px;
     line-height: 19px;
 
-    &>a {
+    & > a {
       padding: 10px 15px;
     }
 
@@ -271,17 +271,16 @@ a.mega-menu-n__header {
 }
 
 @media (max-width: 1279px) {
-
   .mega-menu-n {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .mega-menu-n__inner {
-    display: none;
     position: static;
-    padding: 0;
+    display: none;
     width: 100%;
+    padding: 0;
     opacity: 1;
   }
 
@@ -291,26 +290,25 @@ a.mega-menu-n__header {
   }
 
   .mega-menu-n__list {
-    padding: 0;
     width: 100%;
     min-width: 100%;
+    padding: 0;
   }
 
   .mega-menu-n__item {
-    background-color: $new-color;
     font-size: 18px;
     line-height: 28px;
+    background-color: $new-color;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
 
 
     &:last-child {
       border-bottom: none;
     }
 
-    &>a {
-      color: #ffffff;
+    & > a {
       padding: 14px 30px;
+      color: #ffffff;
 
       &::before {
         display: none;
@@ -328,11 +326,10 @@ a.mega-menu-n__header {
   }
 
 
-
   .mega-menu-n__col {
     width: 100%;
-    border-radius: 0;
     border-bottom: 1px solid #ffffff;
+    border-radius: 0;
 
     &:last-of-type {
       border-bottom: 1px solid transparent;
@@ -344,14 +341,14 @@ a.mega-menu-n__header {
   }
 
   a.mega-menu-n__header {
+    justify-content: flex-start;
     padding: 25px 30px;
     padding-bottom: 24px;
-    justify-content: flex-start;
-    border-radius: 0;
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    background-color: #E4EFEF;
+    background-color: #e4efef;
+    border-radius: 0;
 
     &::before {
       display: none;
@@ -360,7 +357,7 @@ a.mega-menu-n__header {
 
   .mega-menu-n__sub-item {
     background-color: #ffffff;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #eaeaea;
 
     &:last-child {
       border: 1px solid transparent;
@@ -377,5 +374,4 @@ a.mega-menu-n__header {
       margin-bottom: 0;
     }
   }
-
 }

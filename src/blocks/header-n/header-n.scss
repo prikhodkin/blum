@@ -94,8 +94,8 @@
 
 @media (max-width: 1279px) {
   .header-n {
-    padding: 15px 30px;
     position: relative;
+    padding: 15px 30px;
 
     .header-n__list {
       position: absolute;
@@ -111,19 +111,18 @@
 
     .header-n__logo {
       position: absolute;
-      width: calc(100% + 60px);
-      margin: 0 -30px;
       top: -1000px;
       display: none;
-      padding-right: 30px;
       justify-content: flex-end;
+      width: calc(100% + 60px);
+      margin: 0 -30px;
+      padding-right: 30px;
       padding-bottom: 11px;
 
       & a {
         width: 179px;
       }
     }
-
 
 
     // &--active {
@@ -255,7 +254,7 @@
     letter-spacing: 0.03em;
     white-space: inherit;
 
-    &>span {
+    & > span {
       display: none;
     }
   }

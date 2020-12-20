@@ -104,3 +104,43 @@
     top: 140px;
   }
 }
+
+@media (max-width: 1279px) {
+  .patient-histories {
+    padding: 50px 30px;
+  }
+
+  .patient-histories__title {
+    margin-bottom: 38px;
+  }
+
+  .patient-histories__wrap {
+    margin-bottom: 50px;
+  }
+
+  .patient-histories__item {
+    width: 344px;
+    min-width: 344px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .patient-histories__video {
+    margin-bottom: 20px;
+  }
+
+  .patient-histories__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .patient-histories__controls {
+    display: none;
+  }
+
+  .patient-histories__list {
+    margin-bottom: 47px;
+  }
+}

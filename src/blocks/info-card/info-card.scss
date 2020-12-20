@@ -82,3 +82,30 @@
     line-height: 30px;
   }
 }
+
+@media (max-width: 1279px) {
+  .info-card__image {
+    height: 297px;
+  }
+
+  .info-card {
+    padding-bottom: 45px;
+    padding-left: 12px;
+  }
+
+  .info-card__name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .info-card__text {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .info-card__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

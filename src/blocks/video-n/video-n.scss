@@ -52,3 +52,17 @@
     height: 32px;
   }
 }
+
+@media (max-width: 1279px) {
+  .video-n__play {
+    width: 50px;
+    height: 49px;
+    padding-left: 7px;
+  }
+
+  .video-n__icon {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+  }
+}

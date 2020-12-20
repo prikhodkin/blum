@@ -92,3 +92,54 @@
     }
   }
 }
+
+@media (max-width: 1279px) {
+  .our-patient {
+    padding: 0 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .our-patient__title {
+    margin-bottom: 50px;
+  }
+
+  .our-patient__name {
+    margin-bottom: 16px;
+  }
+
+  .our-patient__list {
+    margin-right: -10px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    padding: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .our-patient__item {
+    width: 223px;
+    min-width: 223px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .our-patient__controls {
+    position: static;
+    width: min-content;
+    margin: 0 auto;
+
+    & button {
+      width: 51px;
+      min-width: 51px;
+      height: 51px;
+
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+}

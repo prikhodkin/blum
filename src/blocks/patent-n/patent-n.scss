@@ -110,3 +110,57 @@
     }
   }
 }
+
+@media (max-width: 1279px) {
+  .patent-n {
+    padding: 40px 30px;
+  }
+
+  .patent-n__title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .patent-n__list {
+    display: flex;
+    margin-bottom: 45px;
+    overflow: hidden;
+  }
+
+  .patent-n__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+  }
+
+  .patent-n__subitem {
+    width: 159px;
+    min-width: 159px;
+    height: 236px;
+
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+  }
+
+  .patent-n__controls {
+    position: static;
+    width: min-content;
+    margin: 0 auto;
+    transform: translateY(0);
+
+    & button {
+      width: 51px;
+      min-width: 51px;
+      height: 51px;
+
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+}

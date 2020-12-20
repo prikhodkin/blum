@@ -40,6 +40,8 @@
 
 .blum-method__video {
   position: relative;
+  height: 37.8vw;
+  overflow: hidden;
   line-height: 0;
 }
 
@@ -109,3 +111,34 @@
     }
   }
 }
+
+@media (max-width: 1279px) {
+  .blum-method__wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0 30px;
+    padding-bottom: 47px;
+  }
+
+  .blum-method__content {
+    max-width: initial;
+    margin-left: 0;
+  }
+
+  .blum-method__desc {
+    margin-bottom: 40px;
+  }
+
+  .blum-method__video {
+    height: 49.4vw;
+  }
+
+  .blum-method__play {
+    right: 75px;
+    bottom: 25px;
+    width: 8.1vw;
+    min-width: 8.1vw;
+    height: 8.1vw;
+  }
+}
+
