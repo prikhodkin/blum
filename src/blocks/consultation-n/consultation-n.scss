@@ -189,3 +189,35 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .consultation-n {
+    padding: 50px 15px;
+    padding-bottom: 60px;
+  }
+
+  .consultation-n__title {
+    margin-bottom: 20px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .consultation-n__inner {
+    flex-direction: column-reverse;
+  }
+
+  .consultation-n__content {
+    margin-bottom: 75px;
+    margin-left: 0;
+    line-height: 23px;
+
+    & p:first-of-type {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    & p:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}

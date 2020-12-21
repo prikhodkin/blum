@@ -59,6 +59,10 @@
   height: 3.3vw;
 }
 
+.blum-method__btn {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .blum-method {
     padding-top: 30px;
@@ -142,3 +146,46 @@
   }
 }
 
+@media (max-width: 767px) {
+  .blum-method {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .blum-method__wrapper {
+    padding: 0 15px;
+    padding-bottom: 40px;
+  }
+
+  .blum-method__title {
+    margin-bottom: 30px;
+  }
+
+  .blum-method__desc {
+    margin-bottom: 30px;
+    line-height: 26px;
+  }
+
+  .blum-method__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blum-method__content {
+    max-height: 390px;
+    overflow: hidden;
+  }
+
+  .blum-method__btn {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .blum-method__play {
+    right: 16px;
+    bottom: 16px;
+    width: 13.33vw;
+    min-width: 13.33vw;
+    height: 13.33vw;
+  }
+}

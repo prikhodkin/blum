@@ -58,3 +58,16 @@
     padding: 8px 18px;
   }
 }
+
+@media (max-width: 767px) {
+  .tabs-n__list {
+    flex-wrap: nowrap;
+  }
+
+  .tabs-n__item {
+    padding: 8px 7px;
+    font-size: 16px;
+    line-height: 155%;
+    white-space: nowrap;
+  }
+}

@@ -66,6 +66,10 @@
   width: calc(100% + 40px);
 }
 
+.patient-histories__dots {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .patient-histories {
     padding: 60px 0;
@@ -119,8 +123,8 @@
   }
 
   .patient-histories__item {
-    width: 344px;
-    min-width: 344px;
+    width: 48.6%;
+    min-width: 48.6%;
 
     &:not(:first-child) {
       margin-left: 20px;
@@ -142,5 +146,37 @@
 
   .patient-histories__list {
     margin-bottom: 47px;
+  }
+}
+
+@media (max-width: 767px) {
+  .patient-histories {
+    padding: 50px 15px;
+  }
+
+  .patient-histories__title {
+    margin-bottom: 30px;
+  }
+
+  .patient-histories__list {
+    margin-bottom: 30px;
+  }
+
+  .patient-histories__wrap {
+    margin-bottom: 37px;
+  }
+
+  .patient-histories__item {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .patient-histories__video {
+    margin-bottom: 25px;
+  }
+
+  .patient-histories__dots {
+    display: block;
+    margin-bottom: 45px;
   }
 }

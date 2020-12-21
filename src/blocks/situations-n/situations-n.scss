@@ -84,6 +84,10 @@
   color: #ffffff;
 }
 
+.situations-n__dots {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .situations-n {
     padding-top: 65px;
@@ -157,7 +161,7 @@
 
   .situations-n__list {
     justify-content: center;
-    grid-template-columns: repeat(2, 344px);
+    grid-template-columns: repeat(2, 48.6%);
     margin-bottom: 0;
     gap: 19px;
   }
@@ -178,12 +182,62 @@
   }
 
   .situations-n__inner {
-    min-height: 213px;
+    min-height: 27.74vw;
     padding: 40px 20px;
   }
 
   .situations-n__header {
     font-size: 18px;
     line-height: 23px;
+  }
+}
+
+@media (max-width: 767px) {
+  .situations-n {
+    padding: 25px 15px;
+  }
+
+  .situations-n__title {
+    margin-bottom: 15px;
+    padding: 0 40px;
+    line-height: 38px;
+  }
+
+  .situations-n__text {
+    &--top {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &--bottom {
+      display: none;
+    }
+  }
+
+  .situations-n__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 33px;
+    overflow: hidden;
+    gap: 0;
+  }
+
+  .situations-n__item {
+    width: 100%;
+    min-width: 100%;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .situations-n__inner {
+    min-height: 56.77vw;
+  }
+
+  .situations-n__dots {
+    display: block;
   }
 }

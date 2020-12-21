@@ -249,3 +249,52 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: 767px) {
+  .promo-n__box {
+    padding: 0 15px;
+    padding-top: 40px;
+  }
+
+  .promo-n__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo-n__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .promo-n__link {
+    margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .promo-n__inner {
+    display: none;
+  }
+
+  .promo-n__button {
+    width: 345px;
+    min-height: 74px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .promo-n__img {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .promo-n__button {
+    width: 100%;
+    min-height: 68px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

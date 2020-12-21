@@ -166,3 +166,34 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 767px) {
+  .about-doctor {
+    padding: 0 15px;
+    padding-top: 50px;
+    padding-bottom: 3px;
+  }
+
+  .about-doctor__list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-doctor__item {
+    &:hover .about-doctor__box {
+      position: static;
+      padding: 8px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .about-doctor__text {
+    margin-bottom: 13px;
+  }
+
+  .about-doctor__box {
+    min-width: initial;
+    padding: 8px;
+    padding-bottom: 25px;
+  }
+}

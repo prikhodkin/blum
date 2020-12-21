@@ -53,6 +53,10 @@
   }
 }
 
+.our-patient__dots {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .our-patient {
     padding-right: calc(50% - 585px);
@@ -119,8 +123,8 @@
   }
 
   .our-patient__item {
-    width: 223px;
-    min-width: 223px;
+    width: 31.5%;
+    min-width: 31.5%;
 
     &:not(:first-child) {
       margin-left: 20px;
@@ -141,5 +145,39 @@
         margin-left: 15px;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-patient {
+    padding: 30px 15px;
+    padding-top: 48px;
+  }
+
+  .our-patient__title {
+    margin-bottom: 20px;
+  }
+
+  .our-patient__name {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .our-patient__list {
+    margin-bottom: 25px;
+  }
+
+  .our-patient__item {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .our-patient__controls {
+    display: none;
+  }
+
+  .our-patient__dots {
+    display: block;
   }
 }

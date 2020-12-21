@@ -85,7 +85,7 @@
 
 @media (max-width: 1279px) {
   .info-card__image {
-    height: 297px;
+    height: 38.68vw;
   }
 
   .info-card {
@@ -107,5 +107,20 @@
   .info-card__link {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .info-card__image {
+    height: 122.87vw;
+  }
+
+  .info-card__name {
+    font-size: 18px;
+  }
+
+  .info-card__text {
+    margin-bottom: 27px;
+    font-size: 16px;
   }
 }
