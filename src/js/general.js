@@ -103,22 +103,44 @@ import Swiper from 'swiper/bundle';
 //menu
 
 let toggleNav = document.querySelector('.menu-n__button');
-let header = document.querySelector('.header-n');
-let language = document.querySelector('.header-n__language');
+let headerMenu = document.querySelector('.header-n__menu');
 
 toggleNav.addEventListener("click",  () => {
-  header.classList.toggle(`header-n--active`);
-
-  if (header.classList.contains('header-n--active')) {
-    language.classList.add(`language-n--active`);
-  } else {
-    language.classList.remove(`language-n--active`);
-  }
+  headerMenu.classList.toggle(`header-n__menu--active`);
 });
 
+//submenu
+
+let menuElement = document.querySelectorAll('.menu-n__link--parent');
+let menuElementActive = 'menu-n__link--active';
+let menuItems = document.querySelectorAll('.menu-n__items');
+let menuItemsActive = `menu-n__items--active`;
+let megaMenu = document.querySelectorAll('.mega-menu-n__inner');
+let megaMenuActive = 'mega-menu-n__inner--active';
+let megaMenuItem = document.querySelectorAll('.mega-menu-n__subbutton');
+let megaMenuSubItem = document.querySelectorAll('.mega-menu-n__header');
+let megaMenuSubList = document.querySelectorAll('.mega-menu-n__sub-list');
+let megaMenuSubListActive = 'mega-menu-n__sub-list--active';
+
+
+let openMenu = function (firstItem, secondItem, thirdItem) {
+  for (let i = 0; i < firstItem.length; i++) {
+    firstItem[i].addEventListener('click', () => {
+      secondItem[i].classList.toggle(thirdItem);
+    });
+  };
+};
+
+openMenu(menuElement, menuItems, menuItemsActive);
+openMenu(menuElement, menuElement, menuElementActive);
+openMenu(megaMenuItem, megaMenu, megaMenuActive);
+openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive);
 
 
 
+// if (menuItems.classList.contains(`menu-n__items--active`)) {
+//   megaMenu.classList.remove('mega-menu-n__inner--active')
+// };
 
 
 

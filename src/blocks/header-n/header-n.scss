@@ -96,130 +96,21 @@
   .header-n {
     position: relative;
     padding: 15px 30px;
+  }
 
-    .header-n__list {
-      position: absolute;
-      // top: -1000px;
-      top: 220px;
-      z-index: 1000;
-      display: none;
+  .header-n__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #ffffff;
+    transform: translateY(-100%);
+
+    &--active {
+      transform: translateY(0);
+      transition: all 0.4s;
     }
-
-    .header-n__social {
-      display: none;
-    }
-
-    .header-n__logo {
-      position: absolute;
-      top: -1000px;
-      display: none;
-      justify-content: flex-end;
-      width: calc(100% + 60px);
-      margin: 0 -30px;
-      padding-right: 30px;
-      padding-bottom: 11px;
-
-      & a {
-        width: 179px;
-      }
-    }
-
-
-    // &--active {
-    //   padding-top: 29px;
-    //   flex-direction: column;
-    //   transition: all 0.3s;
-
-    //   .header-n__menu {
-    //     width: 100%;
-    //     background-color: #ffffff;
-    //     z-index: 100;
-    //     position: relative;
-    //   }
-
-    //   .header-n__logo {
-    //     transition: all 0.3s;
-    //     background-color: #ffffff;
-    //     top: 0;
-    //   }
-
-    //   .search {
-    //     display: none;
-    //   }
-
-    //   .header-n__search {
-    //     display: none;
-    //   }
-
-    //   .header-n__list {
-    //     top: 191px;
-    //     transition: all 0.3s;
-    //   }
-
-    //   .header-n__language {
-    //     margin-left: 0;
-    //     position: absolute;
-    //     bottom: -580px;
-    //     width: 100%;
-    //   }
-
-    //   .header-n__box {
-    //     width: 100%;
-    //     background-color: #ffffff;
-    //     position: absolute;
-    //     bottom: -682px;
-    //     margin-left: 0;
-    //     padding: 20px 30px;
-    //     padding-bottom: 25px;
-
-    //     &::after {
-    //       @include pseudo;
-    //       height: 1px;
-    //       width: calc(100% - 60px);
-    //     }
-
-    //     .header-n__phone {
-    //       font-size: 28px;
-    //       line-height: 36px;
-    //     }
-
-    //     .header-n__text {
-    //       font-size: 16px;
-    //       line-height: 21px;
-    //     }
-    //   }
-
-    //   .header-n__button {
-    //     display: none;
-    //   }
-
-    //   .header-n__social {
-    //     width: 100%;
-    //     display: block;
-    //     background-color: #ffffff;
-    //     position: absolute;
-    //     bottom: -945px;
-    //     padding: 0 30px;
-    //     z-index: 1000;
-
-    //     & .social {
-    //       border-top: 1px solid #EAEAEA;
-    //       padding: 45px 0;
-    //       padding-bottom: 175px;
-    //     }
-
-    //     & a {
-    //       background-color: $new-color;
-    //       width: 44px;
-    //       height: 44px;
-
-    //       & svg {
-    //         fill: #ffffff;
-    //       }
-    //     }
-    //   }
-
-    // }
   }
 
   .header-n__button {

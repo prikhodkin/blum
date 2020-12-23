@@ -278,24 +278,41 @@ a.mega-menu-n__header {
 
   .mega-menu-n__inner {
     position: static;
-    display: none;
+    display: block;
     width: 100%;
+    height: auto;
+    max-height: 0;
     padding: 0;
+    overflow: hidden;
     opacity: 1;
+    transition: all 0.8s;
+
+
+    &--active {
+      max-height: 100000px;
+    }
   }
 
   .mega-menu-n__sub-list {
-    display: none;
+    height: auto;
+    max-height: 0;
     padding: 0;
+    transition: all 0.8s;
+
+    &--active {
+      max-height: 100000px;
+    }
   }
 
   .mega-menu-n__list {
     width: 100%;
     min-width: 100%;
     padding: 0;
+    border-radius: 0;
   }
 
   .mega-menu-n__item {
+    z-index: 100;
     font-size: 18px;
     line-height: 28px;
     background-color: $new-color;
@@ -372,6 +389,28 @@ a.mega-menu-n__header {
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mega-menu-n__item {
+    & > a {
+      padding: 14px 20px;
+    }
+  }
+
+  a.mega-menu-n__header {
+    justify-content: flex-start;
+    padding: 25px 20px;
+  }
+
+  .mega-menu-n__sub-item {
+    & a {
+      padding: 25px 60px;
+      padding-right: 25px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
