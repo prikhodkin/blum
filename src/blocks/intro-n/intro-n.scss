@@ -175,9 +175,15 @@
   }
 
   .intro-n__content {
+    height: auto;
     max-height: 300px;
     margin-bottom: 40px;
     overflow: hidden;
+    transition: all 0.4s;
+
+    &--active {
+      max-height: 1000px;
+    }
   }
 
   .intro-n__btn {

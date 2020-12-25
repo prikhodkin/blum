@@ -122,6 +122,10 @@ let megaMenuSubItem = document.querySelectorAll('.mega-menu-n__header');
 let megaMenuSubList = document.querySelectorAll('.mega-menu-n__sub-list');
 let megaMenuSubListActive = 'mega-menu-n__sub-list--active';
 
+let footerControl = document.querySelectorAll('.footer-n__control');
+let footerList = document.querySelectorAll('.footer-n__list');
+let footerListActive = 'footer-n__list--active';
+
 
 let openMenu = function (firstItem, secondItem, thirdItem) {
   for (let i = 0; i < firstItem.length; i++) {
@@ -136,11 +140,35 @@ openMenu(menuElement, menuElement, menuElementActive);
 openMenu(megaMenuItem, megaMenu, megaMenuActive);
 openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive);
 
+//footer-menu
+openMenu(footerControl, footerList, footerListActive);
+
+
 
 
 // if (menuItems.classList.contains(`menu-n__items--active`)) {
 //   megaMenu.classList.remove('mega-menu-n__inner--active')
 // };
+
+// Развернуть текст
+
+let blumMethodButton = document.querySelector('.blum-method__btn');
+let blumMethodContent = document.querySelector('.blum-method__content');
+let blumMethodContentActive = 'blum-method__content--active';
+let introButton = document.querySelector('.intro-n__btn');
+let introContent = document.querySelector('.intro-n__content');
+let introContentActive = 'intro-n__content--active';
+
+
+let openContent = function (firstItem, secondItem, thirdItem) {
+  firstItem.addEventListener("click",  () => {
+    secondItem.classList.toggle(thirdItem);
+  });
+};
+
+openContent(blumMethodButton, blumMethodContent, blumMethodContentActive);
+openContent(introButton, introContent, introContentActive);
+
 
 
 

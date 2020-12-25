@@ -172,8 +172,14 @@
   }
 
   .blum-method__content {
+    height: auto;
     max-height: 390px;
     overflow: hidden;
+    transition: all 0.4s;
+
+    &--active {
+      max-height: 1000px;
+    }
   }
 
   .blum-method__btn {
