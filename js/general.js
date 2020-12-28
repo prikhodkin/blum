@@ -1306,6 +1306,67 @@ if (galleryList) {
 //     el: '.swiper-scrollbar',
 //   },
 // });
+//menu
+
+var toggleNav = document.querySelector('.menu-n__button');
+var headerMenu = document.querySelector('.header-n__menu');
+toggleNav.addEventListener("click", function () {
+  headerMenu.classList.toggle("header-n__menu--active");
+}); //submenu
+
+var menuElement = document.querySelectorAll('.menu-n__link--parent');
+var menuElementActive = 'menu-n__link--active';
+var menuItems = document.querySelectorAll('.menu-n__items');
+var menuItemsActive = "menu-n__items--active";
+var megaMenu = document.querySelectorAll('.mega-menu-n__inner');
+var megaMenuActive = 'mega-menu-n__inner--active';
+var megaMenuItem = document.querySelectorAll('.mega-menu-n__subbutton');
+var megaMenuSubItem = document.querySelectorAll('.mega-menu-n__header');
+var megaMenuSubList = document.querySelectorAll('.mega-menu-n__sub-list');
+var megaMenuSubListActive = 'mega-menu-n__sub-list--active';
+var footerControl = document.querySelectorAll('.footer-n__control');
+var footerList = document.querySelectorAll('.footer-n__list');
+var footerListActive = 'footer-n__list--active';
+
+var openMenu = function openMenu(firstItem, secondItem, thirdItem, fourthItem) {
+  var _loop = function _loop(i) {
+    firstItem[i].addEventListener('click', function () {
+      // for (let j = 0; j < firstItem.length; j++) {
+      //   secondItem[j].classList.remove(thirdItem);
+      // };
+      secondItem[i].classList.toggle(thirdItem);
+    });
+  };
+
+  for (var i = 0; i < firstItem.length; i++) {
+    _loop(i);
+  }
+
+  ;
+};
+
+openMenu(menuElement, menuItems, menuItemsActive);
+openMenu(menuElement, menuElement, menuElementActive);
+openMenu(megaMenuItem, megaMenu, megaMenuActive);
+openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive); //footer-menu
+
+openMenu(footerControl, footerList, footerListActive); // Развернуть текст
+
+var blumMethodButton = document.querySelector('.blum-method__btn');
+var blumMethodContent = document.querySelector('.blum-method__content');
+var blumMethodContentActive = 'blum-method__content--active';
+var introButton = document.querySelector('.intro-n__btn');
+var introContent = document.querySelector('.intro-n__content');
+var introContentActive = 'intro-n__content--active';
+
+var openContent = function openContent(firstItem, secondItem, thirdItem) {
+  firstItem.addEventListener("click", function () {
+    secondItem.classList.toggle(thirdItem);
+  });
+};
+
+openContent(blumMethodButton, blumMethodContent, blumMethodContentActive);
+openContent(introButton, introContent, introContentActive);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),

@@ -30,15 +30,21 @@
 </head>
 
 <body class="page-n">
-  <header class="header-n" id="header-link">
-  <nav class="header-n__menu menu-n" data-controller="menu">
-    <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
-      <span class="burger__inner">Открыть меню</span>
-    </button>
-    <ul class="menu-n__list">
-      <li class="menu-n__item">
-        <a href="#">О центре</a>
-        <ul class="menu-n__sub-list">
+  <header class="header-n " id="header-link" data-controller="menu">
+  <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
+    <span class="burger__inner">Открыть меню</span>
+  </button>
+  <nav class="header-n__menu menu-n" >
+    <div class="menu-n__logo">
+      <a class="logo-n" href="index.html">
+        <img src="img/logo__menu.png" alt="">
+      </a>
+    </div>
+    <ul class="menu-n__list header-n__list">
+      <li class="menu-n__item menu-n__item">
+        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О центре</a>
+        <div class="menu-n__arrow"></div>
+        <ul class="menu-n__sub-list menu-n__items">
           <li class="menu-n__sub-item"><a href="location.html">Расположение</a></li>
           <li class="menu-n__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
           <li class="menu-n__sub-item"><a href="center-news.html">Новости</a></li>
@@ -48,27 +54,29 @@
           <li class="menu-n__sub-item"><a href="#">Контакты</a></li>
         </ul>
       </li>
-      <li class="menu-n__item">
-        <a href="#">О докторе</a>
-        <ul class="menu-n__sub-list">
+      <li class="menu-n__item menu-n__item">
+        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О докторе</a>
+        <div class="menu-n__arrow"></div>
+        <ul class="menu-n__sub-list menu-n__items">
           <li class="menu-n__sub-item"><a href="biography.html">Биография</a></li>
           <li class="menu-n__sub-item"><a href="method.html">Методика</a></li>
           <li class="menu-n__sub-item"><a href="lectures.html">Лекции</a></li>
           <li class="menu-n__sub-item"><a href="books.html">Книги</a></li>
         </ul>
       </li>
-      <li class="menu-n__item menu-n__item--mega">
-        <a href="#">Услуги и цены</a>
+      <li class="menu-n__item menu-n__item menu-n__item--mega">
+        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">Услуги и цены</a>
+        <div class="menu-n__arrow"></div>
         <div class="menu-n__mega mega-menu-n">
-          <ul class="mega-menu-n__list" data-target="menu.list">
+          <ul class="mega-menu-n__list menu-n__items" data-target="menu.list">
             <li class="mega-menu-n__item mega-menu-n__item--active">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__01.png" alt="pr">
                 <span>Специальные программы</span>
               </a>
               <div class="mega-menu-n__inner">
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">Программы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
@@ -81,7 +89,7 @@
                   <a href="program.html" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">заболевания</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
@@ -97,7 +105,7 @@
                   <a href="encyclopedia.html" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">симптомы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
@@ -115,13 +123,13 @@
               </div>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__02.png" alt="pr">
                 <span>поддерживающие программы</span>
               </a>
               <div class="mega-menu-n__inner">
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">Программы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
@@ -134,7 +142,7 @@
                   <a href="#" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">заболевания</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
@@ -150,7 +158,7 @@
                   <a href="#" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">симптомы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
@@ -168,13 +176,13 @@
               </div>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__03.png" alt="pr">
                 <span>для мужчин</span>
               </a>
               <div class="mega-menu-n__inner">
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">Программы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
@@ -187,7 +195,7 @@
                   <a href="#" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">заболевания</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
@@ -203,7 +211,7 @@
                   <a href="#" class="mega-menu-n__link">Посмотреть все</a>
                 </div>
                 <div class="mega-menu-n__col">
-                  <p class="mega-menu-n__header">симптомы</p>
+                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
                   <ul class="mega-menu-n__sub-list">
                     <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
                     <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
@@ -221,31 +229,31 @@
               </div>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__04.png" alt="pr">
                 <span>для детей</span>
               </a>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__05.png" alt="pr">
                 <span>для спортсменов</span>
               </a>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__06.png" alt="pr">
                 <span>для программистов</span>
               </a>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__07.png" alt="pr">
                 <span>для бизнесменов</span>
               </a>
             </li>
             <li class="mega-menu-n__item">
-              <a href="#">
+              <a class="mega-menu-n__subbutton" href="JavaScript://">
                 <img src="img/new/programm-n__08.png" alt="pr">
                 <span>для корпораций</span>
               </a>
@@ -253,14 +261,50 @@
           </ul>
         </div>
       </li>
-      <li class="menu-n__item"><a href="program.html">Программы</a></li>
-      <li class="menu-n__item"><a href="#">контакты</a></li>
+      <li class="menu-n__item"><a class="menu-n__link" href="program.html">Программы</a></li>
+      <li class="menu-n__item"><a class="menu-n__link" href="contacts.html">контакты</a></li>
     </ul>
+    <div class="menu-n__language language-n language--menu" data-controller="language">
+      <ul class="language-n__list language--menu__list">
+        <li class="language-n__item language--menu__item language--menu__item--active" data-target="language.target"><a href="#">Ru</a></li>
+        <li class="language-n__item language--menu__item"><a href="#">En</a></li>
+        <li class="language-n__item language--menu__item"><a href="#">Es</a></li>
+      </ul>
+    </div>
+    <div class="menu-n__box">
+      <a class="menu-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
+      <p class="menu-n__text">круглосуточно</p>
+    </div>
+    <div class="menu-n__social">
+      <ul class="social">
+        <li class="social__item social__item--n social__item--menu">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--n social__item--menu">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--n social__item--menu">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <svg class="header-n__search"  data-action="click->search#show">
     <use xlink:href="img/sprites/sprite.svg#icon__search-n"></use>
   </svg>
-  <div class="header-n__language language-n" data-controller="language">
+  <div class="header-n__language language-n " data-controller="language">
     <ul class="language-n__list">
       <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
       <li class="language-n__item"><a href="#">En</a></li>
@@ -271,8 +315,7 @@
     <a class="header-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
     <p class="header-n__text">круглосуточно</p>
   </div>
-
-  <a class="header-n__button button-n" href="#" >записаться  на  прием</a>
+  <a class="header-n__button button-n" href="#" >записаться <span>на  прием</span> </a>
   <section class="search"  data-target="search.overlay">
     <button class="search__close" data-action="click->search#close">
       <svg>
@@ -763,62 +806,78 @@
   <footer class="page__footer footer-n">
   <div class="footer-n__top">
     <div class="footer-n__left">
-      <a href="index-new.html" class="footer-n__logo">
+      <a href="index.html" class="footer-n__logo">
         <img src="img/new/logo___blum.png" alt="">
       </a>
     </div>
-    <nav class="footer-n__nav">
-      <div class="footer-n__col">
-        <p class="footer-n__header">Разделы каталога:</p>
-        <ul class="footer-n__list">
-          <li class="footer-n__item"><a href="#">О центре</a></li>
-          <li class="footer-n__item"><a href="#">О докторе</a></li>
-          <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
-          <li class="footer-n__item"><a href="program.html">Программы</a></li>
-          <li class="footer-n__item"><a href="#">Отзывы</a></li>
-          <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
-        </ul>
+    <div class="footer-n__box">
+      <nav class="footer-n__nav">
+        <div class="footer-n__col">
+          <p class="footer-n__header">Разделы каталога:</p>
+          <button class="footer-n__control">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <ul class="footer-n__list">
+            <li class="footer-n__item"><a href="#">О центре</a></li>
+            <li class="footer-n__item"><a href="#">О докторе</a></li>
+            <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
+            <li class="footer-n__item"><a href="program.html">Программы</a></li>
+            <li class="footer-n__item"><a href="patient-reviews.html">Отзывы</a></li>
+            <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
+          </ul>
+        </div>
+        <div class="footer-n__col">
+          <p class="footer-n__header">Услуги:</p>
+          <button class="footer-n__control">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <ul class="footer-n__list">
+            <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
+            <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
+            <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
+            <li class="footer-n__item"><a href="#">Еще</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-n__contacts">
+        <div class="footer-n__group">
+          <p class="footer-n__header">Круглосуточно</p>
+          <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
+          <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
+        </div>
+        <div class="footer-n__group">
+          <a href="#" class="footer-n__callback">Напишите нам</a>
+          <ul class="footer-n__social social social">
+            <li class="social__item social__item--n">
+              <a href="#">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--n">
+              <a href="#">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--n">
+              <a href="#">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-n__col">
-        <p class="footer-n__header">Услуги:</p>
-        <ul class="footer-n__list">
-          <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
-          <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
-          <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
-          <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
-          <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
-          <li class="footer-n__item"><a href="#">Еще</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="footer-n__contacts">
-      <p class="footer-n__header">Круглосуточно</p>
-      <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
-      <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
-      <a href="#" class="footer-n__callback">Напишите нам</a>
-      <ul class="footer-n__social social social">
-        <li class="social__item social__item--n">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item social__item--n">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item social__item--n">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
     <a class="footer-n__btn" href="#header-link">
       <svg>
@@ -827,7 +886,7 @@
     </a>
   </div>
   <div class="footer-n__bottom">
-    <p class="footer-n__copyright">© 2007-2020, ООО “Доктор Блюм”.  Все права защищены</p>
+    <p class="footer-n__copyright"><span>©</span> 2007-2020, ООО “Доктор Блюм”. Все права защищены</p>
     <a href="#" class="footer-n__politic">Политика конфиденциальности</a>
     <p class="footer-n__dev">Создание сайта <a href="#">ARS Creative</a></p>
   </div>
