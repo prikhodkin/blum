@@ -125,9 +125,12 @@ let footerList = document.querySelectorAll('.footer-n__list');
 let footerListActive = 'footer-n__list--active';
 
 
-let openMenu = function (firstItem, secondItem, thirdItem) {
+let openMenu = function (firstItem, secondItem, thirdItem, fourthItem) {
   for (let i = 0; i < firstItem.length; i++) {
     firstItem[i].addEventListener('click', () => {
+      // for (let j = 0; j < firstItem.length; j++) {
+      //   secondItem[j].classList.remove(thirdItem);
+      // };
       secondItem[i].classList.toggle(thirdItem);
     });
   };
@@ -140,13 +143,6 @@ openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive);
 
 //footer-menu
 openMenu(footerControl, footerList, footerListActive);
-
-
-
-
-// if (menuItems.classList.contains(`menu-n__items--active`)) {
-//   megaMenu.classList.remove('mega-menu-n__inner--active')
-// };
 
 // Развернуть текст
 

@@ -1,12 +1,12 @@
-<section class="consultation">
-  <h2 class="consultation__title title-n">получите консультацию</h2>
-  <div class="consultation__inner">
-    <form class="consultation__form">
-      <fieldset class="consultation__box">
-        <div class="consultation__group">
-          <label class="consultation__label" for="phone-n">Ваш телефон</label>
-          <input class="consultation__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
-          <div class="consultation__language-n language-n" data-controller="language">
+<section class="consultation-n">
+  <h2 class="consultation-n__title title-n">получите консультацию</h2>
+  <div class="consultation-n__inner">
+    <form class="contacts__form form" enctype="multipart/form-data">
+      <fieldset class="form__box">
+        <div class="form__group">
+          <label class="form__label" for="phone-n">Ваш телефон</label>
+          <input class="form__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
+          <div class="form__language-n language-n" data-controller="language">
             <ul class="language-n__list">
               <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
               <li class="language-n__item"><a href="#">En</a></li>
@@ -14,24 +14,30 @@
             </ul>
           </div>
         </div>
-        <div class="consultation__group">
-          <label class="consultation__label" for="cons-text" >Опишите состояние пациента (необязательно)</label>
-          <textarea class="consultation__textarea" cols="30" rows="10" id="cons-text" ></textarea>
+        <div class="form__group">
+          <label class="form__label" for="cons-text">Опишите состояние пациента (необязательно)</label>
+          <textarea class="form__textarea" id="cons-text"></textarea>
         </div>
       </fieldset>
-      <div class="consultation__wrap">
-        <a class="consultation__info" href="#">
+      <div class="form__wrap">
+        <div class="form__group">
+          <label class="form__send" for="send-file">Прикрепите выписку +</label>
+          <input class="visually-hidden" type="file" id="send-file">
+        </div>
+        <a class="form__info" href="#">
           <svg aria-label="next">
             <use xlink:href="img/sprites/sprite.svg#icon__information"></use>
           </svg>
         </a>
       </div>
-      <p class="consultation__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки персональных данных</a> </p>
-      <button class="consultation__button button-n">отправить</button>
+      <p class="form__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки
+          персональных данных</a> </p>
+      <button class="form__button button-n">отправить</button>
     </form>
-    <div class="consultation__content">
+    <div class="consultation-n__content">
       <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
-      <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень медикаментов и т.д.)</p>
+      <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень
+        медикаментов и т.д.)</p>
       <p>Пожалуйста, укажите телефон, мы изучим ваш случай и с вами свяжется врач-консультант высшей категории.</p>
     </div>
   </div>
