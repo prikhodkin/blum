@@ -53,6 +53,10 @@
   }
 }
 
+.our-patient__dots {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .our-patient {
     padding-right: calc(50% - 585px);
@@ -90,5 +94,90 @@
       min-width: 43px;
       height: 43px;
     }
+  }
+}
+
+@media (max-width: 1279px) {
+  .our-patient {
+    padding: 0 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .our-patient__title {
+    margin-bottom: 50px;
+  }
+
+  .our-patient__name {
+    margin-bottom: 16px;
+  }
+
+  .our-patient__list {
+    margin-right: -10px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    padding: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .our-patient__item {
+    width: 31.5%;
+    min-width: 31.5%;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .our-patient__controls {
+    position: static;
+    width: min-content;
+    margin: 0 auto;
+
+    & button {
+      width: 51px;
+      min-width: 51px;
+      height: 51px;
+
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-patient {
+    padding: 30px 15px;
+    padding-top: 48px;
+  }
+
+  .our-patient__title {
+    margin-bottom: 20px;
+  }
+
+  .our-patient__name {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .our-patient__list {
+    margin-bottom: 25px;
+  }
+
+  .our-patient__item {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .our-patient__controls {
+    display: none;
+  }
+
+  .our-patient__dots {
+    display: block;
   }
 }

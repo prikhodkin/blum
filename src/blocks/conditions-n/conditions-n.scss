@@ -90,3 +90,9 @@
     width: calc(100% - 310px);
   }
 }
+
+@media (max-width: 1279px) {
+  .conditions-n {
+    display: none;
+  }
+}

@@ -98,7 +98,7 @@
   }
 
   .about-doctor__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 344px);
     column-gap: 20px;
     row-gap: 35px;
   }
@@ -126,5 +126,74 @@
   .about-doctor__link {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .about-doctor {
+    padding: 0 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+
+  .about-doctor__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 19px;
+    row-gap: 15px;
+  }
+
+  .about-doctor__item {
+    &:hover .about-doctor__box {
+      right: 0.5px;
+      max-width: 289px;
+      padding: 10px 10px 34px 10px;
+    }
+  }
+
+  .about-doctor__box {
+    min-width: 279px;
+  }
+
+  .about-doctor__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-doctor__text {
+    max-height: 120px;
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-doctor {
+    padding: 0 15px;
+    padding-top: 50px;
+    padding-bottom: 3px;
+  }
+
+  .about-doctor__list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-doctor__item {
+    &:hover .about-doctor__box {
+      position: static;
+      padding: 8px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .about-doctor__text {
+    margin-bottom: 13px;
+  }
+
+  .about-doctor__box {
+    min-width: initial;
+    padding: 8px;
+    padding-bottom: 25px;
   }
 }

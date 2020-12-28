@@ -40,6 +40,8 @@
 
 .blum-method__video {
   position: relative;
+  height: 37.8vw;
+  overflow: hidden;
   line-height: 0;
 }
 
@@ -55,6 +57,10 @@
   width: 3.3vw;
   min-width: 3.3vw;
   height: 3.3vw;
+}
+
+.blum-method__btn {
+  display: none;
 }
 
 @media (max-width: 1900px) {
@@ -107,5 +113,85 @@
       min-width: 30%;
       height: 30%;
     }
+  }
+}
+
+@media (max-width: 1279px) {
+  .blum-method__wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0 30px;
+    padding-bottom: 47px;
+  }
+
+  .blum-method__content {
+    max-width: initial;
+    margin-left: 0;
+  }
+
+  .blum-method__desc {
+    margin-bottom: 40px;
+  }
+
+  .blum-method__video {
+    height: 49.4vw;
+  }
+
+  .blum-method__play {
+    right: 75px;
+    bottom: 25px;
+    width: 8.1vw;
+    min-width: 8.1vw;
+    height: 8.1vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .blum-method {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .blum-method__wrapper {
+    padding: 0 15px;
+    padding-bottom: 40px;
+  }
+
+  .blum-method__title {
+    margin-bottom: 30px;
+  }
+
+  .blum-method__desc {
+    margin-bottom: 30px;
+    line-height: 26px;
+  }
+
+  .blum-method__text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blum-method__content {
+    height: auto;
+    max-height: 390px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+    &--active {
+      max-height: 1000px;
+    }
+  }
+
+  .blum-method__btn {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .blum-method__play {
+    right: 16px;
+    bottom: 16px;
+    width: 13.33vw;
+    min-width: 13.33vw;
+    height: 13.33vw;
   }
 }
