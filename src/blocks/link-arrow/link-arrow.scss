@@ -19,3 +19,21 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: 1279px) {
+  .link-arrow {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-arrow {
+    font-size: 18px;
+    line-height: 21px;
+
+    & svg {
+      margin-left: 8px;
+    }
+  }
+}

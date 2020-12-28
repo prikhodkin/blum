@@ -1,0 +1,24 @@
+.dots__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include list-reset;
+}
+
+.dots__item {
+  width: 9px;
+  min-width: 9px;
+  height: 9px;
+  background-color: #c0c5c4;
+  border-radius: 50%;
+
+
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  &--active {
+    background-color: $new-color;
+  }
+}

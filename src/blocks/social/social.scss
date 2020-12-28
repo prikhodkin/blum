@@ -47,3 +47,28 @@
     }
   }
 }
+
+@media (max-width: 1279px) {
+  .social__item {
+    &--menu > a {
+      width: 44.52px;
+      height: 44.52px;
+      background-color: $new-color;
+
+      & svg {
+        width: 22px;
+        height: 22px;
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .social__item {
+    &--menu > a {
+      width: 41px;
+      height: 41px;
+    }
+  }
+}

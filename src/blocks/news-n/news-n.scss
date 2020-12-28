@@ -63,6 +63,10 @@
   margin-left: -25px;
 }
 
+.news-n__dots {
+  display: none;
+}
+
 @media (max-width: 1900px) {
   .news-n {
     padding-top: 65px;
@@ -84,17 +88,19 @@
   }
 
   .news-n__img {
-    margin-bottom: 25px;
+    width: calc(100% + 25px);
+    margin-bottom: 20px;
+    margin-left: -20px;
   }
 
   .news-n__box {
     padding-bottom: 55px;
+  }
 
-    & > p:nth-last-child(2) {
-      margin-bottom: 33px;
-      font-size: 20px;
-      line-height: 28px;
-    }
+  .news-n__text {
+    margin-bottom: 33px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .news-n__link {
@@ -110,5 +116,119 @@
         margin-left: 15px;
       }
     }
+  }
+}
+
+@media (max-width: 1279px) {
+  .news-n {
+    padding: 20px 30px;
+    padding-bottom: 60px;
+  }
+
+  .news-n__title {
+    margin-bottom: 40px;
+  }
+
+  .news-n__tabs {
+    margin-bottom: 48px;
+
+    & > li {
+      padding: 8px 26px;
+    }
+  }
+
+  .news-n__box {
+    width: 48.59%;
+    min-width: 48.59%;
+    padding-bottom: 45px;
+    padding-left: 20px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  .news-n__img {
+    height: 32.04vw;
+  }
+
+  .news-n__header {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .news-n__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .news-n__list {
+    justify-content: center;
+    margin: -10px;
+    margin-bottom: 33px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .news-n__link {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .news-n__controls {
+    position: static;
+    width: min-content;
+    margin: 0 auto;
+
+    & button {
+      & svg {
+        fill: $new-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .news-n {
+    padding: 20px 15px;
+    padding-bottom: 50px;
+  }
+
+  .news-n__title {
+    margin-bottom: 35px;
+  }
+
+  .news-n__tabs {
+    margin-bottom: 30px;
+
+    & > li {
+      padding: 8px 11px;
+    }
+  }
+
+  .news-n__list {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .news-n__box {
+    width: 100%;
+    min-width: 100%;
+    padding-bottom: 45px;
+    padding-left: 20px;
+  }
+
+  .news-n__img {
+    height: 65.04vw;
+  }
+
+  .news-n__controls {
+    display: none;
+  }
+
+  .news-n__dots {
+    display: block;
   }
 }
