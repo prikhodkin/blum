@@ -289,7 +289,7 @@ a.mega-menu-n__header {
 
 
     &--active {
-      max-height: 100000px;
+      max-height: 1000px;
     }
   }
 
@@ -298,9 +298,10 @@ a.mega-menu-n__header {
     max-height: 0;
     padding: 0;
     transition: all 0.8s;
+    overflow: hidden;
 
     &--active {
-      max-height: 100000px;
+      max-height: 1000px;
     }
   }
 
