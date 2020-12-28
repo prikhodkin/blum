@@ -131,6 +131,10 @@ a.mega-menu-n__header {
   letter-spacing: 0.04em;
   background-color: rgba(15, 146, 124, 0.87);
   border-radius: 10px 10px 0 0;
+
+  &::before {
+    display: none;
+  }
 }
 
 .mega-menu-n__col {
@@ -186,6 +190,7 @@ a.mega-menu-n__header {
 @media (max-width: 1900px) {
   .mega-menu-n {
     padding: 30px;
+    padding-left: calc(50% - 610px);
     padding-bottom: 36px;
     border-radius: 0;
     box-shadow: none;
@@ -230,7 +235,7 @@ a.mega-menu-n__header {
   }
 
   .mega-menu-n__inner {
-    left: 335px;
+    left: 563px;
     width: calc(100% - 360px);
     padding: 0;
     padding-top: 30px;
