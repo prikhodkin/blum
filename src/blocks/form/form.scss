@@ -69,6 +69,7 @@
   width: 100%;
   margin-bottom: 25px;
   padding-right: 35px;
+  position: relative;
 
   & .form__group {
     margin-bottom: 0;
@@ -90,6 +91,11 @@
     min-width: 25px;
     height: 25px;
     fill: $new-color;
+  }
+
+  &:hover ~ .form-question{
+    opacity: 1;
+    transition: all 0.4s;
   }
 }
 
@@ -128,6 +134,24 @@
   & p:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.form-question {
+  background-color: #0A1029;
+  border-radius: 5px;
+  padding: 24px 21px;
+  padding-right: 37px;
+  width: 262px;
+  position: absolute;
+  top: -170px;
+  right: 35px;
+  opacity: 0;
+}
+
+.form-question__text {
+  font-size: 16px;
+  line-height: 23px;
+  color: #E9E9E9;
 }
 
 @media (max-width: 1279px) {
