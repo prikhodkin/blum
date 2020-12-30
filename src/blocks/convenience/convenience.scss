@@ -1,5 +1,6 @@
 .convenience {
   padding: 15px;
+  padding-top: 80px;
   padding-bottom: 30px;
   overflow: hidden;
 }
@@ -59,6 +60,12 @@
 
   &:not(:first-child) {
     margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .convenience {
+    padding-top: 15px;
   }
 }
 

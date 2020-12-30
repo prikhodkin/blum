@@ -17,18 +17,29 @@
       <h1 class="promo-hotel__title title">Sierra Blanca Resort Spa</h1>
       <p class="promo-hotel__text">Отель реабилитационного центра</p>
     </div>
-    <div class="promo-hotel__controls controls">
-      <button class="promo-hotel__button controls__button controls__button--prev" data-target="slider-three.prev">
+    <div class="promo-n__controls controls">
+      <button class="controls__button controls__button--up controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
         <svg aria-label="prev">
-          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+          <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
         </svg>
       </button>
-      <button class="promo-hotel__button controls__button controls__button--next" data-target="slider-three.next">
+      <button class="controls__button controls__button--up controls__button--next" data-target="slider.next" aria-controls="tns1" tabindex="-1" data-controls="next">
         <svg aria-label="next">
-          <use xlink:href="img/sprites/sprite.svg#icon__arrow-other"></use>
+          <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
         </svg>
       </button>
     </div>
+  </section>
+
+  <section class="main__breadcrumbs breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--active">Отель</a>
+      </li>
+    </ul>
   </section>
 
   <section class="hotel-location">
@@ -320,7 +331,7 @@
         <li class="slider-center__item"><img src="../img/f13.png" alt=""></li>
         <li class="slider-center__item"><img src="../img/f14.png" alt=""></li>
       </ul>
-      <div class="slider-center__controls conditions__controls controls">
+      <div class="conditions__controls controls">
         <button class="controls__button controls__button--prev" data-target="slider-center.prev">
           <svg aria-label="prev">
             <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
