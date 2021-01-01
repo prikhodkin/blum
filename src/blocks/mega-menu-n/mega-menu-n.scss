@@ -236,7 +236,7 @@ a.mega-menu-n__header {
 
   .mega-menu-n__inner {
     left: calc(50% - 305px);
-    width: calc(100% - 775px);
+    width: auto;
     padding: 0;
     padding-top: 30px;
     padding-bottom: 36px;
@@ -259,6 +259,7 @@ a.mega-menu-n__header {
     padding: 15px;
     background: #ffffff;
     border-radius: 10px;
+
 
     a {
       padding: 0;
