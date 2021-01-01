@@ -204,9 +204,11 @@
 
   .consultation-n__inner {
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .consultation-n__content {
+    max-width: 100%;
     margin-bottom: 75px;
     margin-left: 0;
     line-height: 23px;
@@ -219,5 +221,10 @@
     & p:not(:last-child) {
       margin-bottom: 18px;
     }
+  }
+
+  .consultation-n__form {
+    width: 100%;
+    min-width: 100%;
   }
 }

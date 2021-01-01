@@ -38,6 +38,10 @@
 .situations-n__item {
   overflow: hidden;
   border-radius: 15px;
+
+  &--text {
+    display: none;
+  }
 }
 
 .situations-n__inner {

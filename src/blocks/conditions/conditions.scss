@@ -23,6 +23,16 @@
   }
 }
 
+.conditions__controls {
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 40px;
+
+  & > button:last-child {
+    margin-left: 14px;
+  }
+}
+
 @media (min-width: 1200px) {
   .conditions {
     padding-top: 50px;
@@ -115,10 +125,6 @@
   &--3::before {
     background-image: url("../../img/Shape1.svg");
   }
-}
-
-.conditions__controls {
-  margin-bottom: 20px;
 }
 
 .conditions__text {
