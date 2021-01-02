@@ -98,7 +98,6 @@
   }
 
   .about-doctor__list {
-    grid-template-columns: repeat(3, 344px);
     column-gap: 20px;
     row-gap: 35px;
   }
@@ -144,8 +143,9 @@
 
   .about-doctor__item {
     &:hover .about-doctor__box {
+      position: static;
       right: 0.5px;
-      max-width: 289px;
+      max-width: initial;
       padding: 10px 10px 34px 10px;
     }
   }

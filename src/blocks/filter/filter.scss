@@ -26,7 +26,7 @@
   &::before {
     @include pseudo;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     z-index: 10;
     width: calc(100% - 13px);
@@ -40,7 +40,7 @@
 .filter__list {
   @include list-reset;
   position: relative;
-  height: 300px;
+  height: 310px;
 }
 
 
@@ -80,6 +80,7 @@
 
   color: #717171;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &::after {
     @include pseudo;

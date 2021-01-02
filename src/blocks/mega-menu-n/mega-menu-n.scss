@@ -131,6 +131,10 @@ a.mega-menu-n__header {
   letter-spacing: 0.04em;
   background-color: rgba(15, 146, 124, 0.87);
   border-radius: 10px 10px 0 0;
+
+  &::before {
+    display: none;
+  }
 }
 
 .mega-menu-n__col {
@@ -186,7 +190,8 @@ a.mega-menu-n__header {
 @media (max-width: 1900px) {
   .mega-menu-n {
     padding: 30px;
-    padding-bottom: 36px;
+    padding-bottom: 45px;
+    padding-left: calc(50% - 610px);
     border-radius: 0;
     box-shadow: none;
   }
@@ -230,8 +235,8 @@ a.mega-menu-n__header {
   }
 
   .mega-menu-n__inner {
-    left: 335px;
-    width: calc(100% - 360px);
+    left: calc(50% - 305px);
+    width: auto;
     padding: 0;
     padding-top: 30px;
     padding-bottom: 36px;
@@ -254,6 +259,7 @@ a.mega-menu-n__header {
     padding: 15px;
     background: #ffffff;
     border-radius: 10px;
+
 
     a {
       padding: 0;
@@ -297,8 +303,8 @@ a.mega-menu-n__header {
     height: auto;
     max-height: 0;
     padding: 0;
-    transition: all 0.8s;
     overflow: hidden;
+    transition: all 0.8s;
 
     &--active {
       max-height: 3000px;
@@ -310,8 +316,8 @@ a.mega-menu-n__header {
     width: 100%;
     min-width: 100%;
     padding: 0;
-    border-radius: 0;
     overflow: hidden;
+    border-radius: 0;
   }
 
   .mega-menu-n__item {
