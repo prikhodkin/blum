@@ -28,13 +28,7 @@
   line-height: 25px;
 }
 
-.book-two__desc {
-  font-size: 14px;
-  line-height: 155%;
-  color: #000000;
-}
-
-.book-two__inner > .book-two__desc {
+.book-two__inner > p {
   margin-bottom: 20px;
 }
 
@@ -51,6 +45,12 @@
 }
 
 .book-two__wrap {
+  & p {
+    font-size: 14px;
+    line-height: 155%;
+    color: #000000;
+  }
+
   &--header {
     margin-bottom: 20px;
     padding-bottom: 20px;
