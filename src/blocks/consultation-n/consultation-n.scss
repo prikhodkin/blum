@@ -12,15 +12,15 @@
 .consultation-n__inner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .consultation-n__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 516px;
-  min-width: 516px;
+  width: 466px;
+  min-width: 466px;
   padding: 35px 25px;
   padding-bottom: 55px;
   background-color: #ffffff;

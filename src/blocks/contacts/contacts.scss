@@ -320,11 +320,10 @@
       }
     }
   }
-}
 
-@media (max-width: 374px) {
   .contacts__form {
-    width: 290px;
-    min-width: 290px;
+    width: 100%;
+    min-width: 100%;
   }
 }
+
