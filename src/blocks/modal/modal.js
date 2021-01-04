@@ -5,7 +5,7 @@ class Popup {
     this.name = this.popup.getAttribute('data-popup');
     this.open_btn = document.querySelectorAll('.get-popup[data-popup="' + this.name + '"]');
     this.popupClose = this.popup.querySelector('.button-close__btn');
-    this.closer = this.popup.querySelector('.button--close');
+    // this.closer = this.popup.querySelector('.button--close');
 
 
     this.events();
@@ -63,7 +63,7 @@ class PopupThanks extends Popup {
     super(popup);
 
     this.isOpened = false;
-    this.closer = this.popup.querySelector('.popup__close');
+    // this.closer = this.popup.querySelector('.popup__close');
   }
 
   events() {
