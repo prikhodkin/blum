@@ -36,12 +36,8 @@
 }
 
 .hotel-info__item {
+  width: 100%;
   min-width: 100%;
-  line-height: 0;
-
-  &:not(:first-child) {
-    margin-left: 15px;
-  }
 }
 
 .hotel-info__number {
@@ -82,15 +78,12 @@
   }
 
   .hotel-info__item {
-    min-width: inherit;
-
-    &:not(:first-child) {
-      margin-left: 45px;
-    }
+    width: 545px;
+    min-width: 545px;
   }
 
   .hotel-info__img {
-    width: 545px;
+
   }
 
   .hotel-info__controls-button {
@@ -127,6 +120,9 @@
 
   .hotel-info__slider {
     margin-left: 50px;
+    overflow: hidden;
+    margin-right: -15px;
+    padding-bottom: 30px;
   }
 
   .hotel-info__list {

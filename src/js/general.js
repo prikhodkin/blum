@@ -356,3 +356,19 @@ if(conditionsSliderTrigget) {
     prevButton: '.conditions-n__slider .controls__button--next',
   });
 }
+
+const hotelSliderTrigget = document.querySelector(`.hotel-info__list`);
+
+if(hotelSliderTrigget) {
+  const hotelSlider = tns({
+    container: hotelSliderTrigget,
+    items: 1,
+    autoWidth: true,
+    nav: false,
+    gutter: 15,
+    loop: false,
+    autoplay: false,
+    nextButton: '.hotel-info__controls .controls__button--next',
+    prevButton: '.hotel-info__controls .controls__button--prev',
+  });
+}
