@@ -177,8 +177,8 @@ if(areaSliderTrigger) {
     nav: false,
     slideBy: 'page',
     autoplay: false,
-    nextButton: '.area-work__controls .controls__button--prev',
-    prevButton: '.area-work__controls .controls__button--next'
+    nextButton: '.area-work__controls .controls__button--next',
+    prevButton: '.area-work__controls .controls__button--prev'
   });
 }
 
@@ -191,8 +191,8 @@ if(missionSliderTrigger) {
     nav: false,
     slideBy: 'page',
     autoplay: false,
-    nextButton: '.mission__slider .controls__button--prev',
-    prevButton: '.mission__slider .controls__button--next'
+    nextButton: '.mission__slider .controls__button--next',
+    prevButton: '.mission__slider .controls__button--prev'
   });
 }
 
@@ -204,8 +204,8 @@ if(convenienceSliderTrigger) {
     items: 1,
     nav: false,
     autoplay: false,
-    nextButton: '.convenience__slider .controls__button--prev',
-    prevButton: '.convenience__slider .controls__button--next',
+    nextButton: '.convenience__slider .controls__button--next',
+    prevButton: '.convenience__slider .controls__button--prev',
     responsive: {
       "700": {
         "items": 2,
@@ -227,8 +227,8 @@ if(promoSliderTrigger) {
     items: 1,
     nav: false,
     autoplay: false,
-    nextButton: '.promo-n__controls .controls__button--prev',
-    prevButton: '.promo-n__controls .controls__button--next'
+    nextButton: '.promo-n__controls .controls__button--next',
+    prevButton: '.promo-n__controls .controls__button--prev'
   });
 }
 
@@ -241,8 +241,8 @@ if(reviewsSliderTrigget) {
     nav: true,
     navPosition: "bottom",
     autoplay: false,
-    nextButton: '.patient-histories__controls .controls__button--prev',
-    prevButton: '.patient-histories__controls .controls__button--next',
+    nextButton: '.patient-histories__controls .controls__button--next',
+    prevButton: '.patient-histories__controls .controls__button--prev',
     responsive: {
       "768": {
         "items": 2,
@@ -268,8 +268,8 @@ if(patientSliderTrigget) {
     gutter: 15,
     navPosition: "bottom",
     autoplay: false,
-    nextButton: '.our-patient__controls .controls__button--prev',
-    prevButton: '.our-patient__controls .controls__button--next',
+    nextButton: '.our-patient__controls .controls__button--next',
+    prevButton: '.our-patient__controls .controls__button--prev',
     responsive: {
       "768": {
         "items": 2,
@@ -319,8 +319,8 @@ if(newsSliderTrigget) {
     gutter: 15,
     navPosition: "bottom",
     autoplay: false,
-    nextButton: '.news-n__controls .controls__button--prev',
-    prevButton: '.news-n__controls .controls__button--next',
+    nextButton: '.news-n__controls .controls__button--next',
+    prevButton: '.news-n__controls .controls__button--prev',
     responsive: {
       "1000": {
         "items": 3,
@@ -352,8 +352,8 @@ if(conditionsSliderTrigget) {
     loop: true,
     center: true,
     autoplay: false,
-    nextButton: '.conditions-n__slider .controls__button--prev',
-    prevButton: '.conditions-n__slider .controls__button--next',
+    nextButton: '.conditions-n__slider .controls__button--next',
+    prevButton: '.conditions-n__slider .controls__button--prev',
   });
 }
 
