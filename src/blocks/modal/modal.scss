@@ -1,11 +1,35 @@
 .modal {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  // display: none;
-  background: #fbfcff;
-  border-radius: 10px;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // padding: 15px;
+  // // display: none;
+  // background: #fbfcff;
+  // border-radius: 10px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: 0 0;
+  opacity: 0;
+  pointer-events: none;
+
+  &.opened {
+    height: 100%;
+    overflow: auto;
+    background: rgba(black, 0.5);
+    cursor: pointer;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .modal__title {
@@ -80,7 +104,7 @@
 @media (min-width: 1200px) {
   .modal {
     flex-direction: row;
-    width: 699px;
+    // width: 699px;
     padding: 45px 56px;
   }
 
