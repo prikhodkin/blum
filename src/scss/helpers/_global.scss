@@ -28,3 +28,19 @@ a {
   color: inherit;
   text-decoration: unset;
 }
+
+main {
+  margin-top: 77px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 85px;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    margin-top: 87px;
+  }
+}
