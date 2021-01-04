@@ -1,0 +1,37 @@
+<section class="modal-reg">
+  <div class="modal-reg__container">
+    <div class="modal-reg__box">
+      <h2 class="modal-reg__title title">Получите бесплатную консультацию</h2>
+      <p class="modal-reg__text">Оставьте заявку и наш специалист свяжется с вами в ближайшее время.</p>
+      <form class="modal-reg__form form" enctype="multipart/form-data">
+        <fieldset class="form__box">
+          <div class="form__group">
+            <input class="form__input form__input--reg form__input--name" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="form__group">
+            <input class="form__input form__input--reg" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
+            <div class="form__language-n form__language-n--reg language-n" data-controller="language">
+              <ul class="language-n__list">
+                <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
+                <li class="language-n__item"><a href="#">En</a></li>
+                <li class="language-n__item"><a href="#">Es</a></li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
+        <button class="form__button form__button--reg button-n" type="submit">Получить бесплатную консультацию</button>
+        <p class="form__politic form__politic--reg">Нажимая на кнопку,  вы соглашаетесь на обработку  персональных данных</p>
+      </form>
+    </div>
+    <div class="modal-reg__wrap">
+      <img class="modal-reg__img" src="../../img/modal__img.png" alt="">
+    </div>
+    <div class="modal-reg__close button-close">
+      <button class="button-close__btn">
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
