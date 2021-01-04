@@ -78,11 +78,13 @@
   align-items: center;
   margin: 12px 27px;
 
-  &::before {
+  img {
     @include pseudo;
     min-width: 46px;
+    width: 46px;
     height: 46px;
     margin-right: 28px;
+    object-fit: contain;
   }
 
   &--1::before {

@@ -7,6 +7,8 @@
   @include list-reset;
   display: flex;
   min-height: 784px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .promo-n__container {

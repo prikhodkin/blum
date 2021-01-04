@@ -31,16 +31,10 @@
 
 .convenience__list {
   @include list-reset;
-  display: flex;
-  align-items: center;
 }
 
 .convenience__item {
   min-width: 100%;
-
-  &:not(:first-child) {
-    margin-left: 28px;
-  }
 }
 
 .convenience__img {
@@ -66,6 +60,10 @@
 @media (min-width: 768px) {
   .convenience {
     padding-top: 15px;
+  }
+
+  .convenience__slider {
+    overflow: hidden;
   }
 }
 
@@ -96,6 +94,10 @@
 
   .convenience__slider {
     margin-left: 100px;
+    align-self: flex-end;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+
   }
 
   .convenience__item {
@@ -103,7 +105,7 @@
   }
 
   .convenience__img {
-    width: 282px;
-    min-width: 282px;
+    //width: 282px;
+    //min-width: 282px;
   }
 }

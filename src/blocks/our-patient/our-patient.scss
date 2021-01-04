@@ -22,12 +22,7 @@
 }
 
 .our-patient__item {
-  width: 260px;
-  min-width: 260px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
 }
 
 .our-patient__name {
@@ -76,12 +71,6 @@
   }
 
   .our-patient__item {
-    width: 262px;
-    min-width: 262px;
-
-    &:not(:first-child) {
-      margin-left: 39px;
-    }
   }
 
   .our-patient__controls {
@@ -123,12 +112,7 @@
   }
 
   .our-patient__item {
-    width: 31.5%;
-    min-width: 31.5%;
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
   }
 
   .our-patient__controls {
@@ -165,12 +149,13 @@
   }
 
   .our-patient__list {
+    margin: 0;
+    overflow: hidden;
     margin-bottom: 25px;
   }
 
   .our-patient__item {
-    width: 100%;
-    min-width: 100%;
+
   }
 
   .our-patient__controls {

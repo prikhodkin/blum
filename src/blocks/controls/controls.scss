@@ -1,5 +1,6 @@
 .controls {
   display: flex;
+  pointer-events: none;
 }
 
 .controls__button {
@@ -15,6 +16,7 @@
   box-shadow: unset;
   cursor: pointer;
   transition: all 0.3s;
+  pointer-events: visible;
 
   &--prev {
     transform: rotate(-180deg);

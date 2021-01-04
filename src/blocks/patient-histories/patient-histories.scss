@@ -29,12 +29,7 @@
 }
 
 .patient-histories__item {
-  width: 553px;
-  min-width: 553px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
 }
 
 .patient-histories__video {
@@ -91,8 +86,6 @@
   }
 
   .patient-histories__item {
-    width: 570px;
-    min-width: 570px;
   }
 
   .patient-histories__video {
@@ -123,12 +116,7 @@
   }
 
   .patient-histories__item {
-    width: 48.6%;
-    min-width: 48.6%;
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
   }
 
   .patient-histories__video {
@@ -166,10 +154,6 @@
     margin-bottom: 37px;
   }
 
-  .patient-histories__item {
-    width: 100%;
-    min-width: 100%;
-  }
 
   .patient-histories__video {
     margin-bottom: 25px;

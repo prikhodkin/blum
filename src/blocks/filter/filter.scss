@@ -40,7 +40,7 @@
 .filter__list {
   @include list-reset;
   position: relative;
-  height: 310px;
+  max-height: 310px;
 }
 
 
@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   font-size: 14px;
+  cursor: pointer;
   line-height: 100%;
 }
 
@@ -56,11 +57,11 @@
   left: -9999px;
 
   &:checked + .filter__checkbox {
-    background-color: #56ccf2;
+    background-color: #0F927C;
     background-image: url("../../img/check.png");
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #56ccf2;
+    border-color: transparent;
   }
 }
 

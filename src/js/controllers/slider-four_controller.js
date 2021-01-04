@@ -21,10 +21,12 @@ export default class extends Controller {
       prevButton: this.prevTarget,
       responsive: {
         600: {
-          items: 2
+          items: 2,
+          gutter: 15
         },
         900: {
-          items: 3
+          items: 3,
+          gutter: 15
         },
         1200: {
           items: 4

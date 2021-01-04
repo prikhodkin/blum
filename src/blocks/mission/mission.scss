@@ -41,7 +41,8 @@
     position: absolute;
     top: 50%;
     width: 60%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
+    right: 0;
   }
 }
 
@@ -111,7 +112,6 @@
       position: absolute;
       top: 50%;
       width: 60%;
-      transform: translateX(-50%);
     }
   }
 }
