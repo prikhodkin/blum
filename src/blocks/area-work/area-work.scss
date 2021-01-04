@@ -12,6 +12,7 @@
   }
 }
 
+
 .area-work__title {
   margin-bottom: 25px;
   font-size: 20px;
@@ -59,6 +60,10 @@
   & .controls__button:last-child {
     margin-left: 10px;
   }
+}
+
+.area-work__box {
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {

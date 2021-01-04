@@ -1,4 +1,4 @@
-.dots__list {
+.dots__list, .tns-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,19 +6,26 @@
   @include list-reset;
 }
 
-.dots__item {
+
+.dots__item, .tns-nav button {
   width: 9px;
   min-width: 9px;
   height: 9px;
   background-color: #c0c5c4;
   border-radius: 50%;
+  border: none;
+  padding: 0;
 
 
   &:not(:first-child) {
     margin-left: 8px;
   }
 
-  &--active {
+  &--active, {
+    background-color: $new-color;
+  }
+
+  &.tns-nav-active {
     background-color: $new-color;
   }
 }

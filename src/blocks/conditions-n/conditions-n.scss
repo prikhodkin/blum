@@ -24,13 +24,11 @@
 .conditions-n__list {
   @include list-reset;
   display: flex;
-  transform: translateX(-43%);
+
 }
 
 .conditions-n__item {
-  min-width: 61%;
   height: 31vw;
-  margin-left: 15px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -68,7 +66,6 @@
 
   .conditions-n__list {
     margin-left: 0;
-    transform: translateX(-38%);
   }
 
   .conditions-n__text {
@@ -78,10 +75,7 @@
   }
 
   .conditions-n__item {
-    width: 58%;
-    min-width: 58%;
     height: 30vw;
-    margin-left: 10px;
     border-radius: 10px;
   }
 

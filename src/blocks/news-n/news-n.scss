@@ -25,14 +25,10 @@
 }
 
 .news-n__box {
-  width: 370px;
-  min-width: 370px;
+
   padding-bottom: 70px;
   padding-left: 25px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
 }
 
 .news-n__link {
@@ -138,14 +134,9 @@
   }
 
   .news-n__box {
-    width: 48.59%;
-    min-width: 48.59%;
     padding-bottom: 45px;
     padding-left: 20px;
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
   }
 
   .news-n__img {

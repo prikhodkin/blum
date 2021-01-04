@@ -40,10 +40,15 @@
   }
 }
 
+.patent-n__slider .slick-slide {
+  & > div {
+    padding: 10px;
+  }
+}
+
 .patent-n__inner {
   display: block;
   height: 100%;
-
   & img {
     height: 100%;
   }

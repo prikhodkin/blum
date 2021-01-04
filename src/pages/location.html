@@ -43,12 +43,18 @@
     <div class="area-work__wrap area-work__wrap--bottom">
       <div class="area-work__image"></div>
       <div class="area-work__box">
-        <ul class="area-work__list">
+        <div class="area-work__slider">
+          <ul class="area-work__list">
           <li class="area-work__item">Реабилитация после длительной госпитализации, <br> иммобилизации конечностей</li>
           <li class="area-work__item">Реабилитация детей при сколиозах и нарушениях <br> осанки</li>
           <li class="area-work__item">Реабилитация детей с ДЦП</li>
           <li class="area-work__item">Восстановление детей при дегенаративно-дистрофических заболеваниях опорно-двигательного аппарата: гипер-пластичность, нестабильность суставов и связок, колосапость, развернутые стопы, неустойчивая поза  и ходьба, вальгусно-варусная деформация стоп, X-образные, О-образные ноги.</li>
         </ul>
+          <ul class="area-work__list">
+          <li class="area-work__item">Реабилитация после длительной госпитализации, <br> иммобилизации конечностей</li>
+          <li class="area-work__item">Реабилитация детей с ДЦП</li>
+        </ul>
+        </div>
         <div class="area-work__controls controls">
           <button class="controls__button controls__button--area controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
             <svg aria-label="prev">
@@ -90,7 +96,10 @@
         <a href="#" class="mission__button button">посетить центр</a>
       </div>
       <div class="mission__slider">
-        <img class="mission__img mission__img--1" src="../img/mission__slider-1.jpg" alt="">
+        <div class="mission__slider-wrapper">
+          <img class="mission__img mission__img--1" src="../img/mission__slider-1.jpg" alt="">
+          <img class="mission__img mission__img--1" src="../img/mission__slider-1.jpg" alt="">
+        </div>
         <img class="mission__img mission__img--2" src="../img/mission__slider-2.jpg" alt="">
         <div class="mission__controls controls">
           <button class="mission__control-button controls__button controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
@@ -117,15 +126,15 @@
     </div>
     <div class="convenience__slider">
       <ul class="convenience__list">
-        <li class="convenience__item">
-          <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
-        </li>
-        <li class="convenience__item">
-          <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
-        </li>
-        <li class="convenience__item">
-          <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
-        </li>
+        <div>
+        <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
+        </div>
+        <div>
+        <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
+        </div>
+        <div>
+        <img class="convenience__img" src="../img/convenience__img-1.jpg" alt="">
+        </div>
       </ul>
       <div class="convenience__controls controls">
         <button class="convenience__control-button controls__button controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
@@ -153,18 +162,18 @@
         <div class="cedar-park__box cedar-park__box--desc">
           <p class="cedar-park__desc">Центр находится в окружении кедрового парка с развитой инфраструктурой, детскими площадками и прогулочными дорожками. На территории прилежащего отеля “Sierra Blanca Resort Spa” есть все необходимое для отдыха родителей с маленькими дельми: кафе, зона отдыха, подогреваемый бессейн с морской водой и SPA на основе императорского нефрита.</p>
         </div>
-        <div class="cedar-park__controls controls">
-          <button class="cedar-park__control-button controls__button controls__button--prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
-            <svg aria-label="prev">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <button class="cedar-park__control-button controls__button controls__button--next" data-target="slider.next" aria-controls="tns1" tabindex="-1" data-controls="next">
-            <svg aria-label="next">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-        </div>
+<!--        <div class="cedar-park__controls controls">-->
+<!--          <button class="cedar-park__control-button controls__button controls__button&#45;&#45;prev" data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">-->
+<!--            <svg aria-label="prev">-->
+<!--              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--          <button class="cedar-park__control-button controls__button controls__button&#45;&#45;next" data-target="slider.next" aria-controls="tns1" tabindex="-1" data-controls="next">-->
+<!--            <svg aria-label="next">-->
+<!--              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
