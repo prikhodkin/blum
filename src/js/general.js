@@ -8,6 +8,7 @@ import intlTelInput from 'intl-tel-input';
 import PerfectScrollbar from 'perfect-scrollbar';
 import { tns } from "tiny-slider/src/tiny-slider"
 import slick from "slick-carousel";
+import {Popup} from "../blocks/modal/modal"
 // global.jQuery = $;
 //
 // require ("@fancyapps/fancybox/dist/jquery.fancybox");
@@ -372,3 +373,8 @@ if(hotelSliderTrigget) {
     prevButton: '.hotel-info__controls .controls__button--prev',
   });
 }
+
+const modals = document.querySelectorAll(`.modal`)
+modals.forEach(it => {
+  new Popup(it)
+})
