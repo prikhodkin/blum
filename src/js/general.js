@@ -196,7 +196,7 @@ if(missionSliderTrigger) {
   });
 }
 
-const convenienceSliderTrigger = document.querySelector(`.convenienceSlider`);
+const convenienceSliderTrigger = document.querySelector(`.convenience__list`);
 
 if(convenienceSliderTrigger) {
   const convenienceSlider = tns({
