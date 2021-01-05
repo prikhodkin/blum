@@ -106,6 +106,7 @@ let headerMenu = document.querySelector('.header-n__menu');
 
 toggleNav.addEventListener("click",  () => {
   headerMenu.classList.toggle(`header-n__menu--active`);
+  document.body.classList.toggle('lock');
 });
 
 //submenu
@@ -128,7 +129,10 @@ let footerListActive = 'footer-n__list--active';
 
 let openMenu = function (firstItem, secondItem, thirdItem, fourthItem) {
   for (let i = 0; i < firstItem.length; i++) {
-    firstItem[i].addEventListener('click', () => {
+    firstItem[i].addEventListener('click', (e) => {
+      if(firstItem[i].classList.contains(`mega-menu-n__subbutton`) || firstItem[i].classList.contains(`mega-menu-n__header`)) {
+        e.preventDefault();
+      }
       // for (let j = 0; j < firstItem.length; j++) {
       //   secondItem[j].classList.remove(thirdItem);
       // };
@@ -139,8 +143,11 @@ let openMenu = function (firstItem, secondItem, thirdItem, fourthItem) {
 
 openMenu(menuElement, menuItems, menuItemsActive);
 openMenu(menuElement, menuElement, menuElementActive);
-openMenu(megaMenuItem, megaMenu, megaMenuActive);
-openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive);
+if (window.matchMedia("(max-width: 1200px)").matches) {
+  openMenu(megaMenuItem, megaMenu, megaMenuActive);
+  openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive);
+}
+
 
 //footer-menu
 openMenu(footerControl, footerList, footerListActive);

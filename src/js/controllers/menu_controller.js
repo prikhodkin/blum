@@ -16,8 +16,8 @@ export default class extends Controller {
   showMenu(evt) {
     evt.preventDefault();
     this.changeBurger();
-    const menu = document.querySelector(`.menu__list`);
-    menu.classList.toggle(`menu__list--active`);
+    // const menu = document.querySelector(`.menu__list`);
+    // menu.classList.toggle(`menu__list--active`);
   }
 
   hideOnHover() {
