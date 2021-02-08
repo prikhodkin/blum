@@ -29,293 +29,273 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="page-n">
-  <header class="header-n " id="header-link" data-controller="menu">
-  <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
-    <span class="burger__inner">Открыть меню</span>
-  </button>
-  <nav class="header-n__menu menu-n" >
-    <div class="menu-n__logo">
-      <a class="logo-n" href="index.html">
-        <img src="img/logo__menu.png" alt="">
-      </a>
-    </div>
-    <ul class="menu-n__list header-n__list">
-      <li class="menu-n__item menu-n__item">
-        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О центре</a>
-        <div class="menu-n__arrow"></div>
-        <ul class="menu-n__sub-list menu-n__items">
-          <li class="menu-n__sub-item"><a href="location.html">Расположение</a></li>
-          <li class="menu-n__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
-          <li class="menu-n__sub-item"><a href="center-news.html">Новости</a></li>
-          <li class="menu-n__sub-item"><a href="research.html">Статьи и исследования</a></li>
-          <li class="menu-n__sub-item"><a href="certificates.html">Патенты и лицензии</a></li>
-          <li class="menu-n__sub-item"><a href="encyclopedia.html">Энциклопедия заболеваний</a></li>
-          <li class="menu-n__sub-item"><a href="#">Контакты</a></li>
+<body class="page">
+  <header class="page__header header" data-controller="search">
+  <a href="index.html" class="header__logo logo">
+    <svg width="154" height="62" viewBox="0 0 154 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9322 34.1556C32.9322 30.7084 30.05 29.3185 27.9985 29.3185C25.7807 29.3185 6.43405 29.2632 6.43405 29.2632V39.5473C6.43405 39.5473 24.3947 39.6026 27.9985 39.6026C31.2696 39.6026 32.9322 37.6017 32.9322 34.1556ZM32.9322 50.2215C32.9322 46.7743 30.05 45.3844 27.9985 45.3844C25.7807 45.3844 6.43405 45.3291 6.43405 45.3291V55.6132C6.43405 55.6132 24.3947 55.6696 27.9985 55.6696C31.2696 55.6696 32.9322 53.6687 32.9322 50.2215ZM38.6976 50.8325C38.6976 61.4514 27.9985 61.5066 27.9985 61.5066H0.613525V23.4814H28.0536C28.0536 23.4814 38.6976 23.5017 38.6976 34.2672C38.6976 42.1604 34.8723 42.3824 34.8723 42.3824C34.8723 42.3824 38.6976 42.5493 38.6976 50.8325ZM99.4557 39.491C101.617 39.491 103.208 40.7704 103.208 43.1603V61.4514H109.007V43.1603C109.007 40.8257 110.431 39.491 113.37 39.491C116.308 39.491 117.731 41.0139 117.731 43.1603V61.4514H123.531V43.1603C123.531 38.2679 121.13 34.2108 114.089 34.2108C107.769 34.2108 106.052 36.9907 106.052 36.9907C106.052 36.9907 104.223 34.2672 100.175 34.2672C96.1295 34.2672 88.6285 34.2108 88.6285 34.2108V61.4514H94.4276V39.491H99.4557ZM74.6583 61.4514C79.9247 61.4514 83.406 57.17 83.406 52.3892V34.2311H77.6068V52.3892C77.6068 54.3349 76.7648 55.7541 74.6583 55.7541H64.4471C62.3406 55.7541 61.4986 54.3349 61.4986 52.3892V34.2311H55.6994V52.3892C55.6994 57.17 59.1819 61.4514 64.4471 61.4514H74.6583ZM44.5575 61.4514H50.3555V23.5017H44.5575V61.4514Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6203 16.4377C20.6203 17.3271 19.8987 18.0508 19.0129 18.0508H15.1876C14.3007 18.0508 13.5802 17.3271 13.5802 16.4377V11.8531C13.5802 10.9637 14.3007 10.24 15.1876 10.24H19.0129C19.8987 10.24 20.6203 10.9637 20.6203 11.8531V16.4377ZM19.0129 8.90527H15.1876C13.5678 8.90527 12.2493 10.2276 12.2493 11.8531V16.4377C12.2493 18.0621 13.5678 19.3844 15.1876 19.3844H19.0129C20.6327 19.3844 21.9513 18.0621 21.9513 16.4377V11.8531C21.9513 10.2276 20.6327 8.90527 19.0129 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M49.1074 16.4377C49.1074 17.3271 48.3858 18.0508 47.4988 18.0508H43.6747C42.7878 18.0508 42.0661 17.3271 42.0661 16.4377V11.8531C42.0661 10.9637 42.7878 10.24 43.6747 10.24H47.4988C48.3858 10.24 49.1074 10.9637 49.1074 11.8531V16.4377ZM47.4988 8.90527H43.6747C42.0549 8.90527 40.7363 10.2276 40.7363 11.8531V16.4377C40.7363 18.0621 42.0549 19.3844 43.6747 19.3844H47.4988C49.1198 19.3844 50.4383 18.0621 50.4383 16.4377V11.8531C50.4383 10.2276 49.1198 8.90527 47.4988 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1189 8.90527H52.3552V19.3562H53.6861V10.24H59.1189C60.0058 10.24 60.7274 10.9625 60.7274 11.852H62.0572C62.0572 10.2276 60.7387 8.90527 59.1189 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.699 11.852V16.4366C23.699 18.0621 25.0175 19.3844 26.6373 19.3844H32.6141V18.0497H26.6373C25.7504 18.0497 25.0299 17.326 25.0299 16.4366V11.852C25.0299 10.9625 25.7504 10.2388 26.6373 10.2388H32.6141V8.90527H26.6373C25.0175 8.90527 23.699 10.2276 23.699 11.852Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.10863 18.0501H3.67591C2.78901 18.0501 2.06847 17.3264 2.06847 16.4369V11.8523C2.06847 10.9629 2.78901 10.2392 3.67591 10.2392H7.50118C8.38696 10.2392 9.10863 10.9629 9.10863 11.8523V18.0501ZM9.10863 9.3881C8.64663 9.08486 8.0947 8.90563 7.50118 8.90563H3.67591C2.0561 8.90563 0.737549 10.2279 0.737549 11.8523V16.4369C0.737549 18.0625 2.0561 19.3848 3.67591 19.3848H10.4395V11.8523V11.8478V5.71094H9.10863V9.3881Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M37.6853 5.74707H36.3544V8.90569H34.811V10.2393H36.3544V19.3555H37.6853V10.2393H39.3141V8.90569H37.6853V5.74707Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M127.823 9.55176L133.899 13.9786L131.579 21.1412H124.069L121.748 13.9786L127.823 9.55176Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M147.486 9.55176L153.562 13.9786L151.24 21.1412H143.73L141.41 13.9786L147.486 9.55176Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M131.578 21.1416L137.654 25.5684L135.334 32.7311H127.823L125.503 25.5684L131.578 21.1416Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M143.803 21.1416L149.879 25.5684L147.559 32.7311H140.049L137.727 25.5684L143.803 21.1416Z" fill="#84ADD0"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M131.579 6.81578L133.899 13.9785H137.46L134.46 4.7168L131.579 6.81578Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M140.535 4.4873L137.461 13.9778H141.41L143.731 6.81512L140.535 4.4873Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M140.095 3.02131C140.095 4.47661 138.918 5.65687 137.467 5.65687C136.016 5.65687 134.839 4.47661 134.839 3.02131C134.839 1.566 136.016 0.385742 137.467 0.385742C138.918 0.385742 140.095 1.566 140.095 3.02131Z" fill="#828282"/>
+    </svg>
+  </a>
+  <nav class="header__menu menu" data-controller="menu">
+    <button class="menu__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
+      <span class="burger__inner">Открыть меню</span>
+    </button>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#">О центре</a>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="location .html">Расположение</a></li>
+          <li class="menu__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
+          <li class="menu__sub-item"><a href="center-news.html">Новости</a></li>
+          <li class="menu__sub-item"><a href="research.html">Статьи и исследования</a></li>
+          <li class="menu__sub-item"><a href="certificates.html">Патенты и лицензии</a></li>
+          <li class="menu__sub-item"><a href="encyclopedia.html">Энциклопедия заболеваний</a></li>
+          <li class="menu__sub-item"><a href="#">Контакты</a></li>
         </ul>
       </li>
-      <li class="menu-n__item menu-n__item">
-        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О докторе</a>
-        <div class="menu-n__arrow"></div>
-        <ul class="menu-n__sub-list menu-n__items">
-          <li class="menu-n__sub-item"><a href="biography.html">Биография</a></li>
-          <li class="menu-n__sub-item"><a href="method.html">Методика</a></li>
-          <li class="menu-n__sub-item"><a href="lectures.html">Лекции</a></li>
-          <li class="menu-n__sub-item"><a href="books.html">Книги</a></li>
+      <li class="menu__item">
+        <a href="#">О докторе</a>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="biography.html">Биография</a></li>
+          <li class="menu__sub-item"><a href="method.html">Методика</a></li>
+          <li class="menu__sub-item"><a href="lectures.html">Лекции</a></li>
+          <li class="menu__sub-item"><a href="books.html">Книги</a></li>
         </ul>
       </li>
-      <li class="menu-n__item menu-n__item menu-n__item--mega">
-        <a class="menu-n__link menu-n__link--parent" href="JavaScript://">Услуги и цены</a>
-        <div class="menu-n__arrow"></div>
-        <div class="menu-n__mega mega-menu-n">
-          <ul class="mega-menu-n__list menu-n__items" data-target="menu.list">
-            <li class="mega-menu-n__item mega-menu-n__item--active">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__01.png" alt="pr">
+      <li class="menu__item menu__item--mega">
+        <a href="#">Услуги и цены</a>
+        <div class="menu__mega mega-menu">
+          <ul class="mega-menu__list" data-target="menu.list">
+            <li class="mega-menu__item mega-menu__item--active">
+              <a href="#">
+                <img src="img/programm_01.png" alt="pr">
                 <span>Специальные программы</span>
               </a>
-              <div class="mega-menu-n__inner">
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
                   </ul>
-                  <a href="program.html" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
                   </ul>
-                  <a href="encyclopedia.html" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
                   </ul>
-                  <a href="symptoms.html" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="symptoms.html" class="mega-menu__link">Посмотреть все</a>
                 </div>
               </div>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__02.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_02.png" alt="pr">
                 <span>поддерживающие программы</span>
               </a>
-              <div class="mega-menu-n__inner">
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
                   </ul>
-                  <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
                   </ul>
-                  <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
                   </ul>
-                  <a href="symptoms.html" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
               </div>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__03.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_03.png" alt="pr">
                 <span>для мужчин</span>
               </a>
-              <div class="mega-menu-n__inner">
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
                   </ul>
-                  <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
                   </ul>
-                  <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
-                <div class="mega-menu-n__col">
-                  <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                  <ul class="mega-menu-n__sub-list">
-                    <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                    <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
                   </ul>
-                  <a href="#" class="mega-menu-n__link">Посмотреть все</a>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
                 </div>
               </div>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__04.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_04.png" alt="pr">
                 <span>для детей</span>
               </a>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__05.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_05.png" alt="pr">
                 <span>для спортсменов</span>
               </a>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__06.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_06.png" alt="pr">
                 <span>для программистов</span>
               </a>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__07.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_07.png" alt="pr">
                 <span>для бизнесменов</span>
               </a>
             </li>
-            <li class="mega-menu-n__item">
-              <a class="mega-menu-n__subbutton" href="JavaScript://">
-                <img src="img/new/programm-n__08.png" alt="pr">
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_08.png" alt="pr">
                 <span>для корпораций</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-      <li class="menu-n__item"><a class="menu-n__link" href="program.html">Программы</a></li>
-      <li class="menu-n__item"><a class="menu-n__link" href="contacts.html">контакты</a></li>
+      <li class="menu__item"><a href="program.html">Программы</a></li>
+      <li class="menu__item"><a href="#">Отзывы</a></li>
     </ul>
-    <div class="menu-n__language language-n language--menu" data-controller="language">
-      <ul class="language-n__list language--menu__list">
-        <li class="language-n__item language--menu__item language--menu__item--active" data-target="language.target"><a href="#">Ru</a></li>
-        <li class="language-n__item language--menu__item"><a href="#">En</a></li>
-        <li class="language-n__item language--menu__item"><a href="#">Es</a></li>
-      </ul>
-    </div>
-    <div class="menu-n__box">
-      <a class="menu-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
-      <p class="menu-n__text">круглосуточно</p>
-    </div>
-    <div class="menu-n__social">
-      <ul class="social">
-        <li class="social__item social__item--n social__item--menu">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item social__item--n social__item--menu">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item social__item--n social__item--menu">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
   </nav>
-  <svg class="header-n__search"  data-action="click->search#show">
-    <use xlink:href="img/sprites/sprite.svg#icon__search-n"></use>
+  <svg class="header__search"  data-action="click->search#show">
+    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
   </svg>
-  <div class="header-n__language language-n " data-controller="language">
-    <ul class="language-n__list">
-      <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
-      <li class="language-n__item"><a href="#">En</a></li>
-      <li class="language-n__item"><a href="#">Es</a></li>
+  <div class="header__language language" data-controller="language">
+    <ul class="language__list">
+      <li class="language__item" data-target="language.target"><a href="#">Ru</a></li>
+      <li class="language__item"><a href="#">En</a></li>
+      <li class="language__item"><a href="#">Es</a></li>
     </ul>
   </div>
-  <div class="header-n__box">
-    <a class="header-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
-    <p class="header-n__text">круглосуточно</p>
-  </div>
-  <a class="header-n__button button-n" href="#" >записаться <span>на  прием</span> </a>
+  <a href="tel: 88005051415" class="header__phone">8-800-505-14-15</a>
+  <a href="#" class="header__button button">задать вопрос</a>
   <section class="search"  data-target="search.overlay">
     <button class="search__close" data-action="click->search#close">
       <svg>
@@ -332,6 +312,7 @@
     </form>
   </section>
 </header>
+
 
   <main class="main main--program page__main">
     <h1 class="visually-hidden">Книги </h1>
@@ -376,92 +357,87 @@
     </section>
 
   </main>
-  <footer class="page__footer footer-n">
-  <div class="footer-n__top">
-    <div class="footer-n__left">
-      <a href="index.html" class="footer-n__logo">
-        <img src="img/new/logo___blum.png" alt="">
+  <footer class="page__footer footer">
+  <div class="footer__top">
+    <div class="footer__left">
+      <a href="index.html" class="footer__logo">
+        <svg width="154" height="62" viewBox="0 0 154 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9322 34.1556C32.9322 30.7084 30.05 29.3185 27.9985 29.3185C25.7807 29.3185 6.43405 29.2632 6.43405 29.2632V39.5473C6.43405 39.5473 24.3947 39.6026 27.9985 39.6026C31.2696 39.6026 32.9322 37.6017 32.9322 34.1556ZM32.9322 50.2215C32.9322 46.7743 30.05 45.3844 27.9985 45.3844C25.7807 45.3844 6.43405 45.3291 6.43405 45.3291V55.6132C6.43405 55.6132 24.3947 55.6696 27.9985 55.6696C31.2696 55.6696 32.9322 53.6687 32.9322 50.2215ZM38.6976 50.8325C38.6976 61.4514 27.9985 61.5066 27.9985 61.5066H0.613525V23.4814H28.0536C28.0536 23.4814 38.6976 23.5017 38.6976 34.2672C38.6976 42.1604 34.8723 42.3824 34.8723 42.3824C34.8723 42.3824 38.6976 42.5493 38.6976 50.8325ZM99.4557 39.491C101.617 39.491 103.208 40.7704 103.208 43.1603V61.4514H109.007V43.1603C109.007 40.8257 110.431 39.491 113.37 39.491C116.308 39.491 117.731 41.0139 117.731 43.1603V61.4514H123.531V43.1603C123.531 38.2679 121.13 34.2108 114.089 34.2108C107.769 34.2108 106.052 36.9907 106.052 36.9907C106.052 36.9907 104.223 34.2672 100.175 34.2672C96.1295 34.2672 88.6285 34.2108 88.6285 34.2108V61.4514H94.4276V39.491H99.4557ZM74.6583 61.4514C79.9247 61.4514 83.406 57.17 83.406 52.3892V34.2311H77.6068V52.3892C77.6068 54.3349 76.7648 55.7541 74.6583 55.7541H64.4471C62.3406 55.7541 61.4986 54.3349 61.4986 52.3892V34.2311H55.6994V52.3892C55.6994 57.17 59.1819 61.4514 64.4471 61.4514H74.6583ZM44.5575 61.4514H50.3555V23.5017H44.5575V61.4514Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6203 16.4377C20.6203 17.3271 19.8987 18.0508 19.0129 18.0508H15.1876C14.3007 18.0508 13.5802 17.3271 13.5802 16.4377V11.8531C13.5802 10.9637 14.3007 10.24 15.1876 10.24H19.0129C19.8987 10.24 20.6203 10.9637 20.6203 11.8531V16.4377ZM19.0129 8.90527H15.1876C13.5678 8.90527 12.2493 10.2276 12.2493 11.8531V16.4377C12.2493 18.0621 13.5678 19.3844 15.1876 19.3844H19.0129C20.6327 19.3844 21.9513 18.0621 21.9513 16.4377V11.8531C21.9513 10.2276 20.6327 8.90527 19.0129 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M49.1074 16.4377C49.1074 17.3271 48.3858 18.0508 47.4988 18.0508H43.6747C42.7878 18.0508 42.0661 17.3271 42.0661 16.4377V11.8531C42.0661 10.9637 42.7878 10.24 43.6747 10.24H47.4988C48.3858 10.24 49.1074 10.9637 49.1074 11.8531V16.4377ZM47.4988 8.90527H43.6747C42.0549 8.90527 40.7363 10.2276 40.7363 11.8531V16.4377C40.7363 18.0621 42.0549 19.3844 43.6747 19.3844H47.4988C49.1198 19.3844 50.4383 18.0621 50.4383 16.4377V11.8531C50.4383 10.2276 49.1198 8.90527 47.4988 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1189 8.90527H52.3552V19.3562H53.6861V10.24H59.1189C60.0058 10.24 60.7274 10.9625 60.7274 11.852H62.0572C62.0572 10.2276 60.7387 8.90527 59.1189 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.699 11.852V16.4366C23.699 18.0621 25.0175 19.3844 26.6373 19.3844H32.6141V18.0497H26.6373C25.7504 18.0497 25.0299 17.326 25.0299 16.4366V11.852C25.0299 10.9625 25.7504 10.2388 26.6373 10.2388H32.6141V8.90527H26.6373C25.0175 8.90527 23.699 10.2276 23.699 11.852Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.10863 18.0501H3.67591C2.78901 18.0501 2.06847 17.3264 2.06847 16.4369V11.8523C2.06847 10.9629 2.78901 10.2392 3.67591 10.2392H7.50118C8.38696 10.2392 9.10863 10.9629 9.10863 11.8523V18.0501ZM9.10863 9.3881C8.64663 9.08486 8.0947 8.90563 7.50118 8.90563H3.67591C2.0561 8.90563 0.737549 10.2279 0.737549 11.8523V16.4369C0.737549 18.0625 2.0561 19.3848 3.67591 19.3848H10.4395V11.8523V11.8478V5.71094H9.10863V9.3881Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M37.6853 5.74707H36.3544V8.90569H34.811V10.2393H36.3544V19.3555H37.6853V10.2393H39.3141V8.90569H37.6853V5.74707Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M127.823 9.55176L133.899 13.9786L131.579 21.1412H124.069L121.748 13.9786L127.823 9.55176Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M147.486 9.55176L153.562 13.9786L151.24 21.1412H143.73L141.41 13.9786L147.486 9.55176Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M131.578 21.1416L137.654 25.5684L135.334 32.7311H127.823L125.503 25.5684L131.578 21.1416Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M143.803 21.1416L149.879 25.5684L147.559 32.7311H140.049L137.727 25.5684L143.803 21.1416Z" fill="#84ADD0"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M131.579 6.81578L133.899 13.9785H137.46L134.46 4.7168L131.579 6.81578Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M140.535 4.4873L137.461 13.9778H141.41L143.731 6.81512L140.535 4.4873Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M140.095 3.02131C140.095 4.47661 138.918 5.65687 137.467 5.65687C136.016 5.65687 134.839 4.47661 134.839 3.02131C134.839 1.566 136.016 0.385742 137.467 0.385742C138.918 0.385742 140.095 1.566 140.095 3.02131Z" fill="#828282"/>
+        </svg>
       </a>
+      <p class="footer__location">Центр Биомеханики Доктора Блюма г. Марбелья, Испания</p>
     </div>
-    <div class="footer-n__box">
-      <nav class="footer-n__nav">
-        <div class="footer-n__col">
-          <p class="footer-n__header">Разделы каталога:</p>
-          <button class="footer-n__control">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <ul class="footer-n__list">
-            <li class="footer-n__item"><a href="#">О центре</a></li>
-            <li class="footer-n__item"><a href="#">О докторе</a></li>
-            <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
-            <li class="footer-n__item"><a href="program.html">Программы</a></li>
-            <li class="footer-n__item"><a href="patient-reviews.html">Отзывы</a></li>
-            <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
-          </ul>
-        </div>
-        <div class="footer-n__col">
-          <p class="footer-n__header">Услуги:</p>
-          <button class="footer-n__control">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <ul class="footer-n__list">
-            <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
-            <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
-            <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
-            <li class="footer-n__item"><a href="#">Еще</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="footer-n__contacts">
-        <div class="footer-n__group">
-          <p class="footer-n__header">Круглосуточно</p>
-          <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
-          <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
-        </div>
-        <div class="footer-n__group">
-          <a href="#" class="footer-n__callback">Напишите нам</a>
-          <ul class="footer-n__social social social">
-            <li class="social__item social__item--n">
-              <a href="#">
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--n">
-              <a href="#">
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--n">
-              <a href="#">
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <nav class="footer__nav">
+      <div class="footer__col">
+        <p class="footer__header">Разделы каталога:</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">О центре</a></li>
+          <li class="footer__item"><a href="#">О докторе</a></li>
+          <li class="footer__item"><a href="#">Услуги и цены</a></li>
+          <li class="footer__item"><a href="program.html">Программы</a></li>
+          <li class="footer__item"><a href="#">Отзывы</a></li>
+          <li class="footer__item"><a href="center-news.html">Новости</a></li>
+        </ul>
       </div>
+      <div class="footer__col">
+        <p class="footer__header">Услуги:</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">Лечение заболеваний позвоночника</a></li>
+          <li class="footer__item"><a href="#">Реабилитация после травм позвоночника</a></li>
+          <li class="footer__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
+          <li class="footer__item"><a href="#">Реабилитация после эндопротезирония</a></li>
+          <li class="footer__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
+          <li class="footer__item"><a href="#">Еще</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__contacts">
+      <p class="footer__text">Круглосуточно</p>
+      <a href="tel:88005051415" class="footer__phone">8 800 505 14 15</a>
+      <a href="mailto:doctor@doctorblum.ru" class="footer__email">doctor@doctorblum.ru</a>
+      <a href="#" class="footer__callback">Напишите нам</a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-    <a class="footer-n__btn" href="#header-link">
-      <svg>
-        <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-      </svg>
-    </a>
   </div>
-  <div class="footer-n__bottom">
-    <p class="footer-n__copyright"><span>©</span> 2007-2020, ООО “Доктор Блюм”. Все права защищены</p>
-    <a href="#" class="footer-n__politic">Политика конфиденциальности</a>
-    <p class="footer-n__dev">Создание сайта <a href="#">ARS Creative</a></p>
+  <div class="footer__bottom">
+    <p class="footer__copyright">© 2007-2020, ООО “Доктор Блюм”.  Все права защищены</p>
+    <a href="#" class="footer__politic">Политика конфиденциальности</a>
+    <p class="footer__dev">Создание сайта <a href="#">ARS Creative</a></p>
   </div>
 </footer>
 

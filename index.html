@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>ЦЕНТР РЕАБИЛИТАЦИИ ДОКТОРА БЛЮМА</title>
@@ -26,1363 +25,1090 @@
   <script src="js/general.js" defer></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
-
-<body class="page-n">
-  <header class="header-n " id="header-link" data-controller="menu">
-    <button class="menu-n__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
+<body class="page">
+<header class="page__header header" data-controller="search">
+  <a href="index.html" class="header__logo logo">
+    <svg width="154" height="62" viewBox="0 0 154 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9322 34.1556C32.9322 30.7084 30.05 29.3185 27.9985 29.3185C25.7807 29.3185 6.43405 29.2632 6.43405 29.2632V39.5473C6.43405 39.5473 24.3947 39.6026 27.9985 39.6026C31.2696 39.6026 32.9322 37.6017 32.9322 34.1556ZM32.9322 50.2215C32.9322 46.7743 30.05 45.3844 27.9985 45.3844C25.7807 45.3844 6.43405 45.3291 6.43405 45.3291V55.6132C6.43405 55.6132 24.3947 55.6696 27.9985 55.6696C31.2696 55.6696 32.9322 53.6687 32.9322 50.2215ZM38.6976 50.8325C38.6976 61.4514 27.9985 61.5066 27.9985 61.5066H0.613525V23.4814H28.0536C28.0536 23.4814 38.6976 23.5017 38.6976 34.2672C38.6976 42.1604 34.8723 42.3824 34.8723 42.3824C34.8723 42.3824 38.6976 42.5493 38.6976 50.8325ZM99.4557 39.491C101.617 39.491 103.208 40.7704 103.208 43.1603V61.4514H109.007V43.1603C109.007 40.8257 110.431 39.491 113.37 39.491C116.308 39.491 117.731 41.0139 117.731 43.1603V61.4514H123.531V43.1603C123.531 38.2679 121.13 34.2108 114.089 34.2108C107.769 34.2108 106.052 36.9907 106.052 36.9907C106.052 36.9907 104.223 34.2672 100.175 34.2672C96.1295 34.2672 88.6285 34.2108 88.6285 34.2108V61.4514H94.4276V39.491H99.4557ZM74.6583 61.4514C79.9247 61.4514 83.406 57.17 83.406 52.3892V34.2311H77.6068V52.3892C77.6068 54.3349 76.7648 55.7541 74.6583 55.7541H64.4471C62.3406 55.7541 61.4986 54.3349 61.4986 52.3892V34.2311H55.6994V52.3892C55.6994 57.17 59.1819 61.4514 64.4471 61.4514H74.6583ZM44.5575 61.4514H50.3555V23.5017H44.5575V61.4514Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6203 16.4377C20.6203 17.3271 19.8987 18.0508 19.0129 18.0508H15.1876C14.3007 18.0508 13.5802 17.3271 13.5802 16.4377V11.8531C13.5802 10.9637 14.3007 10.24 15.1876 10.24H19.0129C19.8987 10.24 20.6203 10.9637 20.6203 11.8531V16.4377ZM19.0129 8.90527H15.1876C13.5678 8.90527 12.2493 10.2276 12.2493 11.8531V16.4377C12.2493 18.0621 13.5678 19.3844 15.1876 19.3844H19.0129C20.6327 19.3844 21.9513 18.0621 21.9513 16.4377V11.8531C21.9513 10.2276 20.6327 8.90527 19.0129 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M49.1074 16.4377C49.1074 17.3271 48.3858 18.0508 47.4988 18.0508H43.6747C42.7878 18.0508 42.0661 17.3271 42.0661 16.4377V11.8531C42.0661 10.9637 42.7878 10.24 43.6747 10.24H47.4988C48.3858 10.24 49.1074 10.9637 49.1074 11.8531V16.4377ZM47.4988 8.90527H43.6747C42.0549 8.90527 40.7363 10.2276 40.7363 11.8531V16.4377C40.7363 18.0621 42.0549 19.3844 43.6747 19.3844H47.4988C49.1198 19.3844 50.4383 18.0621 50.4383 16.4377V11.8531C50.4383 10.2276 49.1198 8.90527 47.4988 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1189 8.90527H52.3552V19.3562H53.6861V10.24H59.1189C60.0058 10.24 60.7274 10.9625 60.7274 11.852H62.0572C62.0572 10.2276 60.7387 8.90527 59.1189 8.90527Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.699 11.852V16.4366C23.699 18.0621 25.0175 19.3844 26.6373 19.3844H32.6141V18.0497H26.6373C25.7504 18.0497 25.0299 17.326 25.0299 16.4366V11.852C25.0299 10.9625 25.7504 10.2388 26.6373 10.2388H32.6141V8.90527H26.6373C25.0175 8.90527 23.699 10.2276 23.699 11.852Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.10863 18.0501H3.67591C2.78901 18.0501 2.06847 17.3264 2.06847 16.4369V11.8523C2.06847 10.9629 2.78901 10.2392 3.67591 10.2392H7.50118C8.38696 10.2392 9.10863 10.9629 9.10863 11.8523V18.0501ZM9.10863 9.3881C8.64663 9.08486 8.0947 8.90563 7.50118 8.90563H3.67591C2.0561 8.90563 0.737549 10.2279 0.737549 11.8523V16.4369C0.737549 18.0625 2.0561 19.3848 3.67591 19.3848H10.4395V11.8523V11.8478V5.71094H9.10863V9.3881Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M37.6853 5.74707H36.3544V8.90569H34.811V10.2393H36.3544V19.3555H37.6853V10.2393H39.3141V8.90569H37.6853V5.74707Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M127.823 9.55176L133.899 13.9786L131.579 21.1412H124.069L121.748 13.9786L127.823 9.55176Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M147.486 9.55176L153.562 13.9786L151.24 21.1412H143.73L141.41 13.9786L147.486 9.55176Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M131.578 21.1416L137.654 25.5684L135.334 32.7311H127.823L125.503 25.5684L131.578 21.1416Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M143.803 21.1416L149.879 25.5684L147.559 32.7311H140.049L137.727 25.5684L143.803 21.1416Z" fill="#84ADD0"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M131.579 6.81578L133.899 13.9785H137.46L134.46 4.7168L131.579 6.81578Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M140.535 4.4873L137.461 13.9778H141.41L143.731 6.81512L140.535 4.4873Z" fill="#828282"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M140.095 3.02131C140.095 4.47661 138.918 5.65687 137.467 5.65687C136.016 5.65687 134.839 4.47661 134.839 3.02131C134.839 1.566 136.016 0.385742 137.467 0.385742C138.918 0.385742 140.095 1.566 140.095 3.02131Z" fill="#828282"/>
+    </svg>
+  </a>
+  <nav class="header__menu menu" data-controller="menu">
+    <button class="menu__button burger" data-target="menu.trigger" data-action="click->menu#showMenu">
       <span class="burger__inner">Открыть меню</span>
     </button>
-    <nav class="header-n__menu menu-n" >
-      <div class="menu-n__logo">
-        <a class="logo-n" href="index.html">
-          <img src="img/logo__menu.png" alt="">
-        </a>
-      </div>
-      <ul class="menu-n__list header-n__list">
-        <li class="menu-n__item menu-n__item">
-          <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О центре</a>
-          <div class="menu-n__arrow"></div>
-          <ul class="menu-n__sub-list menu-n__items">
-            <li class="menu-n__sub-item"><a href="location.html">Расположение</a></li>
-            <li class="menu-n__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
-            <li class="menu-n__sub-item"><a href="center-news.html">Новости</a></li>
-            <li class="menu-n__sub-item"><a href="research.html">Статьи и исследования</a></li>
-            <li class="menu-n__sub-item"><a href="certificates.html">Патенты и лицензии</a></li>
-            <li class="menu-n__sub-item"><a href="encyclopedia.html">Энциклопедия заболеваний</a></li>
-            <li class="menu-n__sub-item"><a href="#">Контакты</a></li>
-          </ul>
-        </li>
-        <li class="menu-n__item menu-n__item">
-          <a class="menu-n__link menu-n__link--parent" href="JavaScript://">О докторе</a>
-          <div class="menu-n__arrow"></div>
-          <ul class="menu-n__sub-list menu-n__items">
-            <li class="menu-n__sub-item"><a href="biography.html">Биография</a></li>
-            <li class="menu-n__sub-item"><a href="method.html">Методика</a></li>
-            <li class="menu-n__sub-item"><a href="lectures.html">Лекции</a></li>
-            <li class="menu-n__sub-item"><a href="books.html">Книги</a></li>
-          </ul>
-        </li>
-        <li class="menu-n__item menu-n__item menu-n__item--mega">
-          <a class="menu-n__link menu-n__link--parent" href="JavaScript://">Услуги и цены</a>
-          <div class="menu-n__arrow"></div>
-          <div class="menu-n__mega mega-menu-n">
-            <ul class="mega-menu-n__list menu-n__items" data-target="menu.list">
-              <li class="mega-menu-n__item mega-menu-n__item--active">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__01.png" alt="pr">
-                  <span>Специальные программы</span>
-                </a>
-                <div class="mega-menu-n__inner">
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
-                    </ul>
-                    <a href="program.html" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
-                    </ul>
-                    <a href="encyclopedia.html" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
-                    </ul>
-                    <a href="symptoms.html" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                </div>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__02.png" alt="pr">
-                  <span>поддерживающие программы</span>
-                </a>
-                <div class="mega-menu-n__inner">
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
-                    </ul>
-                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
-                    </ul>
-                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
-                    </ul>
-                    <a href="symptoms.html" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                </div>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__03.png" alt="pr">
-                  <span>для мужчин</span>
-                </a>
-                <div class="mega-menu-n__inner">
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >Программы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление после инсульта</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Восстановление при сколиозе</a></li>
-                    </ul>
-                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >заболевания</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Нарушение двигательных функций</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Остеохондроз</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Радикулит</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дорсалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Люмбаго</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Миалгия</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Грыжа Шморля</a></li>
-                    </ul>
-                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                  <div class="mega-menu-n__col">
-                    <a class="mega-menu-n__header" href="JavaScript://" >симптомы</a>
-                    <ul class="mega-menu-n__sub-list">
-                      <li class="mega-menu-n__sub-item"><a href="#">Усталость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Ухудшение памяти</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Урчит в животе</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки ступней</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Отеки нижних конечностей</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Куриная слепота</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Галлюцинации</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Общая слабость</a></li>
-                      <li class="mega-menu-n__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
-                    </ul>
-                    <a href="#" class="mega-menu-n__link">Посмотреть все</a>
-                  </div>
-                </div>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__04.png" alt="pr">
-                  <span>для детей</span>
-                </a>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__05.png" alt="pr">
-                  <span>для спортсменов</span>
-                </a>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__06.png" alt="pr">
-                  <span>для программистов</span>
-                </a>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__07.png" alt="pr">
-                  <span>для бизнесменов</span>
-                </a>
-              </li>
-              <li class="mega-menu-n__item">
-                <a class="mega-menu-n__subbutton" href="JavaScript://">
-                  <img src="img/new/programm-n__08.png" alt="pr">
-                  <span>для корпораций</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="menu-n__item"><a class="menu-n__link" href="program.html">Программы</a></li>
-        <li class="menu-n__item"><a class="menu-n__link" href="contacts.html">контакты</a></li>
-      </ul>
-      <div class="menu-n__language language-n language--menu" data-controller="language">
-        <ul class="language-n__list language--menu__list">
-          <li class="language-n__item language--menu__item language--menu__item--active" data-target="language.target"><a href="#">Ru</a></li>
-          <li class="language-n__item language--menu__item"><a href="#">En</a></li>
-          <li class="language-n__item language--menu__item"><a href="#">Es</a></li>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#">О центре</a>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="location .html">Расположение</a></li>
+          <li class="menu__sub-item"><a href="hotel.html">Отель Sierra Blanca</a></li>
+          <li class="menu__sub-item"><a href="center-news.html">Новости</a></li>
+          <li class="menu__sub-item"><a href="research.html">Статьи и исследования</a></li>
+          <li class="menu__sub-item"><a href="certificates.html">Патенты и лицензии</a></li>
+          <li class="menu__sub-item"><a href="encyclopedia.html">Энциклопедия заболеваний</a></li>
+          <li class="menu__sub-item"><a href="#">Контакты</a></li>
         </ul>
-      </div>
-      <div class="menu-n__box">
-        <a class="menu-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
-        <p class="menu-n__text">круглосуточно</p>
-      </div>
-      <div class="menu-n__social">
-        <ul class="social">
-          <li class="social__item social__item--n social__item--menu">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--n social__item--menu">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--n social__item--menu">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-              </svg>
-            </a>
-          </li>
+      </li>
+      <li class="menu__item">
+        <a href="#">О докторе</a>
+        <ul class="menu__sub-list">
+          <li class="menu__sub-item"><a href="biography.html">Биография</a></li>
+          <li class="menu__sub-item"><a href="method.html">Методика</a></li>
+          <li class="menu__sub-item"><a href="lectures.html">Лекции</a></li>
+          <li class="menu__sub-item"><a href="books.html">Книги</a></li>
         </ul>
-      </div>
-    </nav>
-    <svg class="header-n__search"  data-action="click->search#show">
-      <use xlink:href="img/sprites/sprite.svg#icon__search-n"></use>
-    </svg>
-    <div class="header-n__language language-n " data-controller="language">
-      <ul class="language-n__list">
-        <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
-        <li class="language-n__item"><a href="#">En</a></li>
-        <li class="language-n__item"><a href="#">Es</a></li>
-      </ul>
-    </div>
-    <div class="header-n__box">
-      <a class="header-n__phone" href="tel: 88005051415" >8-800-505-14-15</a>
-      <p class="header-n__text">круглосуточно</p>
-    </div>
-    <a class="header-n__button button-n" href="#" >записаться <span>на  прием</span> </a>
-    <section class="search"  data-target="search.overlay">
-      <button class="search__close" data-action="click->search#close">
-        <svg>
-          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
-        </svg>
-      </button>
-      <form action="" class="search__form">
-        <label class="search__label">
-          <input type="text" class="search__input" placeholder="Что вы ищете?">
-          <svg class="search__icon">
-            <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
-          </svg>
-        </label>
-      </form>
-    </section>
-  </header>
-  <main>
-    <h1 class="visually-hidden">центр реабилитации доктора блюма </h1>
-    <section class="special-project">
-      <p class="special-project__text">Спецпроект COVID-19. <span>Устранение поражения легких</span> </p>
-    </section>
-    <section class="promo-n">
-      <div class="promo-n__container">
-        <a class="promo-n__logo logo-n" href="index.html">
-          <img src="img/new/logo___blum.png" alt="">
-        </a>
-        <ul class="promo-n__slider">
-          <li class="promo-n__box">
-            <img class="promo-n__img" src="img/promo__doctor.png" alt="doctor">
-            <div class="promo-n__wrap">
-              <h2 class="promo-n__title">медико-реабилитационый <br> центр доктора блюма <br class=""> в испании</h2>
-              <p class="promo-n__text">Восстанавливаем 98% пациентов <br> с тяжелыми заболеваниями, <br> от которых
-                другие клиники отказываются</p>
-              <a class="promo-n__link" href="#">
-                Смотреть полный список заболеваний
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
+      </li>
+      <li class="menu__item menu__item--mega">
+        <a href="#">Услуги и цены</a>
+        <div class="menu__mega mega-menu">
+          <ul class="mega-menu__list" data-target="menu.list">
+            <li class="mega-menu__item mega-menu__item--active">
+              <a href="#">
+                <img src="img/programm_01.png" alt="pr">
+                <span>Специальные программы</span>
               </a>
-              <a class="promo-n__button button-n" href="#">получить консультацию профессора</a>
-              <div class="promo-n__inner">
-                <p class="promo-n__desc">Блюм Евгений Эвальевич, <br> профессор, доктор медицинских наук</p>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
+                  </ul>
+                  <a href="symptoms.html" class="mega-menu__link">Посмотреть все</a>
+                </div>
+              </div>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_02.png" alt="pr">
+                <span>поддерживающие программы</span>
+              </a>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+              </div>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_03.png" alt="pr">
+                <span>для мужчин</span>
+              </a>
+              <div class="mega-menu__inner">
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">Программы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на суставах</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после травмы позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после операции на позвоночнике</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после сложной травмы суставов, множественных переломов</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после эндропротезирования</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после инсульта</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление при сколиозе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Восстановление после химиотерапии</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">заболевания</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Подвывихи позвонков и смещение</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Протрузия дисков позвоночника</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Остеохондроз</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Межпозвоночная грыжа</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Радикулит</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дорсалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Люмбаго</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Миалгия</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Грыжа Шморля</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Нарушение двигательных функций</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+                <div class="mega-menu__col">
+                  <p class="mega-menu__header">симптомы</p>
+                  <ul class="mega-menu__sub-list">
+                    <li class="mega-menu__sub-item"><a href="#">Усталость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Ухудшение памяти</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Урчит в животе</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки ступней</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки при заболеваниях почек</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Отеки нижних конечностей</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Куриная слепота</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Галлюцинации</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Общая слабость</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Дезориетация и спутанность сознания</a></li>
+                    <li class="mega-menu__sub-item"><a href="#">Двоение перед глазами</a></li>
+                  </ul>
+                  <a href="#" class="mega-menu__link">Посмотреть все</a>
+                </div>
+              </div>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_04.png" alt="pr">
+                <span>для детей</span>
+              </a>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_05.png" alt="pr">
+                <span>для спортсменов</span>
+              </a>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_06.png" alt="pr">
+                <span>для программистов</span>
+              </a>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_07.png" alt="pr">
+                <span>для бизнесменов</span>
+              </a>
+            </li>
+            <li class="mega-menu__item">
+              <a href="#">
+                <img src="img/programm_08.png" alt="pr">
+                <span>для корпораций</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item"><a href="program.html">Программы</a></li>
+      <li class="menu__item"><a href="#">Отзывы</a></li>
+    </ul>
+  </nav>
+  <svg class="header__search"  data-action="click->search#show">
+    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+  </svg>
+  <div class="header__language language" data-controller="language">
+    <ul class="language__list">
+      <li class="language__item" data-target="language.target"><a href="#">Ru</a></li>
+      <li class="language__item"><a href="#">En</a></li>
+      <li class="language__item"><a href="#">Es</a></li>
+    </ul>
+  </div>
+  <a href="tel: 88005051415" class="header__phone">8-800-505-14-15</a>
+  <a href="#" class="header__button button">задать вопрос</a>
+  <section class="search"  data-target="search.overlay">
+    <button class="search__close" data-action="click->search#close">
+      <svg>
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+    <form action="" class="search__form">
+      <label class="search__label">
+        <input type="text" class="search__input" placeholder="Что вы ищете?">
+        <svg class="search__icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+        </svg>
+      </label>
+    </form>
+  </section>
+</header>
+
+
+<!--<div class="search">-->
+<!--  <form class="search__form">-->
+<!--    <input type="search" class="search__input">-->
+<!--  </form>-->
+<!--  <svg class="search__icon">-->
+<!--    <use xlink:href="img/sprites/sprite.svg#icon__search"></use>-->
+<!--  </svg>-->
+<!--</div>-->
+<main>
+  <section class="promo">
+    <div class="promo__content">
+      <h1 class="promo__title">центр реабилитации доктора блюма <br><span>в испании</span></h1>
+      <p class="promo__desc">Восстанавливаем 98% пациентов<br> с тяжелыми заболеваниями,<br> от которых другие клиники отказываются.</p>
+      <a href="#" class="promo__more">
+        Смотреть полный список заболеваний
+        <svg>
+          <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
+        </svg>
+      </a>
+      <a href="" class="promo__button"><p>получить  консультацию</p></a>
+    </div>
+    <img src="img/promo__doctor.png" alt="doctor" class="promo__img">
+  </section>
+  <section class="reviews tabs" data-tabs>
+    <h2 class="reviews__title title title--index">посмотрите истории и отзывы <span>наших пациентов, чтобы убедиться</span></h2>
+    <ul class="reviews__tabs tabs__list">
+      <li class="tabs__item tabs__item--active" data-tab="1">Все</li>
+      <li class="tabs__item" data-tab="2">Инсульт</li>
+      <li class="tabs__item" data-tab="3">Детская реабилитация</li>
+      <li class="tabs__item" data-tab="4">После операций</li>
+      <li class="tabs__item" data-tab="5">Сколиоз</li>
+      <li class="tabs__item" data-tab="6">Дорсалгия</li>
+      <li class="tabs__item" data-tab="7">Артрит</li>
+      <li class="tabs__item" data-tab="8">Подагра</li>
+      <li class="tabs__item" data-tab="9">Грыжа Шморля</li>
+      <li class="tabs__item" data-tab="10">Радикулит</li>
+      <li class="tabs__item"><a href="#">Ещё ...</a></li>
+    </ul>
+    <div class="reviews__content tabs__content tabs__content--active" data-content="1">
+      <div class="reviews__slider" data-controller="slider">
+        <ul class="reviews__list" data-target="slider.list">
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Полина</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Полина</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
               </div>
             </div>
           </li>
         </ul>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__button--prev" data-target="slider.prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--next" data-target="slider.next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="promo-n__controls controls">
-        <button class="controls__button controls__button--up controls__button--prev" data-target="slider.prev"
-          aria-controls="tns1" tabindex="-1" data-controls="prev">
+    </div>
+    <div class="reviews__content tabs__content" data-content="2">
+      <div class="reviews__slider" data-controller="slider">
+        <ul class="reviews__list" data-target="slider.list">
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video" data-target="slider.video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Андрей</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__inner">
+              <div class="reviews__video">
+                <a data-fancybox href="https://www.youtube.com/watch?v=WFomlrhOjNE&t=5s" class="reviews__play">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="reviews__body">
+                <p class="reviews__cats">Позвоночник</p>
+                <p class="reviews__name">Антон</p>
+                <div class="reviews__text">
+                  <p>После перелома позвоночника Полине требовалась реабилитация. </p>
+                  <p>У нас в центре Полина быстро научилась поворачиваться и пересаживаться.
+                    Она научилась вставать и ходить.
+                    Теперь Полина независима в вопросах самообслуживания и не испытывает проблем с памятью и речью.</p>
+                </div>
+                <a href="#" class="reviews__more button">Посмотреть все истории</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews__controls controls">
+          <button class="controls__button controls__button--prev" data-target="slider.prev">
+            <svg aria-label="prev">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+          <button class="controls__button controls__button--next" data-target="slider.next">
+            <svg aria-label="next">
+              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="people">
+    <h2 class="people__title title title--index">мы гордимся людьми, которые приезжают к нам восстанавливаться</h2>
+    <div class="people__inner" data-controller="slider-five">
+      <ul class="people__list" data-target="slider-five.list">
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/p1.jpg" alt="">
+            </div>
+            <p class="program-card__text">Новак Джокович, теннисист, первая ракетка мира в одиночном разряде</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/r2.jpg" alt="">
+            </div>
+            <p class="program-card__text">Михаил Южный, теннисист, бывшая восьмая ракетка в одиночном разряде</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/p3.png" alt="">
+            </div>
+            <p class="program-card__text">Андрей Кузнецов, теннисист, бывшая третья ракетка мира в юниорском рейтинге</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/p4.jpg" alt="">
+            </div>
+            <p class="program-card__text">Петр Осипов, основатель "Бизнес Молодость"</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/p5.jpg" alt="">
+            </div>
+            <p class="program-card__text">Александр Волчек, соучредитель "Бизнес молодость"</p>
+          </a>
+        </li>
+        <li class="people__item program-card">
+          <a class="program-card__link" href="#">
+            <div class="program-card__image">
+              <img class="program-card__img" src="img/p1.jpg" alt="">
+            </div>
+            <p class="program-card__text">Александр Волчек, соучредитель "Бизнес молодость"</p>
+          </a>
+        </li>
+      </ul>
+      <div class="people__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-five.prev">
           <svg aria-label="prev">
             <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
           </svg>
         </button>
-        <button class="controls__button controls__button--up controls__button--next" data-target="slider.next"
-          aria-controls="tns1" tabindex="-1" data-controls="next">
+        <button class="controls__button controls__button--next" data-target="slider-five.next">
           <svg aria-label="next">
             <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
           </svg>
         </button>
       </div>
-    </section>
-    <section class="about-doctor">
-      <h2 class="visually-hidden">О докторе</h2>
-      <ul class="about-doctor__list">
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-1.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Врач общей практики, Врач-нейрофизиолог, Врач высшей категории (2004), Доктор
-              медицинских наук (2000), Профессор (2002).</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-2.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Ученый, в 1990 году основал научно-исследовательский институт Клинической
-              реабилитации для исследования, разработки и практического внедрения новыхтехнологий восстановленияздоровья
-              человека.</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-3.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Заслуженный изобретатель России (2010), автор 62 патентов в области
-              восстановления двигательных функций человека, внедренных в программы реабилитации космонавтов.</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-4.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Заведующий кафедрой (1996-2006) Клинической реабилитации факультета повышения
-              квалификации медицинскихработников Российского Университета Дружбы Народов,подготовившей 5487
-              врачей-специалистов и 25 кандидатов и докторов медицинских наук.</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-5.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Основоположник СОМАТОДИНАМИКИ – нового раздела физиологии и прикладной
-              медицины, открывшей возможность управления микронасосной функцией скелетных мышц; лимфодренажом,
-              кровообращением и обновляемостью клеток; научный консультант Ассоциации междисциплинарной медицины (Первый
-              Московский государственный университет имени И.М.Сеченова).</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="about-doctor__item">
-          <img class="about-doctor__img" src="img/new/about__img-6.png" alt="">
-          <div class="about-doctor__box">
-            <p class="about-doctor__text">Автор медицинских решений под ключ (1997) для спортсменов мирового уровня:
-              полное восстановление после тяжелых травм без операций, возвращениев большой спорт после травм, продление
-              спортивной карьеры, системы подготовки спортсменов к соревнованиям; основатель Центра в Испании (2010):
-              единственная в мире технология восстанавливает тяжелых больных со всего мира - более 20 000 излечившихся
-              пациентов из России, США, Германии, Великобритании, Израиля, Швейцарии и многих других стран.</p>
-            <a class="about-doctor__link" href="#">
-              Читать далее
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="patient-histories tabs-n">
-      <h2 class="patient-histories__title title-n">истории пациентов</h2>
-      <div class="patient-histories__wrap">
-        <ul class="patient-histories__tabs tabs-n__list">
-          <li class="tabs-n__item" data-tab="1">Инсульт</li>
-          <li class="tabs-n__item" data-tab="2">Детская реабилитация</li>
-          <li class="tabs-n__item" data-tab="3">Взрослая реабилитация</li>
-          <li class="tabs-n__item tabs-n__item--active" data-tab="4">После операций</li>
-          <li class="tabs-n__item" data-tab="5">Сколиоз</li>
-          <li class="tabs-n__item" data-tab="6">Дорсалгия</li>
-          <li class="tabs-n__item" data-tab="7">Артрит</li>
-          <li class="tabs-n__item" data-tab="8">Подагра</li>
-        </ul>
+    </div>
+  </section>
+  <section class="video">
+    <div class="video__top">
+      <div class="video__left">
+        <h2 class="video__title">Центр биомеханики Доктора Блюма</h2>
+        <p class="video__desc">Авторская методика и климат Средиземноморья для восстановления здоровья</p>
       </div>
-      <div class="patient-histories__slider">
-        <ul class="patient-histories__list">
-          <li class="patient-histories__item">
-            <div class="patient-histories__video video-n">
-              <img class="video-n__img" src="img/new/video__img-1.jpg" alt="">
-              <a class="video-n__play" data-fancybox="" href="https://www.youtube.com/watch?v=WFomlrhOjNE&amp;t=5s">
-                <svg class="video-n__icon">
-                  <use xlink:href="img/sprites/sprite.svg#icon__play-n"></use>
-                </svg>
-              </a>
-            </div>
-            <p class="patient-histories__text"><b>При поступлении к нам Милана почти не могла говорить и ходить.</b>
-              После курса реабилитации у Миланы нет сложностей с ходьбой. Она катается на самокате и мечтает кататься на
-              велосипеде. Милана отлично понимает собеседников, сталасвободнее говорить</p>
-          </li>
-          <li class="patient-histories__item">
-            <div class="patient-histories__video video-n">
-              <img class="video-n__img" src="img/new/video__img-1.jpg" alt="">
-              <a class="video-n__play" data-fancybox="" href="https://www.youtube.com/watch?v=WFomlrhOjNE&amp;t=5s">
-                <svg class="video-n__icon">
-                  <use xlink:href="img/sprites/sprite.svg#icon__play-n"></use>
-                </svg>
-              </a>
-            </div>
-            <p class="patient-histories__text"><b>При поступлении к нам Милана почти не могла говорить и ходить.</b>
-              После курса реабилитации у Миланы нет сложностей с ходьбой. Она катается на самокате и мечтает кататься на
-              велосипеде. Милана отлично понимает собеседников, сталасвободнее говорить</p>
-          </li>
-          <li class="patient-histories__item">
-            <div class="patient-histories__video video-n">
-              <img class="video-n__img" src="img/new/video__img-1.jpg" alt="">
-              <a class="video-n__play" data-fancybox="" href="https://www.youtube.com/watch?v=WFomlrhOjNE&amp;t=5s">
-                <svg class="video-n__icon">
-                  <use xlink:href="img/sprites/sprite.svg#icon__play-n"></use>
-                </svg>
-              </a>
-            </div>
-            <p class="patient-histories__text"><b>При поступлении к нам Милана почти не могла говорить и ходить.</b>
-              После курса реабилитации у Миланы нет сложностей с ходьбой. Она катается на самокате и мечтает кататься на
-              велосипеде. Милана отлично понимает собеседников, сталасвободнее говорить</p>
-          </li>
-          <li class="patient-histories__item">
-            <div class="patient-histories__video video-n">
-              <img class="video-n__img" src="img/new/video__img-1.jpg" alt="">
-              <a class="video-n__play" data-fancybox="" href="https://www.youtube.com/watch?v=WFomlrhOjNE&amp;t=5s">
-                <svg class="video-n__icon">
-                  <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
-                </svg>
-              </a>
-            </div>
-            <p class="patient-histories__text"><b>При поступлении к нам Милана почти не могла говорить и ходить.</b>
-              После курса реабилитации у Миланы нет сложностей с ходьбой. Она катается на самокате и мечтает кататься на
-              велосипеде. Милана отлично понимает собеседников, сталасвободнее говорить</p>
-          </li>
-        </ul>
-        <div class="patient-histories__dots dots">
-          <ul class="dots__list">
-            <li class="dots__item dots__item--active"></li>
-            <li class="dots__item"></li>
-            <li class="dots__item"></li>
-          </ul>
-        </div>
-        <a class="patient-histories__link link-arrow" href="#">
-          <svg>
-            <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-          </svg>
-          Все истории
-        </a>
-        <div class="patient-histories__controls controls">
-          <button class="controls__button controls__button--new controls__button--prev" data-target="slider.prev"
-            aria-controls="tns1" tabindex="-1" data-controls="prev">
-            <svg aria-label="prev">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <button class="controls__button controls__button--new controls__button--next" data-target="slider.next"
-            aria-controls="tns1" tabindex="-1" data-controls="next">
-            <svg aria-label="next">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-        </div>
+      <div class="video__right">
+        <p>Испанский город Марбелья - это райское место в прибрежной зоне Коста-дель-Соль с видом на далекое побережье Африки. Средиземное море приносит соленый ветер, в теплый климат настраивает отпустить заботы и поддаться испанскому образу жизни с улыбкой и сиестами.</p>
+        <p>Евгений Блюм пришел к выводу, что реабилитация протекает быстрее в странах с мягким и теплым климатом. Самым подходящим регионом  для работы круглый год оказалось Средиземноморье. Так появилась идея открыть центр в Марбелье у подножия горы Ла Конча.</p>
       </div>
-    </section>
-    <section class="our-patient">
-      <h2 class="our-patient__title title-n">наши пациенты</h2>
-      <div class="our-patient__slider swiper-container">
-        <ul class="our-patient__list swiper-wrapper">
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">спортсмены</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/sportsmen.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Новак Джокович</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">бизнесмен</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/businessman.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Сергей Беглик</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">женщины</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/wooman.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Александра Савенкова</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">дети</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/children.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Катя и Нико</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">старшее поколение</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/old-patient.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Елена Чапанова</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">КОСМОНАВТЫ</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/cosmonauts.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Герман Титов</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">КОСМОНАВТЫ</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/cosmonauts.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Герман Титов</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-          <li class="our-patient__item swiper-slide">
-            <p class="our-patient__name">КОСМОНАВТЫ</p>
-            <div class="our-patient__box info-card">
-              <div class="info-card__image">
-                <img src="img/new/cosmonauts.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__name">Герман Титов</p>
-              <p class="info-card__text">Человеческий организм получает почти все необходимые вещества именно через пищу
-                и воду. </p>
-              <a href="#" class="info-card__link link-arrow">
-                Читать полностью
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <div class="our-patient__controls controls">
-          <button class="controls__button controls__button--new-border controls__button--prev" data-target="slider.prev"
-            aria-controls="tns1" tabindex="-1" data-controls="prev">
-            <svg aria-label="prev">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <button class="controls__button controls__button--new-border controls__button--next" data-target="slider.next"
-            aria-controls="tns1" tabindex="-1" data-controls="next">
-            <svg aria-label="next">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="our-patient__dots dots">
-          <ul class="dots__list">
-            <li class="dots__item dots__item--active"></li>
-            <li class="dots__item"></li>
-            <li class="dots__item"></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="blum-method">
-      <div class="blum-method__wrapper">
-        <div class="blum-method__box">
-          <h2 class="blum-method__title title-n">метод доктора блюма</h2>
-          <p class="blum-method__desc">Если медицина борется с отдельными симптомами, то Блюм вылечивает человека
-            целиком, запуская естественные процессы физиологического восстановления.</p>
-        </div>
-        <div class="blum-method__content">
-          <p class="blum-method__text">Клинический подход профессора Блюма берет за основу понимание, что в корне
-            практически всех заболеваний лежит асимметрия тела врожденная или приобретённая. Асимметрия меняет положение
-            органов, и со временем они начинают функционировать неправильно, приводя к застойным явлениям, воспалениям,
-            нарушениям функции и структуры тканей, вплоть до перерождения клеток. Очевидно, что таблетками это не
-            исправить, хотя на какое-то время и можно отключить боль, с помощью которой организм даёт нам понять, что
-            что-то идёт не так. </p>
-          <p class="blum-method__text">Реабилитация по Блюму основана на восстановлении опорно-двигательного аппарата до
-            симметричного состояния. Осуществляется это при помощи запатентованных тренажерных конструкций, устройств,
-            задача которых – быть внешним приводом для воздействия на опорно-двигательный аппарат и внутренние органы.
-          </p>
-          <p class="blum-method__text">Иными словами, человека с дефектной конструкцией «разбирают», а затем собирают
-            заново, но уже в правильном положении. И тогда все процессы в организме начинают течь правильно, в
-            соответствии со здоровыми настройками. В таком организме в прямом смысле слова не остаётся места для
-            болезни.</p>
-        </div>
-        <button class="blum-method__btn deploy-text">Развернуть текст</button>
-      </div>
-      <div class="blum-method__video">
-        <img class="blum-method__img" src="img/video.jpg" alt="">
-        <a class="blum-method__play play-button" data-fancybox=""
-          href="https://www.youtube.com/watch?v=WFomlrhOjNE&amp;t=5s">
-          <svg>
-            <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
-          </svg>
-        </a>
-      </div>
-    </section>
-    <section class="situations-n">
-      <h2 class="situations-n__title title-n title--index">В КАКИХ СЛУЧАЯХ К НАМ ОБРАщаются </h2>
-      <a class="situations-n__text link-arrow situations-n__text--top">
-        <span>Смотреть полный список заболеваний</span>
+    </div>
+    <div class="video__bottom">
+      <img src="img/video.jpg" alt="">
+      <button class="video__play">
         <svg>
-          <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
+          <use xlink:href="img/sprites/sprite.svg#icon__play"></use>
         </svg>
-      </a>
-      <ul class="situations-n__list">
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-1.jpg)">
-            <p class="situations-n__header">Лечение сколиоза</p>
+      </button>
+    </div>
+  </section>
+  <section class="intro">
+    <h2 class="intro__title title title--index">к нам приезжают,<br> когда понимают, что уже все...</h2>
+    <p class="intro__subtitle">... а уезжают счастливыми людьми!</p>
+    <div class="intro__inner">
+      <img src="img/intro__img.jpg" alt="" class="intro__img">
+      <div class="intro__content">
+        <div class="intro__text">
+          <p>Равным образом рамки и место обучения кадров представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации систем массового участия.</p>
+          <p>Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+          <p>Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
+        </div>
+        <div class="intro__people">
+          <p class="intro__name">Елена Балкарова</p>
+          <p class="intro__position">Директор центра</p>
+        </div>
+      </div>
+    </div>
+    <ul class="intro__list">
+      <li class="intro__item">
+        <div class="intro__icon">
+          <img src="img/spine.png" alt="">
+        </div>
+        <p class="intro__desc"><b>Принимаем даже со сложными случаями,</b> от которых другие центры отказываются</p>
+      </li>
+      <li class="intro__item">
+        <div class="intro__icon">
+          <img src="img/contract.png" alt="">
+        </div>
+        <p class="intro__desc"><b>Более 50 лет врачебной практики, и уникальный опыт работы</b> с более чем 2000 пациентов, многие из которых известные личности</p>
+      </li>
+      <li class="intro__item">
+        <div class="intro__icon">
+          <img src="img/xmlid.png" alt="">
+        </div>
+        <p class="intro__desc"><b>Центр оборудован уникальными авторскими тренажерами</b>для восстановления здоровья на всех уровнях</p>
+      </li>
+    </ul>
+  </section>
+  <section class="situations">
+    <h2 class="situations__title title title--index">В КАКИХ СЛУЧАЯХ К НАМ ОБРАщаются </h2>
+    <ul class="situations__list">
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s1.png)">
+          <p class="situations__header">Профилактика и восстановление после перенесенной коронавирусной инфекции</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s2.png)">
+          <p class="situations__header">Реабилитация после травм позвоночника и спинного мозга </p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s3.png)">
+          <p class="situations__header">Лечение и реабилитация детей при ДЦП, задержке развития, синдроме дефицита внимания и гиперактивности</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s4.png)">
+          <p class="situations__header">Реабилитация после сложных травм и операций на суставах</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s5.png)">
+          <p class="situations__header">Восстановление после спортивных травм и подготовка спортсменов к соревнованиям</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s6.png)">
+          <p class="situations__header">Лечение врожденного вывиха бедра</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s7.png)">
+          <p class="situations__header">Реабилитация после инсульта</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s8.png)">
+          <p class="situations__header">Специальные программы для предпринимателей</p>
+        </a>
+      </li>
+      <li class="situations__item">
+        <a href="#" class="situations__inner" style="background-image: url(img/s9.png)">
+          <p class="situations__header">Лечение синдрома выгорания и хронической усталости</p>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="situations__button button">Посмотреть все направления</a>
+  </section>
+  <section class="conditions">
+    <div class="conditions__top">
+      <h2 class="conditions__title title title--index">Комфортные условия и силы природы</h2>
+      <p class="conditions__desc">будут способствовать скорейшему восстановлению вашего организма</p>
+    </div>
+    <div class="conditions__inner slider-center" data-controller="slider-center">
+      <ul class="conditions__list slider-center__list" data-target="slider-center.list">
+        <li class="slider-center__item"><img src="img/f1.jpg" alt=""></li>
+        <li class="slider-center__item"><img src="img/f2.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f3.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f4.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f5.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f6.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f7.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f8.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f9.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f10.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f11.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f12.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f13.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/f14.png" alt=""></li>
+      </ul>
+      <div class="slider-center__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-center.prev">
+          <svg aria-label="prev">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+        <button class="controls__button controls__button--next" data-target="slider-center.next">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section class="advantages">
+    <h2 class="advantages__title title title--index">преимущества НАШЕГО ЦЕНТРА</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <img src="img/adv1.png" alt="" class="advantages__img">
+        <div class="advantages__content">
+          <p class="advantages__header">Уникальная авторская методика<br> доктора Блюма</p>
+          <p class="advantages__text">Основание НИИ Клинической реабилитации, разработка авторских научных направлений, методов, техник  и специального оборудования.</p>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <img src="img/adv2.png" alt="" class="advantages__img">
+        <div class="advantages__content">
+          <p class="advantages__header">Более 60<br>патентов </p>
+          <p class="advantages__text">на  всю систему биомеханических методов и техник восстановления здоровья</p>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <img src="img/adv3.png" alt="" class="advantages__img">
+        <div class="advantages__content">
+          <p class="advantages__header">Междисциплинарный подход<br>к лечению</p>
+          <p class="advantages__text">Междисциплиарный подход
+            к лечению, который учитывает не только локальное состояние пациента</p>
+        </div>
+      </li>
+      <li class="advantages__item">
+        <img src="img/adv4.png" alt="" class="advantages__img">
+        <div class="advantages__content">
+          <p class="advantages__header">Размещение центра в уникальной <br>природной климатической зоне</p>
+          <p class="advantages__text">Издревле считается, что это место имеет оздоровительные и целебные возможности для людей с заболеваниями органов дыхания </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="process">
+    <h2 class="process__title title title--index">как все происходит</h2>
+    <div class="process__inner slider-center" data-controller="slider-center">
+      <ul class="process__list slider-center__list" data-target="slider-center.list">
+        <li class="slider-center__item"><img src="img/process1.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/process1.png" alt=""></li>
+        <li class="slider-center__item"><img src="img/process1.png" alt=""></li>
+      </ul>
+      <div class="slider-center__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-center.prev">
+          <svg aria-label="prev">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+        <button class="controls__button controls__button--next" data-target="slider-center.next">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section class="patent">
+    <h2 class="patent__title title title--index">патенты и лицензии</h2>
+    <div class="patent__inner" data-controller="slider-four">
+      <ul class="patent__list" data-target="slider-four.list">
+        <li class="patent__item">
+          <a data-fancybox="" href="img/patent1.png">
+            <img src="img/patent1.png" alt="" class="patent__img">
           </a>
+          <p class="patent__header">Свидетельство №1014</p>
+          <p class="patent__desc">Корректирующее устройство для поправки осанки</p>
         </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-2.jpg)">
-            <p class="situations-n__header">Тяжелые травмы <br> позвоночника и суставов </p>
+        <li class="patent__item">
+          <a data-fancybox="" href="img/patent2.png">
+            <img src="img/patent2.png" alt="" class="patent__img">
           </a>
+          <p class="patent__header">Патент №2281733</p>
+          <p class="patent__desc">Устройство для восстановления функции опорно-двигательного...</p>
         </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-3.jpg)">
-            <p class="situations-n__header">Устранение осложнений <br> после пластических операций</p>
+        <li class="patent__item">
+          <a data-fancybox="" href="img/patent3.png">
+            <img src="img/patent3.png" alt="" class="patent__img">
           </a>
+          <p class="patent__header">Патент №2145831</p>
+          <p class="patent__desc">Устройство для восстановления частного и общего...</p>
         </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-4.jpg)">
-            <p class="situations-n__header">Лечение и реабилитация детей: ДЦП, СДВГ, задержка развития, врожденный вывих
-              бедра</p>
+        <li class="patent__item">
+          <a data-fancybox="" href="img/patent4.png">
+            <img src="img/patent4.png" alt="" class="patent__img">
           </a>
+          <p class="patent__header">Патент №2707102</p>
+          <p class="patent__desc">Способ заболеваний,
+            связанных с нарушением...</p>
         </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner situations-n__inner--center"
-            style="background-image: url(img/new/situations__img-5.jpg)">
-            <p class="situations-n__header">СОVID-2019 <br> Устранение поражения легких</p>
+        <li class="patent__item">
+          <a data-fancybox="" href="img/patent4.png">
+            <img src="img/patent4.png" alt="" class="patent__img">
           </a>
-        </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-6.jpg)">
-            <p class="situations-n__header">Спортивная реабилитация: восстановление после травм, возвращение в спорт,
-              профилактика травматизма, подготовка к соревнованиям</p>
-          </a>
-        </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-2.jpg)">
-            <p class="situations-n__header">Реабилитация при миопатии, рассеянном склерозе, БАС, болезни Паркинсона,
-              Бехтерева</p>
-          </a>
-        </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-8.jpg)">
-            <p class="situations-n__header">Реабилитация после: <br> инсульта <br> инфаркта <br> онкологии</p>
-          </a>
-        </li>
-        <li class="situations-n__item">
-          <a href="#" class="situations-n__inner" style="background-image: url(img/new/situations__img-3.jpg)">
-            <p class="situations-n__header">Реабилитация <br> после сложных операций на внутренних органах, позвоночнике
-              и суставах</p>
-          </a>
-        </li>
-        <li class="situations-n__item situations-n__item--text">
-          <p class="situations-n__header">А также при состояниях, <br> для которых в медицине <br> нет соответствующих
-            диагнозов.</p>
+          <p class="patent__header">Патент №2707102</p>
+          <p class="patent__desc">Способ заболеваний,
+            связанных с нарушением...</p>
         </li>
       </ul>
-      <div class="situations-n__dots dots">
-        <ul class="dots__list">
-          <li class="dots__item dots__item--active"></li>
-          <li class="dots__item"></li>
-          <li class="dots__item"></li>
-        </ul>
+      <div class="patent__controls controls">
+        <button class="controls__button controls__button--prev" data-target="slider-four.prev">
+          <svg aria-label="prev">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
+        <button class="controls__button controls__button--next" data-target="slider-four.next">
+          <svg aria-label="next">
+            <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+          </svg>
+        </button>
       </div>
-      <p class="situations-n__text situations-n__text--bottom">А также при состояниях, для которых в медицине нет
-        соответствующих диагнозов.</p>
-    </section>
-    <section class="intro-n">
-      <div class="intro-n__box">
-        <div class="intro-n__image">
-          <img class="intro-n__img" src="img/intro-n__img.jpg" alt="">
-        </div>
-        <div class="intro-n__wrap">
-          <h2 class="intro-n__title title-n">к нам обращаются в случаях, когда медицина оказалась бессильна. <br> а
-            уезжают счастливыми людьми!</h2>
-          <div class="intro-n__content">
-            <p class="intro-n__text">Напишите нам, что произошло и в каком состоянии сейчас находится пациент. Мы изучим
-              случай, составим план реабилитации, определим с вами даты курса и подготовим пакет документов, необходимый
-              для приезда в наш Медико-реабилитационный Центр. Если нужно, организуем транспортировку пациента из
-              больницы другого города или страны.</p>
-            <p class="intro-n__text">Также, Вы можете приехать к нам в клинику на экскурсию, прислать своего
-              представителя или личного врача (тренера). Только сообщите нам об этом, пожалуйста, заранее.</p>
-            <p class="intro-n__text">Для удобства наших гостей на территории Центра действует отель Sierra Blanca Resort
-              SPA. Номера оборудованы всем необходимым, чтобы пациент чувствовал себя независимым, имел связь с доктором
-              и сохранил зону своего комфорта.</p>
-            <p class="intro-n__text">Клиника расположена в уникальном курортном городке, где круглый год комфортная
-              температура воздуха зимой днем +19 - +25; летом +25 - +30. А значит, весь период реабилитации вас будет
-              радовать солнце, море, цветение прекрасных растений и вкуснейшая средиземноморская еда.</p>
-            <p class="intro-n__text">Получить консультацию можно по телефону <a href="tel:+34663797569">+34 663 797
-                569</a> или <a href="#"><span>написать нам в Whatsapp.</span></a> </p>
-          </div>
-          <button class="intro-n__btn deploy-text">Развернуть текст</button>
-        </div>
-
-      </div>
-      <div class="intro-n__inner">
-        <p class="intro-n__name">балкарова елена</p>
-        <p class="intro-n__desc">Директор Медико-реабилитационного Центра доктора Блюма, <br> к.м.н. врач-реабилитолог,
-          пульмонолог</p>
-      </div>
-    </section>
-    <section class="conditions-n">
-      <h2 class="conditions-n__title title-n">Комфортные условия и силы природы</h2>
-      <p class="conditions-n__text">Будут способствовать скорейшему восстановлению вашего организма</p>
-      <div class="conditions-n__slider">
-        <ul class="conditions-n__list">
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f14.png" alt="">
-          </li>
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f1.jpg" alt="">
-          </li>
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f2.png" alt="">
-          </li>
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f14.png" alt="">
-          </li>
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f1.jpg" alt="">
-          </li>
-          <li class="conditions-n__item">
-            <img class="conditions-n__img" src="img/f2.png" alt="">
-          </li>
-        </ul>
-        <div class="conditions-n__controls controls">
-          <button class="controls__button controls__button--new-border controls__button--prev" data-target="slider.prev"
-            aria-controls="tns1" tabindex="-1" data-controls="prev">
-            <svg aria-label="prev">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <button class="controls__button controls__button--new-border controls__button--next" data-target="slider.next"
-            aria-controls="tns1" tabindex="-1" data-controls="next">
-            <svg aria-label="next">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="patent-n">
-      <h2 class="patent-n__title title-n">62 патента и лицензии</h2>
-      <div class="patent-n__slider">
-        <ul class="patent-n__list">
-          <li class="patent-n__item">
-            <ul class="patent-n__sublist">
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
+    </div>
+  </section>
+  <section class="news">
+    <h2 class="news__title title title--index">НОВОСТИ ЦЕНТРА</h2>
+    <div class="news__wrapper" data-tabs>
+      <ul class="news__tabs tabs__list">
+        <li class="tabs__item tabs__item--active" data-tab="1">Все</li>
+        <li class="tabs__item" data-tab="2">Новости </li>
+        <li class="tabs__item" data-tab="3">Статьи</li>
+      </ul>
+      <div class="news__content tabs__content tabs__content--active" data-content="1">
+        <div class="news__slider" data-controller="slider-three">
+          <ul class="news__list" data-target="slider-three.list">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
                 </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="patent-n__item">
-            <ul class="patent-n__sublist">
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="patent-n__item">
-            <ul class="patent-n__sublist">
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-3.png">
-                  <img src="img/new/patent__img-3.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-4.png">
-                  <img src="img/new/patent__img-4.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-5.png">
-                  <img src="img/new/patent__img-5.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-1.png">
-                  <img src="img/new/patent__img-1.png" alt="">
-                </a>
-              </li>
-              <li class="patent-n__subitem">
-                <a class="patent-n__inner" data-fancybox href="img/new/patent__img-2.png">
-                  <img src="img/new/patent__img-2.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="patent-n__controls controls">
-          <button class="controls__button controls__button--new-border controls__button--prev" data-target="slider.prev"
-            aria-controls="tns1" tabindex="-1" data-controls="prev">
-            <svg aria-label="prev">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-          <button class="controls__button controls__button--new-border controls__button--next" data-target="slider.next"
-            aria-controls="tns1" tabindex="-1" data-controls="next">
-            <svg aria-label="next">
-              <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="news-n">
-      <h2 class="news-n__title title-n">новости центра</h2>
-      <div class="news-n__wrap">
-        <ul class="news-n__tabs tabs-n__list">
-          <li class="tabs-n__item tabs-n__item--active" data-tab="1">Все</li>
-          <li class="tabs-n__item" data-tab="2">Новости</li>
-          <li class="tabs-n__item" data-tab="3">Эфиры</li>
-          <li class="tabs-n__item" data-tab="3">Статьи</li>
-        </ul>
-        <div class="news-n__container">
-          <ul class="news-n__list">
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
               </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text  news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
             </li>
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
               </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
             </li>
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
               </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
             </li>
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
               </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="news-n__box info-card">
-              <div class="info-card__image news-n__img">
-                <img src="img/new/blum__img.jpg" alt="patient's photo">
-              </div>
-              <p class="info-card__header news-n__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом
-              </p>
-              <p class="info-card__text news-n__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора
-                Блюма в испании. Как врачу... </p>
-              <a href="#" class="info-card__link news-n__link link-arrow">
-                Читать далее
-                <svg>
-                  <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
-                </svg>
-              </a>
             </li>
           </ul>
-          <div class="news-n__controls controls">
-            <button class="controls__button controls__button--new-border controls__button--prev"
-              data-target="slider.prev" aria-controls="tns1" tabindex="-1" data-controls="prev">
+          <div class="news__controls controls">
+            <button class="controls__button controls__button--prev" data-target="slider-three.prev">
               <svg aria-label="prev">
                 <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
               </svg>
             </button>
-            <button class="controls__button controls__button--new-border controls__button--next"
-              data-target="slider.next" aria-controls="tns1" tabindex="-1" data-controls="next">
+            <button class="controls__button controls__button--next" data-target="slider-three.next">
               <svg aria-label="next">
                 <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
               </svg>
             </button>
           </div>
         </div>
-        <div class="news-n__dots dots">
-          <ul class="dots__list">
-            <li class="dots__item dots__item--active"></li>
-            <li class="dots__item"></li>
-            <li class="dots__item"></li>
-          </ul>
-        </div>
       </div>
-    </section>
-    <section class="consultation-n">
-      <h2 class="consultation-n__title title-n">получите консультацию</h2>
-      <div class="consultation-n__inner">
-        <form class="contacts__form form" enctype="multipart/form-data">
-          <fieldset class="form__box">
-            <div class="form__group">
-              <label class="form__label" for="phone-n">Ваш телефон</label>
-              <input class="form__input" type="text" id="phone-n" placeholder="+7 (999) 999-99-99">
-              <div class="form__language-n language-n" data-controller="language">
-                <ul class="language-n__list">
-                  <li class="language-n__item" data-target="language.target"><a href="#">Ru</a></li>
-                  <li class="language-n__item"><a href="#">En</a></li>
-                  <li class="language-n__item"><a href="#">Es</a></li>
-                </ul>
+      <div class="news__content tabs__content" data-content="2">
+        <div class="news__slider" data-controller="slider-three">
+          <ul class="news__list" data-target="slider-three.list">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
               </div>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="cons-text">Опишите состояние пациента (необязательно)</label>
-              <textarea class="form__textarea" id="cons-text"></textarea>
-            </div>
-          </fieldset>
-          <div class="form__wrap">
-            <div class="form__group">
-              <label class="form__send" for="send-file">Прикрепите выписку +</label>
-              <input class="visually-hidden" type="file" id="send-file">
-            </div>
-            <a class="form__info" href="#">
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+          </ul>
+          <div class="news__controls controls">
+            <button class="controls__button controls__button--prev" data-target="slider-three.prev">
+              <svg aria-label="prev">
+                <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+              </svg>
+            </button>
+            <button class="controls__button controls__button--next" data-target="slider-three.next">
               <svg aria-label="next">
-                <use xlink:href="img/sprites/sprite.svg#icon__information"></use>
-              </svg>
-            </a>
-          </div>
-          <p class="form__politic">Нажимая “Отправить” вы соглашаетесь с <a href="#">политикой <br> обработки
-              персональных данных</a> </p>
-          <button class="form__button button-n">отправить</button>
-        </form>
-        <div class="consultation-n__content">
-          <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
-          <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень
-            медикаментов и т.д.)</p>
-          <p>Пожалуйста, укажите телефон, мы изучим ваш случай и с вами свяжется врач-консультант высшей категории.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="page__footer footer-n">
-    <div class="footer-n__top">
-      <div class="footer-n__left">
-        <a href="index.html" class="footer-n__logo">
-          <img src="img/new/logo___blum.png" alt="">
-        </a>
-      </div>
-      <div class="footer-n__box">
-        <nav class="footer-n__nav">
-          <div class="footer-n__col">
-            <p class="footer-n__header">Разделы каталога:</p>
-            <button class="footer-n__control">
-              <svg>
                 <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
               </svg>
             </button>
-            <ul class="footer-n__list">
-              <li class="footer-n__item"><a href="#">О центре</a></li>
-              <li class="footer-n__item"><a href="#">О докторе</a></li>
-              <li class="footer-n__item"><a href="#">Услуги и цены</a></li>
-              <li class="footer-n__item"><a href="program.html">Программы</a></li>
-              <li class="footer-n__item"><a href="patient-reviews.html">Отзывы</a></li>
-              <li class="footer-n__item"><a href="center-news.html">Новости</a></li>
-            </ul>
-          </div>
-          <div class="footer-n__col">
-            <p class="footer-n__header">Услуги:</p>
-            <button class="footer-n__control">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
-              </svg>
-            </button>
-            <ul class="footer-n__list">
-              <li class="footer-n__item"><a href="#">Лечение заболеваний позвоночника</a></li>
-              <li class="footer-n__item"><a href="#">Реабилитация после травм позвоночника</a></li>
-              <li class="footer-n__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
-              <li class="footer-n__item"><a href="#">Реабилитация после эндопротезирония</a></li>
-              <li class="footer-n__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
-              <li class="footer-n__item"><a href="#">Еще</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="footer-n__contacts">
-          <div class="footer-n__group">
-            <p class="footer-n__header">Круглосуточно</p>
-            <a href="tel:88005051415" class="footer-n__phone">8 800 505 14 15</a>
-            <a href="mailto:doctor@doctorblum.ru" class="footer-n__email">doctor@doctorblum.ru</a>
-          </div>
-          <div class="footer-n__group">
-            <a href="#" class="footer-n__callback">Напишите нам</a>
-            <ul class="footer-n__social social social">
-              <li class="social__item social__item--n">
-                <a href="#">
-                  <svg>
-                    <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--n">
-                <a href="#">
-                  <svg>
-                    <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--n">
-                <a href="#">
-                  <svg>
-                    <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-      <a class="footer-n__btn" href="#header-link">
-        <svg>
-          <use xlink:href="img/sprites/sprite.svg#icon__link"></use>
+      <div class="news__content tabs__content" data-content="3">
+        <div class="news__slider" data-controller="slider-three">
+          <ul class="news__list" data-target="slider-three.list">
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__inner">
+                <a class="news__img" href="">
+                  <img src="img/news__img.jpg" alt="">
+                </a>
+                <p class="news__header">Интервью певицы Алены Свиридовой с профессором Евгением Блюмом</p>
+                <p class="news__text">Алена Свиридова, певица, актриса и композитор в Центре Доктора Блюма в испании. Как врачу предотвратить развитие профессиональных деформаций, а пациенту сохранить здоровье без лекарств и операций.</p>
+                <a href="#" class="news__more">Читать далее</a>
+              </div>
+            </li>
+          </ul>
+          <div class="news__controls controls">
+            <button class="controls__button controls__button--prev" data-target="slider-three.prev">
+              <svg aria-label="prev">
+                <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+              </svg>
+            </button>
+            <button class="controls__button controls__button--next" data-target="slider-three.next">
+              <svg aria-label="next">
+                <use xlink:href="img/sprites/sprite.svg#icon__next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="consultation">
+  <h2 class="consultation__title title title--index">получите консультацию</h2>
+  <div class="consultation__inner">
+    <form class="consultation__form">
+      <input class="consultation__input" type="text" id="phone">
+      <textarea placeholder="Опишите состояние пациента" cols="30" rows="10" class="consultation__textarea"></textarea>
+      <div class="consultation__file file">
+        <input name="file" type="file" name="file" id="input__file" class="file__input" multiple>
+        <label for="input__file" class="file__button">
+          <svg class="file__icon">
+            <use xlink:href="img/sprites/sprite.svg#icon__paper-clip"></use>
+          </svg>
+          <span class="file__text">Прикрепить выписку</span>
+        </label>
+      </div>
+      <button class="consultation__button button">Получить  консультацию</button>
+      <p class="consultation__politic">Нажимая на кнопку,  вы соглашаетесь на обработку  персональных данных</p>
+    </form>
+    <div class="consultation__content">
+      <p>Расскажите, что произошло и в каком состоянии сейчас находится пациент.</p>
+      <p>Прикрепите все ваши актуальные медицинские документы (выписки, результаты обследований, описание, перчень медикаментов и т.д.)</p>
+      <p>Пожалуйста, укажите телефон, мы изучим ваш случай и с вами свяжется врач-консультант высшей категории.</p>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="page__footer footer">
+  <div class="footer__top">
+    <div class="footer__left">
+      <a href="index.html" class="footer__logo">
+        <svg width="154" height="62" viewBox="0 0 154 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9322 34.1556C32.9322 30.7084 30.05 29.3185 27.9985 29.3185C25.7807 29.3185 6.43405 29.2632 6.43405 29.2632V39.5473C6.43405 39.5473 24.3947 39.6026 27.9985 39.6026C31.2696 39.6026 32.9322 37.6017 32.9322 34.1556ZM32.9322 50.2215C32.9322 46.7743 30.05 45.3844 27.9985 45.3844C25.7807 45.3844 6.43405 45.3291 6.43405 45.3291V55.6132C6.43405 55.6132 24.3947 55.6696 27.9985 55.6696C31.2696 55.6696 32.9322 53.6687 32.9322 50.2215ZM38.6976 50.8325C38.6976 61.4514 27.9985 61.5066 27.9985 61.5066H0.613525V23.4814H28.0536C28.0536 23.4814 38.6976 23.5017 38.6976 34.2672C38.6976 42.1604 34.8723 42.3824 34.8723 42.3824C34.8723 42.3824 38.6976 42.5493 38.6976 50.8325ZM99.4557 39.491C101.617 39.491 103.208 40.7704 103.208 43.1603V61.4514H109.007V43.1603C109.007 40.8257 110.431 39.491 113.37 39.491C116.308 39.491 117.731 41.0139 117.731 43.1603V61.4514H123.531V43.1603C123.531 38.2679 121.13 34.2108 114.089 34.2108C107.769 34.2108 106.052 36.9907 106.052 36.9907C106.052 36.9907 104.223 34.2672 100.175 34.2672C96.1295 34.2672 88.6285 34.2108 88.6285 34.2108V61.4514H94.4276V39.491H99.4557ZM74.6583 61.4514C79.9247 61.4514 83.406 57.17 83.406 52.3892V34.2311H77.6068V52.3892C77.6068 54.3349 76.7648 55.7541 74.6583 55.7541H64.4471C62.3406 55.7541 61.4986 54.3349 61.4986 52.3892V34.2311H55.6994V52.3892C55.6994 57.17 59.1819 61.4514 64.4471 61.4514H74.6583ZM44.5575 61.4514H50.3555V23.5017H44.5575V61.4514Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6203 16.4377C20.6203 17.3271 19.8987 18.0508 19.0129 18.0508H15.1876C14.3007 18.0508 13.5802 17.3271 13.5802 16.4377V11.8531C13.5802 10.9637 14.3007 10.24 15.1876 10.24H19.0129C19.8987 10.24 20.6203 10.9637 20.6203 11.8531V16.4377ZM19.0129 8.90527H15.1876C13.5678 8.90527 12.2493 10.2276 12.2493 11.8531V16.4377C12.2493 18.0621 13.5678 19.3844 15.1876 19.3844H19.0129C20.6327 19.3844 21.9513 18.0621 21.9513 16.4377V11.8531C21.9513 10.2276 20.6327 8.90527 19.0129 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M49.1074 16.4377C49.1074 17.3271 48.3858 18.0508 47.4988 18.0508H43.6747C42.7878 18.0508 42.0661 17.3271 42.0661 16.4377V11.8531C42.0661 10.9637 42.7878 10.24 43.6747 10.24H47.4988C48.3858 10.24 49.1074 10.9637 49.1074 11.8531V16.4377ZM47.4988 8.90527H43.6747C42.0549 8.90527 40.7363 10.2276 40.7363 11.8531V16.4377C40.7363 18.0621 42.0549 19.3844 43.6747 19.3844H47.4988C49.1198 19.3844 50.4383 18.0621 50.4383 16.4377V11.8531C50.4383 10.2276 49.1198 8.90527 47.4988 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1189 8.90527H52.3552V19.3562H53.6861V10.24H59.1189C60.0058 10.24 60.7274 10.9625 60.7274 11.852H62.0572C62.0572 10.2276 60.7387 8.90527 59.1189 8.90527Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.699 11.852V16.4366C23.699 18.0621 25.0175 19.3844 26.6373 19.3844H32.6141V18.0497H26.6373C25.7504 18.0497 25.0299 17.326 25.0299 16.4366V11.852C25.0299 10.9625 25.7504 10.2388 26.6373 10.2388H32.6141V8.90527H26.6373C25.0175 8.90527 23.699 10.2276 23.699 11.852Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.10863 18.0501H3.67591C2.78901 18.0501 2.06847 17.3264 2.06847 16.4369V11.8523C2.06847 10.9629 2.78901 10.2392 3.67591 10.2392H7.50118C8.38696 10.2392 9.10863 10.9629 9.10863 11.8523V18.0501ZM9.10863 9.3881C8.64663 9.08486 8.0947 8.90563 7.50118 8.90563H3.67591C2.0561 8.90563 0.737549 10.2279 0.737549 11.8523V16.4369C0.737549 18.0625 2.0561 19.3848 3.67591 19.3848H10.4395V11.8523V11.8478V5.71094H9.10863V9.3881Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M37.6853 5.74707H36.3544V8.90569H34.811V10.2393H36.3544V19.3555H37.6853V10.2393H39.3141V8.90569H37.6853V5.74707Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M127.823 9.55176L133.899 13.9786L131.579 21.1412H124.069L121.748 13.9786L127.823 9.55176Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M147.486 9.55176L153.562 13.9786L151.24 21.1412H143.73L141.41 13.9786L147.486 9.55176Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M131.578 21.1416L137.654 25.5684L135.334 32.7311H127.823L125.503 25.5684L131.578 21.1416Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M143.803 21.1416L149.879 25.5684L147.559 32.7311H140.049L137.727 25.5684L143.803 21.1416Z" fill="#84ADD0"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M131.579 6.81578L133.899 13.9785H137.46L134.46 4.7168L131.579 6.81578Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M140.535 4.4873L137.461 13.9778H141.41L143.731 6.81512L140.535 4.4873Z" fill="#828282"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M140.095 3.02131C140.095 4.47661 138.918 5.65687 137.467 5.65687C136.016 5.65687 134.839 4.47661 134.839 3.02131C134.839 1.566 136.016 0.385742 137.467 0.385742C138.918 0.385742 140.095 1.566 140.095 3.02131Z" fill="#828282"/>
         </svg>
       </a>
+      <p class="footer__location">Центр Биомеханики Доктора Блюма г. Марбелья, Испания</p>
     </div>
-    <div class="footer-n__bottom">
-      <p class="footer-n__copyright"><span>©</span> 2007-2020, ООО “Доктор Блюм”. Все права защищены</p>
-      <a href="#" class="footer-n__politic">Политика конфиденциальности</a>
-      <p class="footer-n__dev">Создание сайта <a href="#">ARS Creative</a></p>
+    <nav class="footer__nav">
+      <div class="footer__col">
+        <p class="footer__header">Разделы каталога:</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">О центре</a></li>
+          <li class="footer__item"><a href="#">О докторе</a></li>
+          <li class="footer__item"><a href="#">Услуги и цены</a></li>
+          <li class="footer__item"><a href="program.html">Программы</a></li>
+          <li class="footer__item"><a href="#">Отзывы</a></li>
+          <li class="footer__item"><a href="center-news.html">Новости</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__header">Услуги:</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">Лечение заболеваний позвоночника</a></li>
+          <li class="footer__item"><a href="#">Реабилитация после травм позвоночника</a></li>
+          <li class="footer__item"><a href="#">Реабилитация детей и взрослых с ДЦП</a></li>
+          <li class="footer__item"><a href="#">Реабилитация после эндопротезирония</a></li>
+          <li class="footer__item"><a href="#">Лечение врожденного вывиха бедра</a></li>
+          <li class="footer__item"><a href="#">Еще</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__contacts">
+      <p class="footer__text">Круглосуточно</p>
+      <a href="tel:88005051415" class="footer__phone">8 800 505 14 15</a>
+      <a href="mailto:doctor@doctorblum.ru" class="footer__email">doctor@doctorblum.ru</a>
+      <a href="#" class="footer__callback">Напишите нам</a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#icon__yt"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-  </footer>
-</body>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copyright">© 2007-2020, ООО “Доктор Блюм”.  Все права защищены</p>
+    <a href="#" class="footer__politic">Политика конфиденциальности</a>
+    <p class="footer__dev">Создание сайта <a href="#">ARS Creative</a></p>
+  </div>
+</footer>
 
+<section class="modal">
+  <h2 class="modal__title">Получите бесплатную консультацию</h2>
+  <div class="modal__wrap">
+    <svg class="modal__icon">
+      <use xlink:href="img/sprites/sprite.svg#icon__modal"></use>
+    </svg>
+    <div class="modal__box">
+      <p class="modal__text">Оставьте заявку и наш специалист свяжется с вами в ближайшее время.</p>
+      <form class="modal__form" action="#">
+        <input class="consultation__input" type="text" id="phone">
+      </form>
+    </div>
+  </div>
+
+</section>
+</body>
 </html>

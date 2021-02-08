@@ -596,10 +596,10 @@ var _default = /*#__PURE__*/function (_Controller) {
       var _this = this;
 
       this.listTarget.addEventListener("mouseover", function () {
-        var active = _this.listTarget.querySelector(".mega-menu-n__item--active");
+        var active = _this.listTarget.querySelector(".mega-menu__item--active");
 
         if (active) {
-          active.classList.remove("mega-menu-n__item--active");
+          active.classList.remove("mega-menu__item--active");
         }
       });
       this.listTarget.addEventListener("mouseout", function () {
@@ -1212,17 +1212,18 @@ _defineProperty(_default, "targets", ["name"]);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stimulus */ "./node_modules/stimulus/index.js");
-/* harmony import */ var stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus/webpack-helpers */ "./node_modules/stimulus/webpack-helpers.js");
-/* harmony import */ var _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/tabs/tabs */ "./src/blocks/tabs/tabs.js");
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./util */ "./src/js/util/index.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! intl-tel-input */ "./node_modules/intl-tel-input/index.js");
-/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(intl_tel_input__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
-/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js");
+/* harmony import */ var turbolinks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(turbolinks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! stimulus */ "./node_modules/stimulus/index.js");
+/* harmony import */ var stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! stimulus/webpack-helpers */ "./node_modules/stimulus/webpack-helpers.js");
+/* harmony import */ var _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/tabs/tabs */ "./src/blocks/tabs/tabs.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util */ "./src/js/util/index.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! intl-tel-input */ "./node_modules/intl-tel-input/index.js");
+/* harmony import */ var intl_tel_input__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(intl_tel_input__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var perfect_scrollbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! perfect-scrollbar */ "./node_modules/perfect-scrollbar/dist/perfect-scrollbar.esm.js");
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
 
@@ -1231,36 +1232,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-global.jQuery = jquery__WEBPACK_IMPORTED_MODULE_4___default.a;
+
+global.jQuery = jquery__WEBPACK_IMPORTED_MODULE_5___default.a;
 
 __webpack_require__(/*! @fancyapps/fancybox/dist/jquery.fancybox */ "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js");
 
-var application = stimulus__WEBPACK_IMPORTED_MODULE_0__["Application"].start();
+turbolinks__WEBPACK_IMPORTED_MODULE_0___default.a.start();
+var application = stimulus__WEBPACK_IMPORTED_MODULE_1__["Application"].start();
 
 var context = __webpack_require__("./src/js/controllers sync recursive \\.js$");
 
-application.load(Object(stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_1__["definitionsFromContext"])(context));
-var tabs = Object(_util__WEBPACK_IMPORTED_MODULE_3__["$$"])("[data-tabs]");
+application.load(Object(stimulus_webpack_helpers__WEBPACK_IMPORTED_MODULE_2__["definitionsFromContext"])(context));
+var tabs = Object(_util__WEBPACK_IMPORTED_MODULE_4__["$$"])("[data-tabs]");
 var input = document.querySelector("#phone");
 
 if (input) {
-  intl_tel_input__WEBPACK_IMPORTED_MODULE_5___default()(input, {
+  intl_tel_input__WEBPACK_IMPORTED_MODULE_6___default()(input, {
     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/utils.js"
   });
 }
 
 var filters = document.querySelectorAll(".filter__list");
 filters.forEach(function (item) {
-  return new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_6__["default"](item, {
+  return new perfect_scrollbar__WEBPACK_IMPORTED_MODULE_7__["default"](item, {
     wheelSpeed: 2,
     wheelPropagation: true,
     minScrollbarLength: 20
   });
 });
 tabs.map(function (item) {
-  return new _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_2__["default"](item);
+  return new _modules_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__["default"](item);
 });
-jquery__WEBPACK_IMPORTED_MODULE_4___default()('[data-fancybox]').fancybox({
+jquery__WEBPACK_IMPORTED_MODULE_5___default()('[data-fancybox]').fancybox({
   protect: true
 });
 var inputs = document.querySelectorAll('.file__input');
@@ -1276,7 +1279,7 @@ Array.prototype.forEach.call(inputs, function (input) {
 var galleryList = document.querySelector(".gallery__list");
 
 if (galleryList) {
-  var gallery = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_7__["tns"])({
+  var gallery = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_8__["tns"])({
     "container": ".gallery__list",
     "items": 1,
     "navContainer": ".gallery__sub-list",
@@ -1286,87 +1289,7 @@ if (galleryList) {
     "speed": 400,
     "controls": false
   });
-} // Slider-new
-
-
- // var mySwiper = new Swiper('.swiper-container', {
-//   // Optional parameters
-//   loop: true,
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.controls__button--next',
-//     prevEl: '.controls__button--prev',
-//   },
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
-//menu
-
-var toggleNav = document.querySelector('.menu-n__button');
-var headerMenu = document.querySelector('.header-n__menu');
-toggleNav.addEventListener("click", function () {
-  headerMenu.classList.toggle("header-n__menu--active");
-}); //submenu
-
-var menuElement = document.querySelectorAll('.menu-n__link--parent');
-var menuElementActive = 'menu-n__link--active';
-var menuItems = document.querySelectorAll('.menu-n__items');
-var menuItemsActive = "menu-n__items--active";
-var megaMenu = document.querySelectorAll('.mega-menu-n__inner');
-var megaMenuActive = 'mega-menu-n__inner--active';
-var megaMenuItem = document.querySelectorAll('.mega-menu-n__subbutton');
-var megaMenuSubItem = document.querySelectorAll('.mega-menu-n__header');
-var megaMenuSubList = document.querySelectorAll('.mega-menu-n__sub-list');
-var megaMenuSubListActive = 'mega-menu-n__sub-list--active';
-var footerControl = document.querySelectorAll('.footer-n__control');
-var footerList = document.querySelectorAll('.footer-n__list');
-var footerListActive = 'footer-n__list--active';
-
-var openMenu = function openMenu(firstItem, secondItem, thirdItem, fourthItem) {
-  var _loop = function _loop(i) {
-    firstItem[i].addEventListener('click', function () {
-      // for (let j = 0; j < firstItem.length; j++) {
-      //   secondItem[j].classList.remove(thirdItem);
-      // };
-      secondItem[i].classList.toggle(thirdItem);
-    });
-  };
-
-  for (var i = 0; i < firstItem.length; i++) {
-    _loop(i);
-  }
-
-  ;
-};
-
-openMenu(menuElement, menuItems, menuItemsActive);
-openMenu(menuElement, menuElement, menuElementActive);
-openMenu(megaMenuItem, megaMenu, megaMenuActive);
-openMenu(megaMenuSubItem, megaMenuSubList, megaMenuSubListActive); //footer-menu
-
-openMenu(footerControl, footerList, footerListActive); // Развернуть текст
-
-var blumMethodButton = document.querySelector('.blum-method__btn');
-var blumMethodContent = document.querySelector('.blum-method__content');
-var blumMethodContentActive = 'blum-method__content--active';
-var introButton = document.querySelector('.intro-n__btn');
-var introContent = document.querySelector('.intro-n__content');
-var introContentActive = 'intro-n__content--active';
-
-var openContent = function openContent(firstItem, secondItem, thirdItem) {
-  firstItem.addEventListener("click", function () {
-    secondItem.classList.toggle(thirdItem);
-  });
-};
-
-openContent(blumMethodButton, blumMethodContent, blumMethodContentActive);
-openContent(introButton, introContent, introContentActive);
+}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
